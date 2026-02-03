@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yönetim Paneli - Prof. Dr. Refik YASLIKAYA</title>
+    <!-- Use the same premium font -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        :root {
+            --bg-color: #f1f5f9;
+            --text-primary: #1e293b;
+            --text-secondary: #475569;
+            --accent-color: #38bdf8;
+            --card-bg: #ffffff;
+            --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Outfit', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 2rem;
+        }
+
+        .admin-container {
+            background-color: var(--card-bg);
+            width: 100%;
+            max-width: 600px;
+            padding: 2.5rem;
+            border-radius: 1rem;
+            box-shadow: var(--shadow);
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            margin-bottom: 2rem;
+            text-align: center;
+            border-bottom: 2px solid #f1f5f9;
+            padding-bottom: 1rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: var(--text-secondary);
+            font-weight: 500;
+        }
+
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #cbd5e1;
+            border-radius: 0.5rem;
+            font-size: 1rem;
+            transition: border-color 0.2s;
+        }
+
+        input[type="text"]:focus,
+        textarea:focus {
+            border-color: var(--accent-color);
+            outline: none;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 150px;
+        }
+
+        .btn {
+            display: block;
+            width: 100%;
+            background-color: #0f172a;
+            color: #fff;
+            padding: 1rem;
+            border: none;
+            border-radius: 0.5rem;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        .btn:hover {
+            background-color: #000;
+        }
+
+        .btn:disabled {
+            background-color: #94a3b8;
+            cursor: not-allowed;
+        }
+
+        .status-msg {
+            margin-top: 1rem;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        .success {
+            color: #10b981;
+        }
+
+        .error {
+            color: #ef4444;
+        }
+
+        .back-link {
+            display: block;
+            text-align: center;
+            margin-top: 1.5rem;
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+        .back-link:hover {
+            color: var(--text-primary);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="admin-container">
+        <h1>Duyuru Ekleme Paneli</h1>
+
+        <form id="duyuruForm">
+            <div class="form-group">
+                <label for="title">Duyuru Başlığı</label>
+                <input type="text" id="title" name="title" placeholder="Örn: Ders İptali Hakkında" required>
+            </div>
+
+            <div class="form-group">
+                <label for="content">Duyuru İçeriği</label>
+                <textarea id="content" name="content" placeholder="Detaylı duyuru metnini buraya yazın..."
+                    required></textarea>
+                <small style="color:var(--text-secondary); display:block; margin-top:0.3rem">Özet otomatik
+                    oluşturulacaktır (ilk 200 karakter).</small>
+            </div>
+
+            <button type="submit" class="btn" id="submitBtn">Duyuruyu Yayınla</button>
+        </form>
+
+        <div id="statusMsg" class="status-msg"></div>
+
+        <a href="index.html" class="back-link"><i class='bx bx-arrow-back'></i> Ana Sayfaya Dön</a>
+    </div>
+
+    <script>
+        // API URL (Aynı URL)
+        const API_URL = "https://script.google.com/macros/s/AKfycbzl8S4AoHnvQyN5kZ3HLf60i6hFRooLaPG2Yy5HF3O-UO6KMmrvhhbCfGpHjsoXRPWU/exec";
+
+        const form = document.getElementById('duyuruForm');
+        const submitBtn = document.getElementById('submitBtn');
+        const statusMsg = document.getElementById('statusMsg');
+
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            // Disable button
+            submitBtn.disabled = true;
+            submitBtn.innerText = 'Yayınlanıyor...';
+            statusMsg.textContent = '';
+            statusMsg.className = 'status-msg';
+
+            const data = {
+                action: 'add_announcement',
+                title: document.getElementById('title').value,
+                content: document.getElementById('content').value
+            };
+
+            try {
+                // Not: add_announcement sonrası Apps Script success JSON döner.
+                // Fetch ile POST atıp sonucu bekleyeceğiz.
+                const response = await fetch(API_URL, {
+                    method: 'POST',
+                    // Redirect follow yapmak genelde iyidir Apps Script için
+                    headers: {
+                        'Content-Type': 'text/plain;charset=utf-8'
+                    },
+                    body: JSON.stringify(data)
+                });
+
+                const result = await response.json();
+
+                if (result.result === 'success') {
+                    statusMsg.textContent = 'Duyuru başarıyla yayınlandı!';
+                    statusMsg.className = 'status-msg success';
+                    form.reset();
+                } else {
+                    throw new Error(result.error || 'Bilinmeyen hata');
+                }
+
+            } catch (error) {
+                console.error(error);
+                statusMsg.textContent = 'Bir hata oluştu: ' + error.message;
+                statusMsg.className = 'status-msg error';
+            } finally {
+                submitBtn.disabled = false;
+                submitBtn.innerText = 'Duyuruyu Yayınla';
+            }
+        });
+    </script>
+
+</body>
+
+</html>

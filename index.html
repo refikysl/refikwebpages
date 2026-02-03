@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prof. Dr. Refik YASLIKAYA | Kişisel Web Sitesi</title>
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- LEFT: Fixed Profile Pane -->
+    <aside class="split-split-left">
+        <div class="split-left-content">
+            <div class="profile-image-container">
+                <!-- Ensure this image file exists, or use placeholder -->
+                <img src="placeholder_logo.png" alt="Prof. Dr. Refik YASLIKAYA" id="profile-img">
+            </div>
+
+            <h1>Prof. Dr. Refik YASLIKAYA</h1>
+            <span class="title">Kırıkkale Üniversitesi<br>İktisadi ve İdari Bilimler Fakültesi<br>Siyaset Bilimi ve Kamu
+                Yönetimi</span>
+
+            <ul class="contact-list">
+                <li><i class='bx bx-envelope'></i> refik@kku.edu.tr</li>
+                <li><i class='bx bx-map'></i> Kırıkkale Üniversitesi Kampüsü</li>
+                <li><i class='bx bx-globe'></i> www.refikyaslikaya.com.tr</li>
+            </ul>
+
+            <div class="social-links">
+                <a href="https://kirikkaleturkey.academia.edu/RefikYaslikaya" target="_blank" class="social-btn"
+                    title="Academia.edu">
+                    <span
+                        style="font-family: 'Georgia', serif; font-weight: bold; font-size: 1.2em; font-style: italic;">A</span>
+                </a>
+                <a href="#" class="social-btn"><i class='bx bxl-instagram'></i></a>
+            </div>
+
+            <div class="quick-access"
+                style="margin-top: 2rem; display:flex; gap:0.5rem; flex-wrap:wrap; justify-content:center;">
+                <a href="#" class="quick-btn"
+                    style="text-decoration:none; color:white; border:1px solid rgba(255,255,255,0.3); padding:0.5rem 1rem; border-radius:20px; font-size:0.8rem; transition:0.3s;">
+                    <i class='bx bx-download'></i> CV İndir
+                </a>
+                <a href="https://akademik.yok.gov.tr/AkademikArama/AkademisyenGorevOgrenimBilgileri?islem=direct&sira=_D2bDdARDMCOgjHVGzFVZw&authorId=34403B319A2B6488"
+                    target="_blank" class="quick-btn"
+                    style="text-decoration:none; color:white; border:1px solid rgba(255,255,255,0.3); padding:0.5rem 1rem; border-radius:20px; font-size:0.8rem; transition:0.3s;">
+                    <i class='bx bx-link-external'></i> YÖK Akademik
+                </a>
+            </div>
+
+            <div class="sidebar-footer"
+                style="margin-top:auto; padding-top:2rem; opacity:0.6; font-size:0.8rem; font-style:italic;">
+                "Bilgi paylaştıkça çoğalır."
+            </div>
+        </div>
+    </aside>
+
+    <!-- RIGHT: Scrollable Content Pane -->
+    <main class="split-split-right">
+
+        <!-- Top Sticky Navigation -->
+        <nav class="top-nav">
+            <ul>
+                <li><a href="#" class="nav-link active" data-target="anasayfa">Anasayfa</a></li>
+                <li><a href="#" class="nav-link" data-target="ozgecmis">Özgeçmiş</a></li>
+
+                <!-- DROPDOWN: DERSLER -->
+                <li class="nav-item-dropdown">
+                    <a href="#" class="nav-link" data-target="dersler">Dersler <i class='bx bx-chevron-down'
+                            style="vertical-align:middle"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-link" data-target="ders-karsilastirmali">Karşılaştırmalı Kamu
+                            Yön.</a>
+                        <a href="#" class="dropdown-link" data-target="ders-kentlesme">Kentleşme Politikası</a>
+                        <a href="#" class="dropdown-link" data-target="ders-cevre">Çevre Sorunları</a>
+                    </div>
+                </li>
+
+                <!-- DROPDOWN: YAYINLAR -->
+                <li class="nav-item-dropdown">
+                    <a href="#" class="nav-link" data-target="yayinlar">Yayınlar <i class='bx bx-chevron-down'
+                            style="vertical-align:middle"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-link" data-target="yayin-kitap">Kitaplar</a>
+                        <a href="#" class="dropdown-link" data-target="yayin-makale">Makaleler</a>
+                        <a href="#" class="dropdown-link" data-target="yayin-bildiri">Bildiriler</a>
+                        <a href="#" class="dropdown-link" data-target="yayin-proje">Projeler</a>
+                    </div>
+                </li>
+
+                <li><a href="#" class="nav-link" data-target="iletisim">İletişim</a></li>
+            </ul>
+        </nav>
+
+        <div class="content-wrapper">
+
+            <!-- ANASAYFA -->
+            <section id="anasayfa" class="active">
+                <h2 class="section-title">Güncel Duyurular</h2>
+                <div id="duyuru-container">
+                    <p>Yükleniyor...</p>
+                </div>
+            </section>
+
+            <!-- ÖZGEÇMİŞ -->
+            <section id="ozgecmis">
+                <h2 class="section-title">Akademik Özgeçmiş</h2>
+                <div class="modern-card">
+                    <p style="color:var(--text-dark); line-height:1.8;">
+                        Prof. Dr. Refik YASLIKAYA, Kırıkkale Üniversitesi İktisadi ve İdari Bilimler Fakültesi Siyaset
+                        Bilimi ve Kamu Yönetimi Bölümü'nde öğretim üyesi olarak görev yapmaktadır.
+                        <br><br>
+                        Lisans eğitimini Ankara Üniversitesi Siyasal Bilgiler Fakültesi'nde, yüksek lisans ve
+                        doktorasını İngiltere'de tamamlamıştır.
+                        Başlıca çalışma alanları; Yerel Yönetimler, Kentleşme Politikaları, Çevre Sorunları ve
+                        Karşılaştırmalı Kamu Yönetimi'dir.
+                    </p>
+                </div>
+            </section>
+
+            <!-- DERS GENEL (Dashboard) -->
+            <section id="dersler">
+                <h2 class="section-title">Ders Materyalleri</h2>
+                <p style="margin-bottom:1.5rem; color:var(--text-secondary)">Ders notlarına ve haftalık programlara
+                    erişmek için menüden ilgili dersi seçebilir veya aşağıdan tıklayabilirsiniz.</p>
+
+                <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap:1.5rem;">
+                    <div class="modern-card" style="cursor:pointer;"
+                        onclick="document.querySelector('[data-target=\'ders-karsilastirmali\']').click()">
+                        <div class="card-title">Karşılaştırmalı Kamu Yönetimi</div>
+                        <p>Yönetim sistemlerinin karşılaştırmalı analizi.</p>
+                        <span style="color:var(--accent-color); font-weight:600; font-size:0.9rem">İncele <i
+                                class='bx bx-right-arrow-alt'></i></span>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- DERS DETAY: KARŞILAŞTIRMALI KAMU YÖNETİMİ -->
+            <section id="ders-karsilastirmali">
+                <h2 class="section-title">Karşılaştırmalı Kamu Yönetimi</h2>
+                <div
+                    style="margin-bottom:1rem; padding:1rem; background:#d1ecf1; border-radius:8px; border-left:4px solid #0c5460; color:#0c5460; font-size:0.9rem;">
+                    <i class='bx bx-info-circle'></i> Ders slaytları ve okuma listeleri aşağıda haftalık olarak
+                    sunulmuştur.
+                </div>
+
+                <div
+                    style="margin-bottom:2rem; padding:1rem; background:#fff3cd; border-radius:8px; border-left:4px solid #ff6b6b; color:#721c24; font-size:0.85rem;">
+                    <i class='bx bx-error'></i> <strong>Önemli:</strong> Derslere ilişkin notlar dönem içinde
+                    değişebilir/güncellenebilir. Dönem başında tüm slaytları indirseniz bile derslerde hocanın
+                    uyarılarını dikkate alarak güncel versiyonları sınav öncesinde yeniden indiriniz.
+                </div>
+
+                <!-- 1-2. Hafta: Teori -->
+                <div class="modern-card card-horizontal">
+                    <div class="card-img-box">
+                        <img src="images/teori.png" alt="Teori">
+                    </div>
+                    <div class="card-text-box">
+                        <span class="card-date">1-2. HAFTA</span>
+                        <div class="card-title">Karşılaştırmalı Kamu Yönetimi: Teori ve Yaklaşımlar</div>
+
+                        <a href="https://drive.google.com/open?id=1x7qNT6xNfDykcbyZ2tzqQ1L0QVIE9dkP&usp=drive_fs"
+                            target="_blank" class="read-more">
+                            <i class='bx bxs-file-pdf'></i> Ders Slaytını İndir
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 3-4. Hafta: Fransa -->
+                <div class="modern-card card-horizontal">
+                    <div class="card-img-box">
+                        <img src="images/fr.png" alt="Fransa">
+                    </div>
+                    <div class="card-text-box">
+                        <span class="card-date">3-4. HAFTA</span>
+                        <div class="card-title">Fransa Yönetim Yapısı</div>
+
+                        <a href="https://drive.google.com/file/d/1nmDvQmdZ4seyFXTlkgI3LRrGL16Ppzt8/view?usp=sharing"
+                            target="_blank" class="read-more">
+                            <i class='bx bxs-file-pdf'></i> Ders Slaytını İndir
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 5-6. Hafta: Birleşik Krallık -->
+                <div class="modern-card card-horizontal">
+                    <div class="card-img-box">
+                        <img src="images/gb.png" alt="Birleşik Krallık">
+                    </div>
+                    <div class="card-text-box">
+                        <span class="card-date">5-6. HAFTA</span>
+                        <div class="card-title">Birleşik Krallık Yönetim Yapısı</div>
+
+                        <a href="https://drive.google.com/file/d/18Bt3q1Ouz5QwTUj9QweRar4hlqDbIda3/view?usp=sharing"
+                            target="_blank" class="read-more">
+                            <i class='bx bxs-file-pdf'></i> Ders Slaytını İndir
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 7-8. Hafta: ABD -->
+                <div class="modern-card card-horizontal">
+                    <div class="card-img-box">
+                        <img src="images/us.png" alt="ABD">
+                    </div>
+                    <div class="card-text-box">
+                        <span class="card-date">7-8. HAFTA</span>
+                        <div class="card-title">Amerika Birleşik Devletleri Yönetim Yapısı</div>
+
+                        <a href="#" class="read-more">
+                            <i class='bx bxs-file-pdf'></i> Ders Slaytını İndir
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 9-10. Hafta: Almanya -->
+                <div class="modern-card card-horizontal">
+                    <div class="card-img-box">
+                        <img src="images/de.png" alt="Almanya">
+                    </div>
+                    <div class="card-text-box">
+                        <span class="card-date">9-10. HAFTA</span>
+                        <div class="card-title">Almanya Federal Cumhuriyeti Yönetim Yapısı</div>
+
+                        <a href="#" class="read-more">
+                            <i class='bx bxs-file-pdf'></i> Ders Slaytını İndir
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 11-12. Hafta: İspanya -->
+                <div class="modern-card card-horizontal">
+                    <div class="card-img-box">
+                        <img src="images/es.png" alt="İspanya">
+                    </div>
+                    <div class="card-text-box">
+                        <span class="card-date">11-12. HAFTA</span>
+                        <div class="card-title">İspanya Yönetim Yapısı</div>
+
+                        <a href="#" class="read-more">
+                            <i class='bx bxs-file-pdf'></i> Ders Slaytını İndir
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- DERS DETAY: YEREL SİYASET (AI CHATBOT) -->
+            <section id="ders-yerel">
+                <h2 class="section-title">Yerel Siyaset ve Demokrasi</h2>
+                <p style="margin-bottom:2rem; color:var(--text-secondary)">
+                    Bu ders kapsamında yerel yönetimlerin siyasal boyutları, yerel demokrasi ve katılım süreçleri ele
+                    alınmaktadır.
+                    <br><strong>Aşağıdaki asistanı kullanarak ders notları üzerinde tartışabilir ve sorular
+                        sorabilirsiniz.</strong>
+                </p>
+
+                <div class="chat-wrapper">
+                    <div class="chat-header">
+                        <i class='bx bx-bot'></i> Ders Asistanı
+                        <span style="font-size:0.75rem; font-weight:400; opacity:0.8; margin-left:auto;">Sadece ders
+                            kaynağı kullanılır</span>
+                    </div>
+
+                    <div class="chat-box" id="chat-messages">
+                        <!-- Mesajlar buraya gelecek -->
+                        <div class="message message-bot">
+                            Merhaba! Ben Yerel Siyaset ders asistanıyım. Dersin kaynak pdf'i (Örn: Yerel Demokrasi
+                            Notları) üzerinden sorularınızı yanıtlayabilirim. Size nasıl yardımcı olabilirim?
+                        </div>
+                    </div>
+
+                    <div class="chat-input-area">
+                        <input type="text" id="chat-input" placeholder="Dersle ilgili bir soru sorun..."
+                            autocomplete="off">
+                        <button id="chat-send-btn"><i class='bx bx-send'></i></button>
+                    </div>
+                </div>
+            </section>
+            <section id="ders-kentlesme">
+                <h2 class="section-title">Kentleşme Politikası</h2>
+                <div class="modern-card">
+                    <p>İçerik hazırlanıyor...</p>
+                </div>
+            </section>
+            <section id="ders-cevre">
+                <h2 class="section-title">Çevre Sorunları</h2>
+                <div class="modern-card">
+                    <p>İçerik hazırlanıyor...</p>
+                </div>
+            </section>
+
+
+            <!-- YAYINLAR GENEL -->
+            <section id="yayinlar">
+                <h2 class="section-title">Yayınlar</h2>
+                <div class="modern-card">
+                    <p>Lütfen menüden görüntülemek istediğiniz yayın türünü seçiniz.</p>
+                </div>
+            </section>
+
+            <!-- YAYIN DETAYLARI -->
+            <section id="yayin-kitap">
+                <h2 class="section-title">Kitaplar</h2>
+                <div class="modern-card">
+                    <div class="card-title">Yerel Yönetimler Reformu</div>
+                    <p>2018, Seçkin Yayıncılık.</p>
+                </div>
+            </section>
+            <section id="yayin-makale">
+                <h2 class="section-title">Makaleler</h2>
+                <div class="modern-card">
+                    <p>Makale listesi yükleniyor...</p>
+                </div>
+            </section>
+            <section id="yayin-bildiri">
+                <h2 class="section-title">Bildiriler</h2>
+                <div class="modern-card">
+                    <p>Bildiri listesi yükleniyor...</p>
+                </div>
+            </section>
+            <section id="yayin-proje">
+                <h2 class="section-title">Projeler</h2>
+                <div class="modern-card">
+                    <p>Proje listesi yükleniyor...</p>
+                </div>
+            </section>
+
+            <!-- İLETİŞİM -->
+            <section id="iletisim">
+                <h2 class="section-title">Bana Ulaşın</h2>
+                <div class="modern-card">
+                    <form id="contact-form" style="display:flex; flex-direction:column; gap:1rem;">
+                        <input type="text" name="name" placeholder="Adınız Soyadınız"
+                            style="padding:1rem; border:1px solid #ddd; border-radius:8px;" required>
+                        <input type="email" name="email" placeholder="E-posta Adresiniz"
+                            style="padding:1rem; border:1px solid #ddd; border-radius:8px;" required>
+                        <textarea name="message" rows="5" placeholder="Mesajınız..."
+                            style="padding:1rem; border:1px solid #ddd; border-radius:8px;" required></textarea>
+                        <button type="submit"
+                            style="padding:1rem; background-color:var(--primary-color); color:white; border:none; border-radius:8px; cursor:pointer; font-weight:600;">Mesajı
+                            Gönder</button>
+                    </form>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Modal Overlay -->
+    <div class="modal-overlay" id="modal-overlay">
+        <div class="modal-box">
+            <div class="modal-header">
+                <div>
+                    <h3 id="modal-title" style="margin:0;">Başlık</h3>
+                    <small id="modal-date" style="color:#64748b;">Tarih</small>
+                </div>
+                <button class="close-modal-btn"
+                    style="background:none; border:none; font-size:1.5rem; cursor:pointer;">&times;</button>
+            </div>
+            <div class="modal-body" id="modal-body">
+                İçerik...
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // Profil resmini mevcut siteden almayı dene
+        const img = document.getElementById('profile-img');
+        // Varsa gerçek resim yolunu buraya yazalım
+        // img.src = 'sidebar_logo.png'; // Eğer önceki logoyu kullanmak isterseniz
+    </script>
+</body>
+
+</html>
