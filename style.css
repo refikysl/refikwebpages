@@ -94,8 +94,13 @@ body {
     letter-spacing: 0.15em;
     font-size: 0.85rem;
     font-weight: 600;
-    margin-bottom: 3rem;
+    margin-bottom: 0.3rem;
     display: block;
+    line-height: 1.6;
+}
+
+.split-left-content .title:last-of-type {
+    margin-bottom: 3rem;
 }
 
 .contact-list {
