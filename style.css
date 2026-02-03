@@ -573,10 +573,6 @@ h2.section-title::before {
         align-items: flex-start;
     }
 
-    .profile-text br {
-        display: none;
-    }
-
     .profile-image-container {
         width: 60px;
         height: 60px;
