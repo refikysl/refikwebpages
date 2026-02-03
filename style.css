@@ -552,7 +552,7 @@ h2.section-title::before {
     .split-split-left {
         width: 100%;
         min-width: 0;
-        padding: 1rem;
+        padding: 0.5rem 1rem;
         height: auto;
         position: sticky;
         top: 0;
