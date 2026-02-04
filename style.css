@@ -466,6 +466,18 @@ h2.section-title::before {
 /* Article Items */
 .article-item {
     margin-bottom: 1rem;
+    position: relative;
+    transition: all 0.2s ease;
+}
+
+.article-item.has-link {
+    cursor: pointer;
+}
+
+.article-item.has-link:hover {
+    border-color: var(--primary-color);
+    background-color: #f8fafc;
+    transform: translateX(5px);
 }
 
 .article-reference {
