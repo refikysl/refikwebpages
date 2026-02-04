@@ -17,7 +17,8 @@ const makalelerData = [
         "cilt": "15",
         "sayi": "2",
         "sayfa": "206-222",
-        "doi": ""
+        "doi": "",
+        "link": "https://drive.google.com/file/d/1A6fWn1WKunrtyWtqrQTJHFThHoOFKyTo/view?usp=sharing"
     },
     {
         "yazar": "Arslan, F. D., ve Yaslıkaya, R.",
@@ -120,7 +121,8 @@ const makalelerData = [
         "doi": ""
     },
     {
-        "yazar": "Bülbül, K., ve Yaslıkaya, R. (2006",
+        "yazar": "Bülbül, K., ve Yaslıkaya, R.",
+        "yil": "2006",
         "baslik": "Sivil Topluma Siyasal Güven: Türk Milletvekillerinin Sivil Toplum Örgütlerine Güven Düzeyi Üzerine Bir Araştırma",
         "dergi": "Sivil Toplum Düşünce ve Araştırma Dergisi",
         "cilt": "4",
