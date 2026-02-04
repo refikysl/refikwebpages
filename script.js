@@ -22,6 +22,12 @@ document.addEventListener('DOMContentLoaded', () => {
         if (targetSection) {
             targetSection.classList.add('active');
             window.scrollTo(0, 0);
+
+            // Eğer "tavsiyeler" bölümüne geçildiyse, tüm açık akordiyonları kapat
+            if (targetId === 'tavsiyeler') {
+                document.querySelectorAll('.tavsiye-content').forEach(el => el.style.display = 'none');
+                document.querySelectorAll('.tavsiye-header .arrow-icon').forEach(el => el.style.transform = 'rotate(0deg)');
+            }
         }
         if (targetLink) {
             targetLink.classList.add('active');
@@ -306,15 +312,52 @@ document.addEventListener('DOMContentLoaded', () => {
 
             tavsiyelerData.forEach(item => {
                 const div = document.createElement('div');
-                div.className = 'modern-card';
-                div.style.marginBottom = '1.5rem';
+                div.className = 'modern-card tavsiye-item';
+                div.style.marginBottom = '1rem';
+                div.style.padding = '0'; // Padding'i CSS ile içeride yöneteceğiz
 
-                div.innerHTML = `
-                    <h3 style="color:var(--primary-color); margin-bottom:1rem; border-bottom:1px solid #eee; padding-bottom:0.5rem;">${item.title}</h3>
-                    <p style="color:var(--text-dark); line-height:1.7;">
+                // Başlık
+                const header = document.createElement('div');
+                header.className = 'tavsiye-header';
+                header.style.padding = '1rem';
+                header.style.cursor = 'pointer';
+                header.style.display = 'flex';
+                header.style.alignItems = 'center';
+                header.style.justifyContent = 'space-between';
+
+                header.innerHTML = `
+                    <h3 style="margin:0; color:var(--primary-color); font-size:1.1rem; display:flex; align-items:center; gap:0.5rem;">
+                        <i class='bx bx-chevron-right arrow-icon' style="transition:transform 0.3s;"></i> ${item.title}
+                    </h3>
+                `;
+
+                // İçerik
+                const content = document.createElement('div');
+                content.className = 'tavsiye-content';
+                content.style.display = 'none';
+                content.style.padding = '0 1.5rem 1.5rem 1.5rem';
+                content.style.borderTop = '1px solid #eee';
+
+                content.innerHTML = `
+                    <p style="color:var(--text-dark); line-height:1.7; margin-top:1rem;">
                         ${item.content.replace(/\n/g, '<br>')}
                     </p>
                 `;
+
+                // Tıklama Logic
+                header.addEventListener('click', () => {
+                    const arrow = header.querySelector('.arrow-icon');
+                    if (content.style.display === 'none') {
+                        content.style.display = 'block';
+                        arrow.style.transform = 'rotate(90deg)';
+                    } else {
+                        content.style.display = 'none';
+                        arrow.style.transform = 'rotate(0deg)';
+                    }
+                });
+
+                div.appendChild(header);
+                div.appendChild(content);
                 container.appendChild(div);
             });
         } else {
