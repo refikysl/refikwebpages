@@ -232,4 +232,68 @@ document.addEventListener('DOMContentLoaded', () => {
     // Makaleleri yükle
     loadArticles();
 
+    // --- KİTAPLAR VERİ YÜKLEME ---
+    function loadBooks() {
+        const container = document.getElementById('kitaplar-container');
+        if (!container) return;
+
+        if (typeof kitaplarData !== 'undefined') {
+            container.innerHTML = '';
+
+            // 1. Kitaplar
+            if (kitaplarData.kitaplar && kitaplarData.kitaplar.length > 0) {
+                const h3 = document.createElement('h3');
+                h3.innerText = 'Kitaplar';
+                h3.style.color = 'var(--primary-color)';
+                h3.style.fontSize = '1.1rem';
+                h3.style.margin = '0 0 1rem 0';
+                h3.style.borderBottom = '1px solid #eee';
+                h3.style.paddingBottom = '0.5rem';
+                container.appendChild(h3);
+
+                kitaplarData.kitaplar.forEach(item => createBookItem(item, container));
+            }
+
+            // 2. Bölümler
+            if (kitaplarData.bolumler && kitaplarData.bolumler.length > 0) {
+                const h3 = document.createElement('h3');
+                h3.innerText = 'Kitap Bölümleri';
+                h3.style.color = 'var(--primary-color)';
+                h3.style.fontSize = '1.1rem';
+                h3.style.margin = '2rem 0 1rem 0';
+                h3.style.borderBottom = '1px solid #eee';
+                h3.style.paddingBottom = '0.5rem';
+                container.appendChild(h3);
+
+                kitaplarData.bolumler.forEach(item => createBookItem(item, container));
+            }
+        } else {
+            console.error('Veri bulunamadı (kitaplarData)');
+            container.innerHTML = '<p>Kitap listesi yüklenemedi.</p>';
+        }
+    }
+
+    function createBookItem(item, container) {
+        const div = document.createElement('div');
+        div.className = 'modern-card article-item'; // Makale stili ile aynı
+
+        if (item.link) {
+            div.classList.add('has-link');
+            div.title = "Görüntülemek için tıklayın";
+            div.onclick = (e) => {
+                if (!e.target.closest('a')) window.open(item.link, '_blank');
+            };
+        }
+
+        div.innerHTML = `
+            <p class="article-reference">
+                ${item.yazar} (${item.yil}). ${item.baslik}. 
+                <em>${item.yayin}</em>
+            </p>
+        `;
+        container.appendChild(div);
+    }
+
+    loadBooks();
+
 });
