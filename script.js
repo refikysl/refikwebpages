@@ -159,9 +159,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 
-
-
-
     // --- BOOK MODAL ---
     const bookModal = document.getElementById('book-modal-overlay');
     const closeBookBtn = document.querySelector('.close-book-modal-btn');
@@ -184,5 +181,40 @@ document.addEventListener('DOMContentLoaded', () => {
             if (e.target === bookModal) bookModal.classList.remove('open');
         });
     }
+
+    // --- MAKALELER VERİ YÜKLEME (JSON yerine JS Variable) ---
+    function loadArticles() {
+        const container = document.getElementById('makaleler-container');
+        if (!container) return;
+
+        // data/makaleler.js dosyasından gelen global değişkeni kontrol et
+        if (typeof makalelerData !== 'undefined' && Array.isArray(makalelerData)) {
+            container.innerHTML = '';
+
+            makalelerData.forEach(makale => {
+                const div = document.createElement('div');
+                div.className = 'modern-card article-item';
+
+                let doiHtml = '';
+                if (makale.doi) {
+                    doiHtml = ` <a href="https://doi.org/${makale.doi}" target="_blank" style="color:var(--primary-color); text-decoration:none;">https://doi.org/${makale.doi}</a>`;
+                }
+
+                div.innerHTML = `
+                    <p class="article-reference">
+                        ${makale.yazar} (${makale.yil}). ${makale.baslik}. 
+                        <em>${makale.dergi}, ${makale.cilt}</em>(${makale.sayi}), ${makale.sayfa}.${doiHtml}
+                    </p>
+                `;
+                container.appendChild(div);
+            });
+        } else {
+            console.error('Veri bulunamadı (makalelerData)');
+            container.innerHTML = '<p>Makale listesi yüklenemedi.</p>';
+        }
+    }
+
+    // Makaleleri yükle
+    loadArticles();
 
 });
