@@ -53,5 +53,92 @@ Sonra her bir başlığı yazıp bu başlık altında kaynak neyi anlatmaktadır
 Benzer bir yöntem zaten notebookLM içinde sağ taraftaki araçlarda yer almaktadır. Zihin haritasına bastığınızda yüklediğiniz kaynağın içeriğini başlıklara bölecek ve bir ağaç yapısında gösterecektir. Bu yapıda en uç noktalara kadar gidebileceğiniz gibi daha orta düzey başlıklara tıklayarak da değerlendirme yapmasını isteyebilirsiniz. 
 <br>
 Yine notebookLM üzerinde sesli ve videolu özetler hazırlatıp konuyu size anlatmasını sağlayabilirsiniz. Sesli özetler podcast mantığıyla üretilmekte ve iki kişinin karşılıklı konuşmasıyla ilerlemektedir. Dosyayı indirip cep telefonunuza yükleyip boş kaldığınız zamanlarda ya da yatarken 15 dakika dinlerseniz kalıcı bilgilere sahip olursunuz.`
+    },
+    {
+        "id": 2,
+        "title": "Kitap Tavsiyeleri",
+        "isHtml": true,
+        "content": `
+        <details class="modern-details">
+            <summary>
+                <span class="summary-text" style="font-weight:bold; color:var(--primary-color);">1. Halis Çetin: Siyaset</span>
+                <i class='bx bx-chevron-down summary-icon'></i>
+            </summary>
+            <div class="details-content">
+                <div style="display: flex; gap: 1.5rem; align-items: flex-start;">
+                    <!-- Sol: Kitap Kapağı (Sabit Genişlik) -->
+                    <div style="flex-shrink: 0; width: 150px;">
+                        <img src="images/siyaset_kitap.jpg" alt="Halis Çetin - Siyaset" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); display: block;">
+                    </div>
+                    
+                    <!-- Sağ: Açıklama -->
+                    <div style="flex-grow: 1;">
+                         <p style="text-align: justify; margin-top:0;">
+                         Halis Çetin’in ilk baskısı <em>Cumhur ve Başkanı</em> adıyla yayımlanan, güncellenmiş ve genişletilmiş versiyonuyla ise kısaca <strong>Siyaset</strong> başlığını taşıyan eseri, Türk siyasal kültürünün röntgenini çeken özgün bir çalışma niteliğindedir.
+                         </p>
+                         <p style="text-align: justify;">
+                         Akademik kuramların soğukluğundan ziyade, Machiavelli’nin yöntemine atıfla mektuplar üzerinden şekillenen bu eser; kahvehanelerden kampüslere kadar hayatın tam merkezindeki pratik tecrübeleri merkeze alır. Yazar, siyasetin <em>"kitapta durduğu gibi hayatta durmadığı"</em> gerçeğinden hareketle; ideal ile gerçek, erdem ile ihtiras ve teori ile pratik arasındaki o derin uçurumu ironik ve akıcı bir üslupla irdeler.
+                         </p>
+                         <p style="text-align: justify;">
+                         Türkiye’nin siyasal genetiğini, güç ve iktidar arayışındaki insan doğasıyla birleştirerek anlatan bu el kitabı, siyaseti sadece bir yönetim biçimi değil, zaaflar ve tutkularla örülü bir <em>"yaşama sanatı"</em> olarak okura sunmaktadır.
+                         </p>
+                    </div>
+                </div>
+            </div>
+        </details>
+
+        <details class="modern-details" style="margin-top: 1rem;">
+            <summary>
+                <span class="summary-text" style="font-weight:bold; color:var(--primary-color);">2. Lewis Dartnell: Kökenler</span>
+                <i class='bx bx-chevron-down summary-icon'></i>
+            </summary>
+            <div class="details-content">
+                <div style="display: flex; gap: 1.5rem; align-items: flex-start;">
+                    <!-- Sol: Kitap Kapağı -->
+                    <div style="flex-shrink: 0; width: 150px;">
+                        <img src="images/kökenler_kitap.jpg" alt="Lewis Dartnell - Kökenler" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); display: block;">
+                    </div>
+                    
+                    <!-- Sağ: Açıklama -->
+                    <div style="flex-grow: 1;">
+                         <p style="text-align: justify; margin-top:0;">
+                         Lewis Dartnell’in <em>"Kökenler: Yeryüzünün Tarihi İnsanlık Tarihini Nasıl Şekillendirdi?"</em> başlıklı eseri, antropoloji ve tarih anlatısını alışılagelmiş kalıpların dışına çıkararak <strong>"büyük tarih" (big history)</strong> perspektifiyle ele alan etkileyici bir çalışmadır. Dartnell, insanlık serüvenini sadece siyasi kararlar veya ekonomik devrimlerle değil; levha tektoniği, iklim döngüleri ve jeolojik katmanların belirleyiciliği üzerinden okur.
+                         </p>
+                         <p style="text-align: justify;">
+                         Kitap, bugünkü siyasi haritalardan tükettiğimiz gıdalara, hatta oy verme tercihlerimize kadar pek çok güncel durumun köklerini milyonlarca yıl önceki jeolojik olaylara dayandırır. Örneğin; Himalayalar'ın yükselişinin evrimimizi nasıl tetiklediğini veya antik deniz yataklarının modern seçim sonuçlarını nasıl etkilediğini disiplinlerarası bir titizlikle açıklar.
+                         </p>
+                         <p style="text-align: justify;">
+                         Dartnell’in akıcı üslubu, teknik coğrafi bilgileri sosyal bilimlerin derinliğiyle birleştirerek, üzerinde yaşadığımız gezegenin sessiz ama mutlak belirleyiciliğini gözler önüne sermektedir.
+                         </p>
+                    </div>
+                </div>
+            </div>
+        </details>
+
+        <details class="modern-details" style="margin-top: 1rem;">
+            <summary>
+                <span class="summary-text" style="font-weight:bold; color:var(--primary-color);">3. İdris Küçükömer: Düzenin Yabancılaşması</span>
+                <i class='bx bx-chevron-down summary-icon'></i>
+            </summary>
+            <div class="details-content">
+                <div style="display: flex; gap: 1.5rem; align-items: flex-start;">
+                    <!-- Sol: Kitap Kapağı -->
+                    <div style="flex-shrink: 0; width: 150px;">
+                        <img src="images/düzeninyabancilasmasi_kitap.jpg" alt="İdris Küçükömer - Düzenin Yabancılaşması" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); display: block;">
+                    </div>
+                    
+                    <!-- Sağ: Açıklama -->
+                    <div style="flex-grow: 1;">
+                         <p style="text-align: justify; margin-top:0;">
+                         İdris Küçükömer’in Türk düşünce hayatında tabu deviren ve tartışmaları bugün dahi canlılığını koruyan kült eseri <em>"Düzenin Yabancılaşması"</em>, Türkiye’nin modernleşme serüvenine ve sınıfsal yapısına dair alışılagelmiş ezberleri sarsan bir başyapıttır. Küçükömer, Batılılaşma çabalarını bir "yabancılaşma" süreci olarak nitelerken, Türk siyasal hayatındaki geleneksel "sağ" ve "sol" kavramlarını tersyüz eden o meşhur tezini ileri sürer: Türkiye’de bürokratik seçkinlerin (ceberrut devlet geleneğinin temsilcileri) "ilerici" değil aslında statükocu; halkın değerlerini temsil eden geniş kitlelerin ise "gerici" değil, değişime açık ve sivil bir potansiyel barındırdığını savunur.
+                         </p>
+                         <p style="text-align: justify;">
+                         Kitap, Tanzimat’tan Cumhuriyet’e uzanan süreçte devletin toplumla kurduğu mesafeyi ve bu mesafenin yarattığı kimlik krizini ekonomi-politik bir perspektifle irdeler. Küçükömer’in "sivil toplum" ve "bürokrasi" arasındaki bu gerilime dair yaptığı analizler, sadece tarihsel bir dönemi aydınlatmakla kalmaz; aynı zamanda Türkiye’nin güncel siyasal kutuplaşmalarının ve kurumsal tıkanıklıklarının kökenlerine dair de derinlemesine bir kavrayış sunar.
+                         </p>
+                    </div>
+                </div>
+            </div>
+        </details>
+        `
     }
 ];
