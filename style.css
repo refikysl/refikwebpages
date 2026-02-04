@@ -494,6 +494,11 @@ h2.section-title::before {
     text-align: justify;
 }
 
+/* Tavsiyeler Accordion */
+.tavsiye-header:hover {
+    background-color: #f8fafc;
+}
+
 .article-reference em {
     font-style: italic;
 }
