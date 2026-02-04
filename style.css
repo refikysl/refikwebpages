@@ -404,6 +404,23 @@ h2.section-title::before {
     margin: 0;
 }
 
+/* Article Items */
+.article-item {
+    margin-bottom: 1rem;
+}
+
+.article-reference {
+    color: var(--text-dark);
+    line-height: 1.8;
+    font-size: 0.95rem;
+    margin: 0;
+    text-align: justify;
+}
+
+.article-reference em {
+    font-style: italic;
+}
+
 /* Cards & Elements */
 .modern-card {
     background: #fff;
