@@ -246,7 +246,7 @@ body {
 /* Content Container */
 .content-wrapper {
     padding: 3rem 4rem;
-    max-width: 900px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -312,6 +312,7 @@ h2.section-title::before {
     color: #4a5568;
     line-height: 1.8;
     font-size: 1rem;
+    text-align: justify;
 }
 
 /* Two Column Grid */
