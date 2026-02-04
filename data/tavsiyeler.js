@@ -139,6 +139,181 @@ Yine notebookLM üzerinde sesli ve videolu özetler hazırlatıp konuyu size anl
                 </div>
             </div>
         </details>
+
+        <details class="modern-details" style="margin-top: 1rem;">
+            <summary>
+                <span class="summary-text" style="font-weight:bold; color:var(--primary-color);">4. Yıldıray Oğur: Alternatif Türkiye Tarihi I</span>
+                <i class='bx bx-chevron-down summary-icon'></i>
+            </summary>
+            <div class="details-content">
+                <div style="display: flex; gap: 1.5rem; align-items: flex-start;">
+                    <!-- Sol: Kitap Kapağı -->
+                    <div style="flex-shrink: 0; width: 150px;">
+                        <img src="images/alternatiftarih_kitap.jpg" alt="Yıldıray Oğur - Alternatif Türkiye Tarihi I" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); display: block;">
+                    </div>
+                    
+                    <!-- Sağ: Açıklama -->
+                    <div style="flex-grow: 1;">
+                         <p style="text-align: justify; margin-top:0;">
+                         Yıldıray Oğur’un <em>"Alternatif Türkiye Tarihi 1"</em> başlıklı eseri, resmi tarih anlatısının gölgesinde kalmış, unutulmuş veya kasten perdelenmiş olayları ve şahsiyetleri merkeze alan bir iade-i itibar çalışmasıdır. Kitap, Türkiye’nin yakın tarihini kazananların yazdığı doğrusal bir metin olmaktan çıkarıp; kaybedenlerin, itiraz edenlerin ve satır aralarında kalanların perspektifinden yeniden kurgular. Oğur, titiz bir arşiv taraması ve akıcı bir anlatımla, bildiğimizi sandığımız tarihsel kırılma anlarının aslında ne kadar farklı dinamiklerle şekillendiğini çarpıcı örneklerle ortaya koyar.
+                         </p>
+                         <p style="text-align: justify;">
+                         Eser, ideolojik kalıplara sığınmak yerine belgelerin izini sürerek; Jön Türkler’den tek parti dönemine, faili meçhul kalmış siyasi cinayetlerden toplumsal hafızadaki beyaz lekelere kadar geniş bir yelpazede "öteki" hikâyeleri anlatır. Yazarın bu çalışması, sadece geçmişe dair yeni bir bilgi sunmakla kalmaz; aynı zamanda bugünün Türkiye’sini anlamak için elzem olan o saklı genetik kodları deşifre ederek okuru sarsıcı bir yüzleşmeye davet eder.
+                         </p>
+                    </div>
+                </div>
+            </div>
+        </details>
+
+        <details class="modern-details" style="margin-top: 1rem;">
+            <summary>
+                <span class="summary-text" style="font-weight:bold; color:var(--primary-color);">5. Richard Sennett: Ten ve Taş (Batı Uygarlığında Beden ve Şehir)</span>
+                <i class='bx bx-chevron-down summary-icon'></i>
+            </summary>
+            <div class="details-content">
+                <div style="display: flex; gap: 1.5rem; align-items: flex-start;">
+                    <!-- Sol: Kitap Kapağı -->
+                    <div style="flex-shrink: 0; width: 150px;">
+                        <img src="images/tenvetas_kitap.jpg" alt="Richard Sennett - Ten ve Taş" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); display: block;">
+                    </div>
+                    
+                    <!-- Sağ: Açıklama -->
+                    <div style="flex-grow: 1;">
+                         <p style="text-align: justify; margin-top:0;">
+                         Richard Sennett’in modern bir klasik sayılan <em>"Ten ve Taş: Batı Uygarlığında Vücut ve Şehir"</em> adlı eseri, kentsel mekânın tarihini mimari formlardan ziyade insanın fiziksel deneyimi ve bedensel algısı üzerinden okuyan sarsıcı bir çalışmadır. Sennett, antik Atina’dan modern New York’a uzanan geniş bir tarihsel perspektifte, şehirlerin sadece taştan ve çelikten ibaret olmadığını; aksine insan bedeninin arzularını, acılarını ve toplumsal hiyerarşilerini yansıtan birer "deri" olduğunu savunur. Yazar, çıplaklığın demokrasideki rolünden disiplin altındaki bedenlere kadar, fiziksel yapının toplumsal ilişkileri nasıl şekillendirdiğini veya körelttiğini çarpıcı örneklerle irdeler.
+                         </p>
+                         <p style="text-align: justify;">
+                         Kitabın temel izleği, modern kentin bireyi "pasif bir izleyiciye" dönüştürerek bedensel duyuları nasıl uyuşturduğudur. Sennett, hız ve konfor odaklı çağdaş şehircilik anlayışının, insanları birbirine yabancılaştırdığını ve ötekinin acısına karşı duyarsızlaştırdığını iddia eder. <em>Ten ve Taş</em>, şehri sadece bir yerleşim birimi olarak değil, insan varoluşunun mekânsal bir tezahürü olarak anlamak isteyenler için derinlikli bir felsefi ve sosyolojik rehber sunmaktadır.
+                         </p>
+                    </div>
+                </div>
+            </div>
+        </details>
+
+        <details class="modern-details" style="margin-top: 1rem;">
+            <summary>
+                <span class="summary-text" style="font-weight:bold; color:var(--primary-color);">6. Ahmet Hamdi Tanpınar: Beş Şehir</span>
+                <i class='bx bx-chevron-down summary-icon'></i>
+            </summary>
+            <div class="details-content">
+                <div style="display: flex; gap: 1.5rem; align-items: flex-start;">
+                    <!-- Sol: Kitap Kapağı -->
+                    <div style="flex-shrink: 0; width: 150px;">
+                        <img src="images/bessehir_kitap.jpg" alt="Ahmet Hamdi Tanpınar - Beş Şehir" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); display: block;">
+                    </div>
+                    
+                    <!-- Sağ: Açıklama -->
+                    <div style="flex-grow: 1;">
+                         <p style="text-align: justify; margin-top:0;">
+                         Ahmet Hamdi Tanpınar’ın ölümsüz eseri <em>"Beş Şehir"</em>, Ankara, Erzurum, Konya, Bursa ve İstanbul’un ruhunu; tarih, kültür ve estetik imbiğinden süzerek anlatan eşsiz bir medeniyet okumasıdır. Tanpınar, bu şehirleri sadece coğrafi mekanlar ya da mimari yapılar toplamı olarak değil; süreklilik içindeki değişimlerin, hatıraların ve "terkip" kabiliyetimizin birer tezahürü olarak ele alır. Yazarın o meşhur "devam ederek değişmek, değişerek devam etmek" düşüncesinin en somut yansıması olan bu eser, kaybolan güzelliklerin ardından tutulan bir yas değil, o güzellikleri bugünün bilinciyle yeniden inşa etme çabasıdır.
+                         </p>
+                         <p style="text-align: justify;">
+                         Kitap, her bir şehri kendine has bir mizaç ve karakterle resmederken; Selçuklu’nun ağırbaşlılığından Osmanlı’nın görkemine, oradan Cumhuriyet’in taze heyecanına uzanan tarihsel bir sürekliliğin izini sürer. Tanpınar’ın şiirsel üslubu ve derin tefekkürüyle şekillenen bu denemeler, okuru sadece bir şehir gezisine çıkarmaz; aynı zamanda Türk ruhunun köklerine, musikisine ve estetik değerlerine doğru içsel bir yolculuğa davet eder.
+                         </p>
+                    </div>
+                </div>
+            </div>
+        </details>
+
+        <details class="modern-details" style="margin-top: 1rem;">
+            <summary>
+                <span class="summary-text" style="font-weight:bold; color:var(--primary-color);">7. Kemal Tahir: Devlet Ana</span>
+                <i class='bx bx-chevron-down summary-icon'></i>
+            </summary>
+            <div class="details-content">
+                <div style="display: flex; gap: 1.5rem; align-items: flex-start;">
+                    <!-- Sol: Kitap Kapağı -->
+                    <div style="flex-shrink: 0; width: 150px;">
+                        <img src="images/devletana_kitap.jpg" alt="Kemal Tahir - Devlet Ana" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); display: block;">
+                    </div>
+                    
+                    <!-- Sağ: Açıklama -->
+                    <div style="flex-grow: 1;">
+                         <p style="text-align: justify; margin-top:0;">
+                         Kemal Tahir’in Türk edebiyatının zirve noktalarından biri kabul edilen dev eseri <em>"Devlet Ana"</em>, Osmanlı Devleti’nin kuruluş dönemini bir "aşiret" yapısından "devlet" formuna geçiş sancılarıyla ele alan epik bir romandır. Tahir, bu eserinde Batılı feodalizm ile Doğu’nun "Asya Tipi Üretim Tarzı" (ATÜT) arasındaki yapısal farkları sorunsallaştırarak, Türk devlet geleneğinin insancıl ve koruyucu niteliğini "Kerim Devlet" kavramı üzerinden temellendirir. Roman, sadece bir tarih anlatısı değil; aynı zamanda Batı’nın "şövalye" kültürüne karşı Doğu’nun "alp-eren" ahlakını ve mülkiyet rejimindeki farklılıkları savunan siyasi bir manifestodur.
+                         </p>
+                         <p style="text-align: justify;">
+                         Eser, Bizans sınırındaki Söğüt ve çevresinde gelişen olayları; Osman Bey’in stratejik dehasını, Şeyh Edebali’nin bilgeliğini ve halkın devlete bakışını canlı, yerli ve oldukça zengin bir dille aktarır. Kemal Tahir, <em>Devlet Ana</em> ile Türk toplumunun tarihsel genetiğinde yer alan "adalet" ve "nizam" arayışını, Marksist tarih okumasını yerel dinamiklerle harmanlayarak yeniden kurgular. Bu yönüyle kitap, Türkiye’nin kendi modernleşme ve devletleşme modelini anlamak isteyen her okur için vazgeçilmez bir referans kaynağıdır.
+                         </p>
+                    </div>
+                </div>
+            </div>
+        </details>
+
+        <details class="modern-details" style="margin-top: 1rem;">
+            <summary>
+                <span class="summary-text" style="font-weight:bold; color:var(--primary-color);">8. Ayn Rand: Atlas Shrugged (Atlas Vazgeçti)</span>
+                <i class='bx bx-chevron-down summary-icon'></i>
+            </summary>
+            <div class="details-content">
+                <div style="display: flex; gap: 1.5rem; align-items: flex-start;">
+                    <!-- Sol: Kitap Kapağı -->
+                    <div style="flex-shrink: 0; width: 150px;">
+                        <img src="images/atlasvazgeçti_kitap.jpg" alt="Ayn Rand - Atlas Vazgeçti" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); display: block;">
+                    </div>
+                    
+                    <!-- Sağ: Açıklama -->
+                    <div style="flex-grow: 1;">
+                         <p style="text-align: justify; margin-top:0;">
+                         Ayn Rand’ın dev eseri <em>"Atlas Vazgeçti"</em> (Atlas Shrugged), bireysel yaratıcılığın, akılcılığın ve serbest piyasa ahlakının ödünsüz bir savunusudur. Roman, dünyanın en üretken zihinlerinin —mucitlerin, sanayicilerin ve sanatçıların— kolektivist bir devlet baskısına ve "kamu yararı" adına yapılan haksız müdahalelere tepki olarak dünyadan elini eteğini çekmesini konu alır. Rand, "Dünyanın motoru durursa ne olur?" sorusunun peşinden giderek, yaratıcı azınlığın greve gitmesiyle çöküşe sürüklenen bir toplumun distopik tablosunu çizer.
+                         </p>
+                         <p style="text-align: justify;">
+                         Eser, sadece bir roman değil, aynı zamanda devletin ekonomiye ve bireysel mülkiyete müdahalesine karşı radikal bir kapitalist manifestodur. Rand; yeteneğin cezalandırıldığı, liyakatin yerini sadakatin aldığı ve bürokrasinin üretim araçlarını felç ettiği bir düzende, bireyin kendi mutluluğunu ve emeğini savunmasının en yüce erdem olduğunu iddia eder. John Galt karakteri üzerinden somutlaşan bu felsefe, modern siyasal düşüncede devlet-birey ilişkisine dair en çok tartışılan ve sarsıcı argümanlardan birini temsil etmektedir.
+                         </p>
+                    </div>
+                </div>
+            </div>
+        </details>
+
+        <details class="modern-details" style="margin-top: 1rem;">
+            <summary>
+                <span class="summary-text" style="font-weight:bold; color:var(--primary-color);">9. Ömer Çaha: İçindeki Şakirti Öldürmek</span>
+                <i class='bx bx-chevron-down summary-icon'></i>
+            </summary>
+            <div class="details-content">
+                <div style="display: flex; gap: 1.5rem; align-items: flex-start;">
+                    <!-- Sol: Kitap Kapağı -->
+                    <div style="flex-shrink: 0; width: 150px;">
+                        <img src="images/sakirtioldürmek_kitap.jpg" alt="Ömer Çaha - İçindeki Şakirti Öldürmek" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); display: block;">
+                    </div>
+                    
+                    <!-- Sağ: Açıklama -->
+                    <div style="flex-grow: 1;">
+                         <p style="text-align: justify; margin-top:0;">
+                         Ömer Çaha’nın <em>"İçindeki Şakirti Öldürmek"</em> adlı romanı Türkiye’nin yakın siyasal tarihinde devlet ve toplum yapısına ciddi zararlar veren Fethullahçı Terör Örgütü’nün (FETÖ) zihniyet dünyasını, bireyi nasıl araçsallaştırdığını ve sosyolojik kodlarını analiz eden kritik bir çalışmadır. Çaha bu romanda örgüt yapısı içindeki "şakirt" kimliğinin, bireyin özgür iradesini ve eleştirel düşünme yetisini nasıl yok ederek onu mutlak bir itaat nesnesine dönüştürdüğünü irdeler. Kitap, kolektif bir körleşmenin ve irade teslimiyetinin yarattığı tahribatı merkeze alan bir yapı söküm çalışması niteliğindedir.
+                         </p>
+                         <p style="text-align: justify;">
+                         Eser, FETÖ’nün sivil toplum maskesi altındaki totaliter doğasını deşifre ederken, dini duyguların bir güç ve iktidar mekanizmasına nasıl kurban edildiğini ortaya koyar. Bu çalışma, sadece bir örgütün anatomisini çıkarmakla kalmaz; aynı zamanda Türkiye’deki cemaat görünümlü illegal yapıların siyaset ve bürokrasi üzerindeki yansımalarını anlamak için önemli bir sosyolojik kaynak sunar.
+                         </p>
+                    </div>
+                </div>
+            </div>
+        </details>
+
+        <details class="modern-details" style="margin-top: 1rem;">
+            <summary>
+                <span class="summary-text" style="font-weight:bold; color:var(--primary-color);">10. Ömer Çaha: Sayın Vekilim</span>
+                <i class='bx bx-chevron-down summary-icon'></i>
+            </summary>
+            <div class="details-content">
+                <div style="display: flex; gap: 1.5rem; align-items: flex-start;">
+                    <!-- Sol: Kitap Kapağı -->
+                    <div style="flex-shrink: 0; width: 150px;">
+                        <img src="images/sayinvekilim_kitap.jpg" alt="Ömer Çaha - Sayın Vekilim" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); display: block;">
+                    </div>
+                    
+                    <!-- Sağ: Açıklama -->
+                    <div style="flex-grow: 1;">
+                         <p style="text-align: justify; margin-top:0;">
+                         Ömer Çaha’nın <em>"Sayın Vekilim"</em> adlı eseri, hayatını öğrencilerine ve akademik çalışmalara adamış bir siyaset bilimi profesörünün, teoride çok iyi bildiği siyasetin "mutfağına" girme çabasını anlatan çarpıcı bir romandır. Bir akademisyenin milletvekili adaylığı süreciyle başlayan bu yolculuk; kitaplardaki ideal rasyonel siyaset ile sahadaki geleneksel, pragmatik ve kimi zaman acımasız gerçeklik arasındaki derin çatışmayı tüm çıplaklığıyla gözler önüne serer.
+                         </p>
+                         <p style="text-align: justify;">
+                         Çaha, başkahramanının yaşadığı hayal kırıklıkları, etik ikilemler ve yerel siyasetin kendine has informel kuralları üzerinden, Türkiye’deki güç ilişkilerini ve siyasal kültürü içeriden bir bakışla, akıcı ve edebi bir dille sorgular. "Siyasetin ateşi halktır" düsturuyla şekillenen bu roman, bir aydının fildişi kulesinden inip toplumsal gerçekliğin sert zeminine çarpışının hikâyesidir.
+                         </p>
+                    </div>
+                </div>
+            </div>
+        </details>
         `
     }
 ];
