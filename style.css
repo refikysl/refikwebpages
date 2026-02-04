@@ -465,7 +465,10 @@ h2.section-title::before {
 
 /* Article Items */
 .article-item {
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
+    /* Kartlar arası boşluk (8px) */
+    padding: 0.75rem !important;
+    /* Kart içi boşluk (12px) - modern-card padding'ini ezer */
     position: relative;
     transition: all 0.2s ease;
 }
@@ -477,13 +480,16 @@ h2.section-title::before {
 .article-item.has-link:hover {
     border-color: var(--primary-color);
     background-color: #f8fafc;
-    transform: translateX(5px);
+    transform: translateX(3px);
+    /* Hover hareketi de küçültüldü */
 }
 
 .article-reference {
     color: var(--text-dark);
-    line-height: 1.8;
-    font-size: 0.95rem;
+    line-height: 1.4;
+    /* Satır aralığı daha da sıkı */
+    font-size: 0.88rem;
+    /* Font biraz daha küçük */
     margin: 0;
     text-align: justify;
 }
