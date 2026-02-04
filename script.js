@@ -195,20 +195,30 @@ document.addEventListener('DOMContentLoaded', () => {
                 const div = document.createElement('div');
                 div.className = 'modern-card article-item';
 
+                // Link varsa karta class ve tıklama özelliği ekle
+                if (makale.link) {
+                    div.classList.add('has-link');
+                    div.title = "Makaleyi görüntülemek için tıklayın";
+                    div.onclick = (e) => {
+                        // Eğer DOI linkine tıklandıysa kartın linkini açma (çakışmayı önle)
+                        if (!e.target.closest('a')) {
+                            window.open(makale.link, '_blank');
+                        }
+                    };
+                }
+
                 let doiHtml = '';
                 if (makale.doi) {
                     doiHtml = ` <a href="https://doi.org/${makale.doi}" target="_blank" style="color:var(--primary-color); text-decoration:none;">https://doi.org/${makale.doi}</a>`;
                 }
 
-                let linkHtml = '';
-                if (makale.link) {
-                    linkHtml = ` <a href="${makale.link}" target="_blank" style="color:#ef4444; text-decoration:none; margin-left:0.5rem;" title="PDF İndir"><i class='bx bxs-file-pdf'></i> PDF</a>`;
-                }
+                // Link butonu artık yok, tüm kart tıklanabilir.
+                // let linkHtml = ... iptal.
 
                 div.innerHTML = `
                     <p class="article-reference">
                         ${makale.yazar} (${makale.yil}). ${makale.baslik}. 
-                        <em>${makale.dergi}, ${makale.cilt}</em>(${makale.sayi}), ${makale.sayfa}.${doiHtml}${linkHtml}
+                        <em>${makale.dergi}, ${makale.cilt}</em>(${makale.sayi}), ${makale.sayfa}.${doiHtml}
                     </p>
                 `;
                 container.appendChild(div);
