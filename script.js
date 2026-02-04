@@ -296,4 +296,34 @@ document.addEventListener('DOMContentLoaded', () => {
 
     loadBooks();
 
+    // --- HOCADAN TAVSİYELER VERİ YÜKLEME ---
+    function loadTavsiyeler() {
+        const container = document.getElementById('tavsiyeler-container');
+        if (!container) return;
+
+        if (typeof tavsiyelerData !== 'undefined' && Array.isArray(tavsiyelerData)) {
+            container.innerHTML = '';
+
+            tavsiyelerData.forEach(item => {
+                const div = document.createElement('div');
+                div.className = 'modern-card';
+                div.style.marginBottom = '1.5rem';
+
+                div.innerHTML = `
+                    <h3 style="color:var(--primary-color); margin-bottom:1rem; border-bottom:1px solid #eee; padding-bottom:0.5rem;">${item.title}</h3>
+                    <p style="color:var(--text-dark); line-height:1.7;">
+                        ${item.content.replace(/\n/g, '<br>')}
+                    </p>
+                `;
+                container.appendChild(div);
+            });
+        } else {
+            console.error('Veri bulunamadı (tavsiyelerData)');
+            container.innerHTML = '<p>Tavsiye listesi yüklenemedi.</p>';
+        }
+    }
+
+    // Tavsiyeleri yükle
+    loadTavsiyeler();
+
 });
