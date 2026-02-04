@@ -344,6 +344,10 @@ document.addEventListener('DOMContentLoaded', () => {
                     </p>
                 `;
 
+                if (item.isHtml) {
+                    content.innerHTML = `<div style="margin-top:1rem;">${item.content}</div>`;
+                }
+
                 // Tıklama Logic
                 header.addEventListener('click', () => {
                     const arrow = header.querySelector('.arrow-icon');
