@@ -99,9 +99,37 @@
 
             <!-- ANASAYFA -->
             <section id="anasayfa" class="active">
-                <h2 class="section-title">GÜNCEL DUYURULAR</h2>
-                <div id="duyuru-container">
-                    <p>Yükleniyor...</p>
+                <!-- Hoş Geldiniz Kartı -->
+                <div class="welcome-card">
+                    <h2 class="welcome-title">Web sayfama hoş geldiniz.</h2>
+                    <p class="welcome-text">
+                        Kırıkkale Üniversitesi İktisadi ve İdari Bilimler Fakültesi'nde akademik çalışmalarıma devam
+                        etmekteyim.
+                        Bu platform, kentleşme politikalarından kamu yönetimine, akademik metodolojiden dijital
+                        araçların kullanımına
+                        kadar uzanan çalışma alanlarıma dair güncel bilgileri paylaşmak amacıyla oluşturulmuştur.
+                    </p>
+                </div>
+
+                <!-- İki Sütunlu Düzen -->
+                <div class="home-grid">
+                    <!-- Sol: Son Kitabım -->
+                    <div class="home-column">
+                        <h3 class="column-title">Son Kitabım</h3>
+                        <div class="book-card" onclick="openBookModal()">
+                            <img src="images/kitapkapak.jpeg" alt="Metropoliten Yönetim" class="book-cover">
+                            <h4 class="book-title">Metropoliten Yönetim</h4>
+                            <p class="book-publisher">Liberte Yayınları</p>
+                        </div>
+                    </div>
+
+                    <!-- Sağ: Duyurular -->
+                    <div class="home-column">
+                        <h3 class="column-title">Duyurular</h3>
+                        <div id="duyuru-container">
+                            <p>Yükleniyor...</p>
+                        </div>
+                    </div>
                 </div>
             </section>
 
@@ -364,6 +392,40 @@
             </div>
             <div class="modal-body" id="modal-body">
                 İçerik...
+            </div>
+        </div>
+    </div>
+
+    <!-- Book Modal -->
+    <div class="modal-overlay" id="book-modal-overlay">
+        <div class="modal-box">
+            <div class="modal-header">
+                <h3 style="margin:0;">Metropoliten Yönetim</h3>
+                <button class="close-book-modal-btn"
+                    style="background:none; border:none; font-size:1.5rem; cursor:pointer;">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p style="line-height:1.8; color:#4a5568;">
+                    Bu kitap çağdaş kentleşme süreçlerinin doğurduğu yönetsel karmaşıklıkları anlamaya ve çözümlemeye
+                    yönelik bütüncül bir yaklaşım sunuyor.
+                </p>
+                <p style="line-height:1.8; color:#4a5568;">
+                    Kentlerin hızla büyümesiyle birlikte metropoliten yönetim, kamu yönetimi ve şehir planlama
+                    disiplinlerinde önemli bir tartışma alanı haline geldi.
+                </p>
+                <p style="line-height:1.8; color:#4a5568;">
+                    Bu kitap, metropoliten alanların yönetimine ilişkin temel kuramsal yaklaşımları tartışmaya açmakta,
+                    farklı yönetim modellerini analitik bir çerçevede değerlendirmekte ve çeşitli ülke örnekleri
+                    üzerinden bu modellerin pratikte nasıl işlediğini gözler önüne sermektedir.
+                </p>
+                <p style="line-height:1.8; color:#4a5568;">
+                    Kuram, model ve uygulama üçlüsü etrafında kurgulanan eser, hem akademik dünyaya katkı sunmakta hem
+                    de karar alıcılar için yol gösterici bir kaynak işlevi görmektedir.
+                </p>
+                <p style="line-height:1.8; color:#4a5568;">
+                    Metropoliten ölçekli yönetim arayışlarına disiplinlerarası bir bakış açısıyla yaklaşan bu çalışma,
+                    kent ve kamu yönetimi literatüründe önemli bir boşluğu doldurmayı amaçlamaktadır.
+                </p>
             </div>
         </div>
     </div>
