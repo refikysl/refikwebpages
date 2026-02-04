@@ -200,10 +200,15 @@ document.addEventListener('DOMContentLoaded', () => {
                     doiHtml = ` <a href="https://doi.org/${makale.doi}" target="_blank" style="color:var(--primary-color); text-decoration:none;">https://doi.org/${makale.doi}</a>`;
                 }
 
+                let linkHtml = '';
+                if (makale.link) {
+                    linkHtml = ` <a href="${makale.link}" target="_blank" style="color:#ef4444; text-decoration:none; margin-left:0.5rem;" title="PDF İndir"><i class='bx bxs-file-pdf'></i> PDF</a>`;
+                }
+
                 div.innerHTML = `
                     <p class="article-reference">
                         ${makale.yazar} (${makale.yil}). ${makale.baslik}. 
-                        <em>${makale.dergi}, ${makale.cilt}</em>(${makale.sayi}), ${makale.sayfa}.${doiHtml}
+                        <em>${makale.dergi}, ${makale.cilt}</em>(${makale.sayi}), ${makale.sayfa}.${doiHtml}${linkHtml}
                     </p>
                 `;
                 container.appendChild(div);
