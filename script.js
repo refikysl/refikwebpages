@@ -71,18 +71,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 result.data.forEach(item => {
                     // Modern Card HTML
                     const card = document.createElement('div');
-                    card.className = 'modern-card';
+                    card.className = 'announcement-card';
                     card.innerHTML = `
-                        <span class="card-date">${item.date || ''}</span>
-                        <div class="card-title">${item.title}</div>
-                        <p style="color:#64748b; line-height:1.6;">${item.summary}</p>
-                        <button class="read-more">
-                            Devamını Oku <i class='bx bx-right-arrow-alt'></i>
-                        </button>
+                        <h4 class="announcement-title">${item.title}</h4>
+                        <p class="announcement-summary">${item.summary}</p>
                     `;
 
                     // Click event
-                    card.querySelector('button').addEventListener('click', () => openModal(item));
+                    card.addEventListener('click', () => openModal(item));
                     container.appendChild(card);
                 });
             } else {
@@ -163,5 +159,30 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 
+
+
+
+    // --- BOOK MODAL ---
+    const bookModal = document.getElementById('book-modal-overlay');
+    const closeBookBtn = document.querySelector('.close-book-modal-btn');
+
+    window.openBookModal = function () {
+        if (bookModal) {
+            bookModal.classList.add('open');
+        }
+    };
+
+    if (closeBookBtn) {
+        closeBookBtn.addEventListener('click', () => {
+            bookModal.classList.remove('open');
+        });
+    }
+
+    // Close on background click
+    if (bookModal) {
+        bookModal.addEventListener('click', (e) => {
+            if (e.target === bookModal) bookModal.classList.remove('open');
+        });
+    }
 
 });
