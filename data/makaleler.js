@@ -7,7 +7,8 @@ const makalelerData = [
         "cilt": "11",
         "sayi": "1",
         "sayfa": "30-50",
-        "doi": ""
+        "doi": "",
+        "link": "https://drive.google.com/file/d/1OhJggs3VXBtSN-j6F4b9syb5BHSA_Wqs/view?usp=sharing"
     },
     {
         "yazar": "Şahan, M., ve Yaslıkaya, R.",
@@ -28,7 +29,8 @@ const makalelerData = [
         "cilt": "26",
         "sayi": "2",
         "sayfa": "673-700",
-        "doi": ""
+        "doi": "",
+        "link": "https://drive.google.com/file/d/1V-3TF2YTWv88dpD-PmrBUyBDXdEUHUiM/view?usp=sharing"
     },
     {
         "yazar": "Yazıcı, M., ve Yaslıkaya, R.",
@@ -38,7 +40,8 @@ const makalelerData = [
         "cilt": "6",
         "sayi": "12",
         "sayfa": "78-92",
-        "doi": ""
+        "doi": "",
+        "link": "https://drive.google.com/file/d/1_2doxKsjEAF_BIBcfpyG_gBaO-vdsBDG/view?usp=sharing"
     },
     {
         "yazar": "Yaslıkaya, R.",
