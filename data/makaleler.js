@@ -8,7 +8,7 @@ const makalelerData = [
         "sayi": "1",
         "sayfa": "30-50",
         "doi": "",
-        "link": "https://drive.google.com/file/d/1OhJggs3VXBtSN-j6F4b9syb5BHSA_Wqs/view?usp=sharing"
+        "link": "makaleler/Yaslıkaya ve Yozgat - 2025 - Müşterilerin Kafe Tercihlerini Etkileyen Faktörler Kırıkkale İli Yahşihan İlçesi Yenişehir Mahalles.pdf"
     },
     {
         "yazar": "Şahan, M., ve Yaslıkaya, R.",
@@ -19,7 +19,7 @@ const makalelerData = [
         "sayi": "2",
         "sayfa": "206-222",
         "doi": "",
-        "link": "https://drive.google.com/file/d/1A6fWn1WKunrtyWtqrQTJHFThHoOFKyTo/view?usp=sharing"
+        "link": "makaleler/Şahan ve Yaslıkaya - 2025 - KENTTE YAŞAYANLARIN BOŞ ZAMAN ETKİNLİKLERİ ÜZERİNE BİR DEĞERLENDİRME HOBİ BAHÇELERİ ÖRNEĞİ.pdf"
     },
     {
         "yazar": "Arslan, F. D., ve Yaslıkaya, R.",
@@ -30,7 +30,7 @@ const makalelerData = [
         "sayi": "2",
         "sayfa": "673-700",
         "doi": "",
-        "link": "https://drive.google.com/file/d/1V-3TF2YTWv88dpD-PmrBUyBDXdEUHUiM/view?usp=sharing"
+        "link": "makaleler/Arslan ve Yaslıkaya - Soylulaştırmanın Dönüşümü Devlet Eliyle Soylulaşt.pdf"
     },
     {
         "yazar": "Yazıcı, M., ve Yaslıkaya, R.",
@@ -41,7 +41,7 @@ const makalelerData = [
         "sayi": "12",
         "sayfa": "78-92",
         "doi": "",
-        "link": "https://drive.google.com/file/d/1_2doxKsjEAF_BIBcfpyG_gBaO-vdsBDG/view?usp=sharing"
+        "link": "makaleler/Ulucan ve Yaslıkaya - 2021 - Yerel Yöneti̇m ve Kentsel Güvenli̇k İli̇şki̇si̇ Üz.pdf"
     },
     {
         "yazar": "Yaslıkaya, R.",
@@ -51,7 +51,8 @@ const makalelerData = [
         "cilt": "52",
         "sayi": "1",
         "sayfa": "33-65",
-        "doi": ""
+        "doi": "",
+        "link": "makaleler/Yaslıkaya - 2019 - Yerel Yönetimlerde Ölçeği Büyütmenin Siyasi Sonuçları Avrupa’da Belediye Birleşmeleri Üzerinden Bir.pdf"
     },
     {
         "yazar": "Yaslıkaya, R.",
@@ -61,7 +62,8 @@ const makalelerData = [
         "cilt": "14",
         "sayi": "5",
         "sayfa": "2683-2706",
-        "doi": ""
+        "doi": "",
+        "link": "makaleler/Yaslikaya - 2019 - Yerel Yönetimlerde Ölçeği Büyütmenin Ekonomik Sonu.pdf"
     },
     {
         "yazar": "Yaslıkaya, R.",
@@ -71,7 +73,8 @@ const makalelerData = [
         "cilt": "24",
         "sayi": "95",
         "sayfa": "163-192",
-        "doi": "10.36484/liberal.612182"
+        "doi": "10.36484/liberal.612182",
+        "link": "makaleler/Yaslıkaya - 2019 - Yerel Yönetimlerde Ölçek Ekonomisi Teori, Kavram ve Tartışmalar.pdf"
     },
     {
         "yazar": "Pustu, Y., Abdulai, A., ve Yaslıkaya, R.",
@@ -81,7 +84,8 @@ const makalelerData = [
         "cilt": "54",
         "sayi": "3",
         "sayfa": "1377-1398",
-        "doi": ""
+        "doi": "",
+        "link": "makaleler/Pustu vd. - 2019 - Political, Economic and Cultural Dimensions of Cor.pdf"
     },
     {
         "yazar": "Yaslıkaya, R.",
@@ -91,7 +95,8 @@ const makalelerData = [
         "cilt": "54",
         "sayi": "3",
         "sayfa": "1319-1342",
-        "doi": ""
+        "doi": "",
+        "link": "makaleler/Yaslıkaya - 2019 - Katı Atık Hizmetlerinde Özelleştirme Taşeron İşçilerin Kadroya Geçişi Bir Fırsat mıdır Tehdit mi.pdf"
     },
     {
         "yazar": "Yaslıkaya, R.",
@@ -101,7 +106,8 @@ const makalelerData = [
         "cilt": "3",
         "sayi": "1",
         "sayfa": "410-428",
-        "doi": "10.14486/IJSCS308"
+        "doi": "10.14486/IJSCS308",
+        "link": "makaleler/Yaslıkaya - 2015 - Ekolojik Paradigmada Bir Kavşak Çevreci Sinema.pdf"
     },
     {
         "yazar": "Yaylı, H., ve Yaslıkaya, R.",
@@ -111,7 +117,8 @@ const makalelerData = [
         "cilt": "3",
         "sayi": "1",
         "sayfa": "452-465",
-        "doi": "10.14486/IJSCS312"
+        "doi": "10.14486/IJSCS312",
+        "link": "makaleler/İnsan Doğa İlişkisi Tasarımında Radikal Dönüşüm Derin Ekoloji.pdf"
     },
     {
         "yazar": "Yaylı, H., ve Yaslıkaya, R.",
@@ -121,7 +128,8 @@ const makalelerData = [
         "cilt": "47",
         "sayi": "2",
         "sayfa": "65-82",
-        "doi": ""
+        "doi": "",
+        "link": "makaleler/Yaylı ve Yaslıkaya - 2012 - Türkiye'de Yerel Hizmetlerle İlgili Yasal Düzenlemelerin Gelişimi.pdf"
     },
     {
         "yazar": "Bülbül, K., ve Yaslıkaya, R.",
@@ -131,6 +139,7 @@ const makalelerData = [
         "cilt": "4",
         "sayi": "16",
         "sayfa": "91-105",
-        "doi": ""
+        "doi": "",
+        "link": "makaleler/Bülbül ve Yaslıkaya - 2006 - Sivil Topluma Siyasal Güven Türk Milletvekillerin.pdf"
     }
 ];
