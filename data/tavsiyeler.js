@@ -1261,6 +1261,41 @@ Yine notebookLM üzerinde sesli ve videolu özetler hazırlatıp konuyu size anl
                     </div>
                 </div>
             </details>
+
+            <details class="modern-details" style="margin-top: 1rem;">
+                <summary>
+                    <span class="summary-text" style="font-weight:bold; color:var(--primary-color);">17. The Wave (Tehlikeli Oyun)</span>
+                    <i class='bx bx-chevron-down summary-icon'></i>
+                </summary>
+                <div class="details-content">
+                    <div class="recommendation-card-body">
+                        <!-- Sol: Afiş -->
+                        <div class="recommendation-poster">
+                            <img src="images/tehlikelioyun_film.jpg" alt="The Wave" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); display: block;">
+                        </div>
+                        
+                        <!-- Sağ: Açıklama -->
+                        <div class="recommendation-content">
+                             <div style="margin-bottom: 0.8rem; font-size: 0.95rem; color: #555;">
+                                <strong>Yönetmen:</strong> Dennis Gansel <br>
+                                <strong>Oyuncular:</strong> Jürgen Vogel, Frederick Lau, Jennifer Ulrich <br>
+                                <strong>Çıkış Tarihi:</strong> 13 Mart 2008
+                            </div>
+                             <p style="text-align: justify; margin-top:0;">
+                             Bizim ülkemizde bir daha asla diktatörlük kurulamaz," diye düşünenlerden misiniz? The Wave, bu kadar emin olmamanız gerektiğini size sadece beş gün içinde ispatlıyor. Bir lise öğretmeninin, otokrasiyi öğrencilerine sadece anlatmak yerine "yaşatarak" öğretmeye karar vermesiyle başlayan bu film, masum bir sınıf deneyinin nasıl hızla kontrol edilemez bir disiplin ve dışlama mekanizmasına dönüştüğünü gösteriyor.
+                             </p>
+                             <p style="text-align: justify;">
+                             Disiplin, ortak bir logo, bir selamlaşma şekli ve "bizden olmayanlar" mantığıyla şekillenen bu süreç; bireyin grup içinde nasıl eridiğine dair devasa bir gerçeklik. İzlerken, faşizmin aslında ne kadar davetkâr ve "ait olma" hissiyle dolu bir tuzak olduğunu dehşetle fark edeceksiniz. Toplumsal psikolojinin ve iktidar arzusunun karanlık dehlizlerine girmek istiyorsanız, bu film sizin için unutulmaz bir deneyim olacak.
+                             </p>
+                             <div style="margin-top: 1rem;">
+                                <a href="https://www.imdb.com/title/tt1063669/" target="_blank" style="text-decoration: none; color: #f5c518; font-weight: bold; display: inline-flex; align-items: center; gap: 4px;">
+                                    <i class='bx bxl-imdb' style="font-size: 1.2rem;"></i> IMDb
+                                </a>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+            </details>
         `
     }
 ];
