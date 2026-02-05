@@ -797,8 +797,48 @@ h2.section-title::before {
 
 
 /* ===========================
-   ACCORDION (COLLAPSIBLE) STYLES
+   Recommendation Item Responsive Styles
    =========================== */
+.recommendation-card-body {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+}
+
+.recommendation-poster {
+    flex-shrink: 0;
+    width: 150px;
+}
+
+.recommendation-content {
+    flex-grow: 1;
+}
+
+@media (max-width: 900px) {
+    .recommendation-card-body {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .recommendation-poster {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1rem;
+    }
+
+    .recommendation-poster img {
+        max-width: 200px;
+        /* Limit max width on mobile for aesthetics */
+        width: 100%;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        /* Enhance shadow on mobile */
+    }
+
+    .recommendation-content {
+        width: 100%;
+    }
+}
 
 /* Remove default marker */
 details.modern-details>summary {
