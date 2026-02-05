@@ -643,6 +643,56 @@ Yine notebookLM üzerinde sesli ve videolu özetler hazırlatıp konuyu size anl
                 </div>
             </div>
         </details>
+
+        <details class="modern-details" style="margin-top: 1rem;">
+            <summary>
+                <span class="summary-text" style="font-weight:bold; color:var(--primary-color);">24. Frantz Fanon: Yeryüzünün Lanetlileri</span>
+                <i class='bx bx-chevron-down summary-icon'></i>
+            </summary>
+            <div class="details-content">
+                <div class="recommendation-card-body">
+                    <!-- Sol: Kitap Kapağı -->
+                    <div class="recommendation-poster">
+                        <img src="images/yeryüzününlanetlileri_kitap.jpg" alt="Frantz Fanon - Yeryüzünün Lanetlileri" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); display: block;">
+                    </div>
+                    
+                    <!-- Sağ: Açıklama -->
+                    <div class="recommendation-content">
+                         <p style="text-align: justify; margin-top:0;">
+                         Dünyanın bir yarısı refah içinde yaşarken, diğer yarısının neden hâlâ "görünmez" kaldığını hiç düşündünüz mü? Frantz Fanon, Yeryüzünün Lanetlileri eserinde, sömürgeciliğin sadece toprakları değil, asıl insanların ruhlarını nasıl işgal ettiğini bir cerrah titizliğiyle gözler önüne seriyor. Bir psikiyatrın gözünden ezilen halkların öfkesine, kimlik arayışına ve özgürlük tutkusuna şahitlik ederken; adaletsizliğin hüküm sürdüğü bir dünyada sessiz kalmanın imkansızlığını iliklerinize kadar hissedeceksiniz.
+                         </p>
+                         <p style="text-align: justify;">
+                         Fanon’un her cümlesi, insanlık onurunun yeniden kazanılmasına dair devasa bir metafor gibi karşımızda duruyor. Bugünün dünyasını, sınırları ve toplumsal hiyerarşileri gerçekten anlamak istiyorsanız, Jean-Paul Sartre’ın o meşhur önsözüyle taçlanan bu klasiği mutlaka başucunuza almalısınız. Ezberlerinizi bozacak ve size dünyaya "ötekinin" gözünden bakmayı öğretecek bir yolculuğa hazır olun.
+                         </p>
+                    </div>
+                </div>
+            </div>
+        </details>
+
+        <details class="modern-details" style="margin-top: 1rem;">
+            <summary>
+                <span class="summary-text" style="font-weight:bold; color:var(--primary-color);">25. Çizgilerle Komunist Manifesto</span>
+                <i class='bx bx-chevron-down summary-icon'></i>
+            </summary>
+            <div class="details-content">
+                <div class="recommendation-card-body">
+                    <!-- Sol: Kitap Kapağı -->
+                    <div class="recommendation-poster">
+                        <img src="images/komunistmanifesto_kitap.jpg" alt="Çizgilerle Komunist Manifesto" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); display: block;">
+                    </div>
+                    
+                    <!-- Sağ: Açıklama -->
+                    <div class="recommendation-content">
+                         <p style="text-align: justify; margin-top:0;">
+                         Dünyayı yerinden oynatan o meşhur, "Avrupa'da bir hayalet dolaşıyor; Komünizm hayaleti," cümlesiyle başlayan devasa bir metnin, kuru bir teori kitabı olmaktan çıkıp siyah-beyaz bir görsel şölene dönüştüğünü hayal edin. Çizgilerle Komünist Manifesto, sayfalarca süren ağır analizleri ve anlaşılması zor ekonomik kavramları, çizgilerin gücüyle bir solukta okunacak bir serüvene çeviriyor. Tarihin akışını, sınıf çatışmalarını ve sermayenin hikâyesini adeta bir çizgi roman akıcılığında izlerken; aslında karmaşık görünen her şeyin hayatın içinde ne kadar net birer metafor olduğunu fark edeceksiniz.
+                         </p>
+                         <p style="text-align: justify;">
+                         "Ben bu ağır teorileri asla bitiremem" diyenlerin bile elinden düşüremeyeceği bu çalışma, fikirlerin de tıpkı resimler gibi zihnimize kazınabileceğini kanıtlıyor. Hem dünyayı değiştiren o tarihi manifestoyu tanımak hem de çizgilerin zekasına hayran kalmak istiyorsanız, bu kitap tam size göre.
+                         </p>
+                    </div>
+                </div>
+            </div>
+        </details>
         `
     },
     {
@@ -668,6 +718,11 @@ Yine notebookLM üzerinde sesli ve videolu özetler hazırlatıp konuyu size anl
                         
                         <!-- Sağ: Açıklama -->
                         <div class="recommendation-content">
+                             <div style="margin-bottom: 0.8rem; font-size: 0.95rem; color: #555;">
+                                <strong>Yönetmen:</strong> Nadine Labaki <br>
+                                <strong>Oyuncular:</strong> Zain Al Rafeea, Yordanos Shiferaw <br>
+                                <strong>Çıkış Tarihi:</strong> 20 Eylül 2018
+                            </div>
                              <p style="text-align: justify; margin-top:0;">
                              Capernaum, Beyrut’un tozlu ve kalabalık sokaklarında, sistemin çoktan vazgeçtiği çocukların çığlığı gibi bir film. Başrolündeki Zain’in hikayesi üzerinden; bir insanın sadece "var olduğu" için verdiği o ağır mücadeleyi, göçün insanı nasıl köksüz ve kimliksiz bıraktığını iliklerinize kadar hissediyorsunuz.
                              </p>
@@ -698,6 +753,11 @@ Yine notebookLM üzerinde sesli ve videolu özetler hazırlatıp konuyu size anl
                         
                         <!-- Sağ: Açıklama -->
                         <div class="recommendation-content">
+                             <div style="margin-bottom: 0.8rem; font-size: 0.95rem; color: #555;">
+                                <strong>Yönetmen:</strong> Richard Schenkman <br>
+                                <strong>Oyuncular:</strong> David Lee Smith, John Billingsley <br>
+                                <strong>Çıkış Tarihi:</strong> 13 Kasım 2007
+                            </div>
                              <p style="text-align: justify; margin-top:0;">
                              Hayal edin; bir akşam arkadaşlarınızla veda kahvesi içiyorsunuz ve içlerinden biri aniden, "Ben tam 14 bin yıldır yaşıyorum," diyor. The Man from Earth, işte bu akılalmaz iddiayla başlayıp sizi oturduğunuz koltuğa çivileyen, kelimenin tam anlamıyla bir "beyin fırtınası" şöleni. Ne özel efekt var ne de büyük bütçeli sahneler; sadece bir oda, bir avuç insan ve insanlık tarihini, inançları, sanatı yeniden sorgulatan o büyüleyici hikâye.
                              </p>
@@ -728,6 +788,11 @@ Yine notebookLM üzerinde sesli ve videolu özetler hazırlatıp konuyu size anl
                         
                         <!-- Sağ: Açıklama -->
                         <div class="recommendation-content">
+                             <div style="margin-bottom: 0.8rem; font-size: 0.95rem; color: #555;">
+                                <strong>Yönetmen:</strong> Bryan Singer <br>
+                                <strong>Oyuncular:</strong> Kevin Spacey, Gabriel Byrne <br>
+                                <strong>Çıkış Tarihi:</strong> 16 Ağustos 1995
+                            </div>
                              <p style="text-align: justify; margin-top:0;">
                              Bir limanda patlayan gemi, arkada bırakılan onlarca ceset ve polisin elindeki tek koz: Sağ kurtulan ve olan biteni anlatmaya dünden razı, "topal" bir dolandırıcı. Ama sakın anlatılanlara hemen inanmayın; çünkü bu film, bir yalanın ne kadar kusursuz bir sanat eserine dönüşebileceğinin en büyük kanıtı. "Kayser Söze" isminin gizemi etrafında dönen hikâye, sizi karmaşık bir yapbozun içine öyle bir fırlatıyor ki, her parçayı yerleştirdiğinizi sandığınız an oyun yeniden başlıyor.
                              </p>
@@ -758,6 +823,11 @@ Yine notebookLM üzerinde sesli ve videolu özetler hazırlatıp konuyu size anl
                         
                         <!-- Sağ: Açıklama -->
                         <div class="recommendation-content">
+                             <div style="margin-bottom: 0.8rem; font-size: 0.95rem; color: #555;">
+                                <strong>Yönetmen:</strong> Barry Levinson <br>
+                                <strong>Oyuncular:</strong> Dustin Hoffman, Tom Cruise <br>
+                                <strong>Çıkış Tarihi:</strong> 16 Aralık 1988
+                            </div>
                              <p style="text-align: justify; margin-top:0;">
                              Biri hayatı sadece sayılarla ve kurallarla algılayan bir dahi, diğeri ise dünyayı sadece çıkarlardan ibaret sanan hırslı bir kardeş... Yağmur Adam, babasından kalan mirasın peşine düşen bencil bir adamın, varlığından bile haberdar olmadığı abisiyle çıktığı o meşhur yolculuğun hikâyesi. Ama bu bildiğiniz yol filmlerinden değil; bu, birbirine dokunmanın bile imkânsız olduğu iki farklı dünyanın çarpışıp sonunda birbirine karışması.
                              </p>
@@ -788,6 +858,11 @@ Yine notebookLM üzerinde sesli ve videolu özetler hazırlatıp konuyu size anl
                         
                         <!-- Sağ: Açıklama -->
                         <div class="recommendation-content">
+                             <div style="margin-bottom: 0.8rem; font-size: 0.95rem; color: #555;">
+                                <strong>Yaratıcı:</strong> Beau Willimon <br>
+                                <strong>Oyuncular:</strong> Kevin Spacey, Robin Wright <br>
+                                <strong>Çıkış Tarihi:</strong> 1 Şubat 2013
+                            </div>
                              <p style="text-align: justify; margin-top:0;">
                              "Politika denen şey aslında nedir?" diye merak ediyorsanız, bu dizi size o çok konuşulan "kapalı kapılar ardındaki" dünyayı bir balyoz gibi indiriyor. Demokrasinin aslında ne kadar karanlık koridorlardan geçtiğini görmek istiyorsanız, Frank Underwood ile tanışma vaktiniz gelmiş demektir. House of Cards, bir adamın iktidar basamaklarını tırmanırken önüne çıkan her şeyi ve herkesi nasıl soğukkanlılıkla ezebileceğinin hikâyesi.
                              </p>
@@ -818,6 +893,11 @@ Yine notebookLM üzerinde sesli ve videolu özetler hazırlatıp konuyu size anl
                         
                         <!-- Sağ: Açıklama -->
                         <div class="recommendation-content">
+                             <div style="margin-bottom: 0.8rem; font-size: 0.95rem; color: #555;">
+                                <strong>Yönetmen:</strong> Darren Aronofsky <br>
+                                <strong>Oyuncular:</strong> Jennifer Lawrence, Javier Bardem <br>
+                                <strong>Çıkış Tarihi:</strong> 15 Eylül 2017
+                            </div>
                              <p style="text-align: justify; margin-top:0;">
                              Peşinen uyarayım sizi. Bu film "mısırımı alayım da rahat rahat izleyeyim" diyebileceğiniz bir film değil, sizi ruhsal bir türbülansa sokacak bir deneyim var karşımızda. Darren Aronofsky, Mother! ile sinir uçlarınızla oynamaya geliyor. Kendi kabuğuna çekilmiş, huzur dolu bir ev hayal edin; sonra bu eve davetsiz misafirlerin birer birer doluştuğunu ve o çok değer verdiğiniz sükuneti bir kaosa çevirdiğini... Mother!, başladığı andan itibaren tırnaklarınızı koltuğa geçirtecek kadar gerilimli, bir o kadar da sürreal bir yolculuk.
                              </p>
@@ -848,6 +928,12 @@ Yine notebookLM üzerinde sesli ve videolu özetler hazırlatıp konuyu size anl
                         
                         <!-- Sağ: Açıklama -->
                         <div class="recommendation-content">
+
+                             <div style="margin-bottom: 0.8rem; font-size: 0.95rem; color: #555;">
+                                <strong>Yönetmen:</strong> Vijay Lalwani <br>
+                                <strong>Oyuncular:</strong> Farhan Akhtar, Deepika Padukone <br>
+                                <strong>Çıkış Tarihi:</strong> 26 Şubat 2010
+                            </div>
                              <p style="text-align: justify; margin-top:0;">
                              Karthik Calling Karthik, klasik Bollywood filmlerinden çok farklı, psikolojik derinliği olan tam bir "merak uyandırıcı" hikâye. Kendi gölgesinden bile çekinen, hayatta pek de görünür olmayan sıradan bir adamın, bir sabah gelen gizemli bir telefonla tüm dünyasının değiştiğini düşünün. Telefonun ucundaki ses ise kendisine tıpatıp benzeyen bir başkası! Karthik Calling Karthik, bir adamın özgüven kazanma yolculuğu gibi başlayıp, adım adım sizi gerilimin ve belirsizliğin içine çeken müthiş bir kurgu.
                              </p>
@@ -878,6 +964,11 @@ Yine notebookLM üzerinde sesli ve videolu özetler hazırlatıp konuyu size anl
                         
                         <!-- Sağ: Açıklama -->
                         <div class="recommendation-content">
+                            <div style="margin-bottom: 0.8rem; font-size: 0.95rem; color: #555;">
+                                <strong>Yönetmen:</strong> Steven Spielberg <br>
+                                <strong>Oyuncular:</strong> Tom Hanks, Catherine Zeta-Jones <br>
+                                <strong>Çıkış Tarihi:</strong> 18 Haziran 2004
+                            </div>
                              <p style="text-align: justify; margin-top:0;">
                              Bir gün bir havaalanına iniyorsunuz ve tam o sırada ülkenizde darbe olduğu için pasaportunuzun geçersiz kaldığını öğreniyorsunuz. Ne geri dönebiliyorsunuz ne de havaalanından dışarı adım atabiliyorsunuz; artık siz hiçbir yere ait olmayan, "transit" bir insansınız. The Terminal, işte bu trajikomik durumun içinden devasa bir yaşam dersi çıkarıyor. Tom Hanks’in canlandırdığı Viktor Navorski karakterinin, o soğuk ve bürokratik havaalanı terminalini nasıl bir "yuvaya" dönüştürdüğünü izlerken, sabrın ve insan kalabilmenin ne demek olduğunu yeniden hatırlayacaksınız.
                              </p>
@@ -908,6 +999,11 @@ Yine notebookLM üzerinde sesli ve videolu özetler hazırlatıp konuyu size anl
                         
                         <!-- Sağ: Açıklama -->
                         <div class="recommendation-content">
+                             <div style="margin-bottom: 0.8rem; font-size: 0.95rem; color: #555;">
+                                <strong>Yönetmen:</strong> Anurag Basu <br>
+                                <strong>Oyuncular:</strong> Ranbir Kapoor, Priyanka Chopra <br>
+                                <strong>Çıkış Tarihi:</strong> 14 Eylül 2012
+                            </div>
                              <p style="text-align: justify; margin-top:0;">
                              Dünyayı duyamıyor ya da konuşamıyor olabilirsiniz, ama bu durum hayatın tadını çıkarmanıza ve sırılsıklam aşık olmanıza engel mi? Kesinlikle hayır! Barfi!, her anı bir tablodan fırlamış gibi duran renkleri, büyüleyici müzikleri ve insanı hayata bağlayan neşesiyle tam bir görsel şölen. Ranbir Kapoor’un Charlie Chaplin naifliğindeki performansı, sizi o bildiğiniz klişe aşk hikâyelerinden alıp çok daha derin ve saf bir yere götürüyor.
                              </p>
@@ -938,6 +1034,11 @@ Yine notebookLM üzerinde sesli ve videolu özetler hazırlatıp konuyu size anl
                         
                         <!-- Sağ: Açıklama -->
                         <div class="recommendation-content">
+                             <div style="margin-bottom: 0.8rem; font-size: 0.95rem; color: #555;">
+                                <strong>Yönetmen:</strong> Rajkumar Hirani <br>
+                                <strong>Oyuncular:</strong> Aamir Khan, Anushka Sharma <br>
+                                <strong>Çıkış Tarihi:</strong> 19 Aralık 2014
+                            </div>
                              <p style="text-align: justify; margin-top:0;">
                              Dünyaya çok uzak bir gezegenden gelen bir yabancının, kaybettiği bir eşyayı bulmak için bizim karmaşık ritüellerimizle dolu dünyamıza ayak uydurmaya çalıştığını hayal edin. PK, dışarıdan bakan bir çift gözün, alışageldiğimiz toplumsal normlara ve farklı inanç pratiklerine sorduğu o naif ama sarsıcı soruların hikâyesi. Aamir Khan’ın çocuksu bir merakla canlandırdığı karakterin yaşadığı komik maceralar, aslında bizlerin "normal" kabul ettiği birçok davranışın ne kadar tuhaf olabileceğine dair devasa bir metafor.
                              </p>
@@ -968,6 +1069,11 @@ Yine notebookLM üzerinde sesli ve videolu özetler hazırlatıp konuyu size anl
                         
                         <!-- Sağ: Açıklama -->
                         <div class="recommendation-content">
+                             <div style="margin-bottom: 0.8rem; font-size: 0.95rem; color: #555;">
+                                <strong>Yönetmen:</strong> Luc Besson <br>
+                                <strong>Oyuncular:</strong> Scarlett Johansson, Morgan Freeman <br>
+                                <strong>Çıkış Tarihi:</strong> 25 Temmuz 2014
+                            </div>
                              <p style="text-align: justify; margin-top:0;">
                              Sıradan bir hayat yaşayan bir kadının, beklemediği bir anda kendisini kontrolü dışındaki bir deneyin merkezinde bulduğunu hayal edin. Lucy, insan zihninin sınırlarına dair o meşhur "ya kapasitemizin tamamını kullansaydık?" sorusunu merkeze alan, temposu hiç düşmeyen bir serüven. Scarlett Johansson’ın karakteri, adım adım fiziksel ve zihinsel bir değişim geçirirken, izleyiciyi de "insan olmanın sınırı nerede başlar?" diye sorduran bir metaforun içine çekiyor.
                              </p>
@@ -976,6 +1082,143 @@ Yine notebookLM üzerinde sesli ve videolu özetler hazırlatıp konuyu size anl
                              </p>
                              <div style="margin-top: 1rem;">
                                 <a href="https://www.imdb.com/title/tt2872718/" target="_blank" style="text-decoration: none; color: #f5c518; font-weight: bold; display: inline-flex; align-items: center; gap: 4px;">
+                                    <i class='bx bxl-imdb' style="font-size: 1.2rem;"></i> IMDb
+                                </a>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+            </details>
+
+            <details class="modern-details" style="margin-top: 1rem;">
+                <summary>
+                    <span class="summary-text" style="font-weight:bold; color:var(--primary-color);">12. Altıncı His (The Sixth Sense)</span>
+                    <i class='bx bx-chevron-down summary-icon'></i>
+                </summary>
+                <div class="details-content">
+                    <div class="recommendation-card-body">
+                        <!-- Sol: Afiş -->
+                        <div class="recommendation-poster">
+                            <img src="images/altincihis_film.jpg" alt="Altıncı His" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); display: block;">
+                        </div>
+                        
+                        <!-- Sağ: Açıklama -->
+                        <div class="recommendation-content">
+                             <div style="margin-bottom: 0.8rem; font-size: 0.95rem; color: #555;">
+                                <strong>Yönetmen:</strong> M. Night Shyamalan <br>
+                                <strong>Oyuncular:</strong> Bruce Willis, Haley Joel Osment <br>
+                                <strong>Çıkış Tarihi:</strong> 6 Ağustos 1999
+                            </div>
+                             <p style="text-align: justify; margin-top:0;">
+                             Bazen bir çocuk, kimsenin göremediği bir dünyayı sırtında taşımak zorunda kalır. Altıncı His, karanlıktan korkan küçük bir çocuk ile ona yardım etmeye çalışan bir psikoloğun, omuz omuza verdikleri o tüyler ürpertici ama bir o kadar da duygusal yolculuğu anlatıyor. Bruce Willis ve genç Haley Joel Osment’ın unutulmaz performanslarıyla devleşen film; yalnızlığı, anlaşılamamayı ve saklanan sırları anlatırken aslında iletişim kurmanın ne kadar hayati olduğuna dair devasa bir metafor sunuyor.
+                             </p>
+                             <p style="text-align: justify;">
+                             Her sahnesinde ensenizde hissedeceğiniz o soğuk esinti, sizi adım adım sinema tarihinin en çok konuşulan, en akıl dolu düğümlerinden birine hazırlıyor. "Gerçekten gördüğümüz şey, orada olan şey midir?" sorusunun peşine düşmek ve bittiğinde her sahneyi zihninizde en baştan sarmak istiyorsanız, bu başyapıtı sakın atlamayın.
+                             </p>
+                             <div style="margin-top: 1rem;">
+                                <a href="https://www.imdb.com/title/tt0167404/" target="_blank" style="text-decoration: none; color: #f5c518; font-weight: bold; display: inline-flex; align-items: center; gap: 4px;">
+                                    <i class='bx bxl-imdb' style="font-size: 1.2rem;"></i> IMDb
+                                </a>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+            </details>
+
+            <details class="modern-details" style="margin-top: 1rem;">
+                <summary>
+                    <span class="summary-text" style="font-weight:bold; color:var(--primary-color);">13. Şeytanın Avukatı (The Devil's Advocate)</span>
+                    <i class='bx bx-chevron-down summary-icon'></i>
+                </summary>
+                <div class="details-content">
+                    <div class="recommendation-card-body">
+                        <!-- Sol: Afiş -->
+                        <div class="recommendation-poster">
+                            <img src="images/seytaninavukati_film.jpg" alt="Şeytanın Avukatı" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); display: block;">
+                        </div>
+                        
+                        <!-- Sağ: Açıklama -->
+                        <div class="recommendation-content">
+                             <div style="margin-bottom: 0.8rem; font-size: 0.95rem; color: #555;">
+                                <strong>Yönetmen:</strong> Taylor Hackford <br>
+                                <strong>Oyuncular:</strong> Keanu Reeves, Al Pacino, Charlize Theron <br>
+                                <strong>Çıkış Tarihi:</strong> 17 Ekim 1997
+                            </div>
+                             <p style="text-align: justify; margin-top:0;">
+                             Hırsın ve kibrin insanı nerelere sürükleyebileceğini, ruhun nasıl adım adım rehin alındığını izlemeye hazır mısınız? Şeytanın Avukatı, genç ve başarılı bir avukatın, New York’un parıltılı dünyasında karşısına çıkan gizemli bir teklifle hayatının nasıl bir kabusa dönüştüğünü anlatıyor. Al Pacino ve Keanu Reeves’in o efsanevi düellosunda, kötülüğün ne kadar ikna edici ve davetkâr olabileceğine şahitlik edeceksiniz.
+                             </p>
+                             <p style="text-align: justify;">
+                             Özellikle o unutulmaz yüzleşme sahnesinde, şaşkınlık ve dehşet içindeki oğlunun "Nesin sen? Şeytan mı? İblis mi? Lucifer mı?" sorusuna karşılık, o tüyler ürperten sakinliğiyle verdiği "Sen yine de bana 'Baba' de," cevabı, sinema tarihinin en vurucu anlarından biridir. Adaletin ve vicdanın, kibrin gölgesinde nasıl can çekiştiğini izlerken yerinizden kalkamayacaksınız. "Kibir, benim en sevdiğim günahtır," diyen bir dünyaya adım atmaya cesaretiniz var mı?
+                             </p>
+                             <div style="margin-top: 1rem;">
+                                <a href="https://www.imdb.com/title/tt0118971/" target="_blank" style="text-decoration: none; color: #f5c518; font-weight: bold; display: inline-flex; align-items: center; gap: 4px;">
+                                    <i class='bx bxl-imdb' style="font-size: 1.2rem;"></i> IMDb
+                                </a>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+            </details>
+
+            <details class="modern-details" style="margin-top: 1rem;">
+                <summary>
+                    <span class="summary-text" style="font-weight:bold; color:var(--primary-color);">14. Cui Mian Da Shi (The Great Hypnotist)</span>
+                    <i class='bx bx-chevron-down summary-icon'></i>
+                </summary>
+                <div class="details-content">
+                    <div class="recommendation-card-body">
+                        <!-- Sol: Afiş -->
+                        <div class="recommendation-poster">
+                            <img src="images/cuimiandashi_film.jpg" alt="Cui Mian Da Shi" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); display: block;">
+                        </div>
+                        
+                        <!-- Sağ: Açıklama -->
+                        <div class="recommendation-content">
+                             <div style="margin-bottom: 0.8rem; font-size: 0.95rem; color: #555;">
+                                <strong>Yönetmen:</strong> Leste Chen <br>
+                                <strong>Oyuncular:</strong> Xu Zheng, Karen Mok <br>
+                                <strong>Çıkış Tarihi:</strong> 29 Nisan 2014
+                            </div>
+                             <p style="text-align: justify; margin-top:0;">
+                             Zihninizin içinde, sizin bile anahtarını kaybettiğiniz kapılar olduğunu düşünün. The Great Hypnotist, kibirli ve başarılı bir hipnoz uzmanının, bugüne kadar gördüğü en gizemli vakayla karşı karşıya gelmesini konu alıyor. Tedavi etmeye çalıştığı kadının anlattıkları ile gerçekler arasındaki o ince çizgi silikleştikçe, sadece hastanın değil, doktorun da kendi geçmişindeki hayaletlerle yüzleşmesini izliyoruz.
+                             </p>
+                             <p style="text-align: justify;">
+                             Film, adeta bir yapboz gibi; her sahne zekice yerleştirilmiş bir metafor barındırıyor ve izleyiciyi "Acaba şu an kim hipnozda?" sorusuyla baş başa bırakıyor. Eğer son ana kadar neyin gerçek, neyin hayal olduğunu çözmeye çalışacağınız, bittiğinde ise sizi koltuğunuza çivileyecek bir "akıl oyunu" arıyorsanız, bu Çin sineması harikasını sakın kaçırmayın.
+                             </p>
+                             <div style="margin-top: 1rem;">
+                                <a href="https://www.imdb.com/title/tt3720058/" target="_blank" style="text-decoration: none; color: #f5c518; font-weight: bold; display: inline-flex; align-items: center; gap: 4px;">
+                                    <i class='bx bxl-imdb' style="font-size: 1.2rem;"></i> IMDb
+                                </a>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+            </details>
+
+            <details class="modern-details" style="margin-top: 1rem;">
+                <summary>
+                    <span class="summary-text" style="font-weight:bold; color:var(--primary-color);">15. Mulholland Dr. (Mulholland Çıkmazı)</span>
+                    <i class='bx bx-chevron-down summary-icon'></i>
+                </summary>
+                <div class="details-content">
+                    <div class="recommendation-card-body">
+                        <!-- Sol: Afiş -->
+                        <div class="recommendation-poster">
+                            <img src="images/mullholland_film.jpg" alt="Mulholland Dr." style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); display: block;">
+                        </div>
+                        
+                        <!-- Sağ: Açıklama -->
+                        <div class="recommendation-content">
+                             <div style="margin-bottom: 0.8rem; font-size: 0.95rem; color: #555;">
+                                <strong>Yönetmen:</strong> David Lynch <br>
+                                <strong>Oyuncular:</strong> Naomi Watts, Laura Harring <br>
+                                <strong>Çıkış Tarihi:</strong> 12 Ekim 2001
+                            </div>
+                             <p style="text-align: justify; margin-top:0;">
+                             Hollywood rüyasının nasıl bir kabusa dönüşebileceğini, mantığın bittiği yerde rüyaların başladığını görmeye hazır mısınız? Mulholland Çıkmazı, gizemli bir trafik kazasıyla başlayan ve izleyiciyi adım adım bilincin karanlık dehlizlerine çeken bir başyapıt. Her sahnesi, her karakteri ve hatta renklerin kullanımı bile çözülmeyi bekleyen devasa birer metafor. David Lynch, alışık olduğumuz o doğrusal hikâye anlatımını bir kenara bırakıyor ve sizi kendi gerçeğinizi bulmaya davet ediyor. 'Bu filmde ne oldu?' sorusunu sorduran ama cevabı yine sizin hislerinizde saklı olan bu eşsiz deneyim, bittiğinde sizi saatlerce sürecek bir zihin jimnastiğine hapsedecek.
+                             </p>
+                             <div style="margin-top: 1rem;">
+                                <a href="https://www.imdb.com/title/tt0166924/" target="_blank" style="text-decoration: none; color: #f5c518; font-weight: bold; display: inline-flex; align-items: center; gap: 4px;">
                                     <i class='bx bxl-imdb' style="font-size: 1.2rem;"></i> IMDb
                                 </a>
                              </div>
