@@ -857,6 +857,126 @@ Yine notebookLM üzerinde sesli ve videolu özetler hazırlatıp konuyu size anl
                     </div>
                 </div>
             </details>
+
+            <details class="modern-details" style="margin-top: 1rem;">
+                <summary>
+                    <span class="summary-text" style="font-weight:bold; color:var(--primary-color);">7. Karthik Calling Karthik</span>
+                    <i class='bx bx-chevron-down summary-icon'></i>
+                </summary>
+                <div class="details-content">
+                    <div style="display: flex; gap: 1.5rem; align-items: flex-start;">
+                        <!-- Sol: Afiş -->
+                        <div style="flex-shrink: 0; width: 150px;">
+                            <img src="images/Karthik_film.jpg" alt="Karthik Calling Karthik" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); display: block;">
+                        </div>
+                        
+                        <!-- Sağ: Açıklama -->
+                        <div style="flex-grow: 1;">
+                             <p style="text-align: justify; margin-top:0;">
+                             Karthik Calling Karthik, klasik Bollywood filmlerinden çok farklı, psikolojik derinliği olan tam bir "merak uyandırıcı" hikâye. Kendi gölgesinden bile çekinen, hayatta pek de görünür olmayan sıradan bir adamın, bir sabah gelen gizemli bir telefonla tüm dünyasının değiştiğini düşünün. Telefonun ucundaki ses ise kendisine tıpatıp benzeyen bir başkası! Karthik Calling Karthik, bir adamın özgüven kazanma yolculuğu gibi başlayıp, adım adım sizi gerilimin ve belirsizliğin içine çeken müthiş bir kurgu.
+                             </p>
+                             <p style="text-align: justify;">
+                             Film ilerledikçe, karakterin başarısının arkasındaki bu gizemli yardımcının aslında bir lütuf mu yoksa bir kabus mu olduğunu çözmeye çalışırken buluyorsunuz kendinizi. Her sahnesi zekice işlenmiş bir metafor barındıran bu yapım, "insan aslında en çok kimden kaçamaz?" sorusuna sarsıcı bir cevap arıyor. Eğer son ana kadar sizi ters köşe yapacak, zihin yoran bir gizem arıyorsanız, Karthik’in telefonuna mutlaka cevap verin derim.
+                             </p>
+                             <div style="margin-top: 1rem;">
+                                <a href="https://www.imdb.com/title/tt1373148/" target="_blank" style="text-decoration: none; color: #f5c518; font-weight: bold; display: inline-flex; align-items: center; gap: 4px;">
+                                    <i class='bx bxl-imdb' style="font-size: 1.2rem;"></i> IMDb
+                                </a>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+            </details>
+
+            <details class="modern-details" style="margin-top: 1rem;">
+                <summary>
+                    <span class="summary-text" style="font-weight:bold; color:var(--primary-color);">8. The Terminal (Terminal)</span>
+                    <i class='bx bx-chevron-down summary-icon'></i>
+                </summary>
+                <div class="details-content">
+                    <div style="display: flex; gap: 1.5rem; align-items: flex-start;">
+                        <!-- Sol: Afiş -->
+                        <div style="flex-shrink: 0; width: 150px;">
+                            <img src="images/terminal_film.jpg" alt="The Terminal" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); display: block;">
+                        </div>
+                        
+                        <!-- Sağ: Açıklama -->
+                        <div style="flex-grow: 1;">
+                             <p style="text-align: justify; margin-top:0;">
+                             Bir gün bir havaalanına iniyorsunuz ve tam o sırada ülkenizde darbe olduğu için pasaportunuzun geçersiz kaldığını öğreniyorsunuz. Ne geri dönebiliyorsunuz ne de havaalanından dışarı adım atabiliyorsunuz; artık siz hiçbir yere ait olmayan, "transit" bir insansınız. The Terminal, işte bu trajikomik durumun içinden devasa bir yaşam dersi çıkarıyor. Tom Hanks’in canlandırdığı Viktor Navorski karakterinin, o soğuk ve bürokratik havaalanı terminalini nasıl bir "yuvaya" dönüştürdüğünü izlerken, sabrın ve insan kalabilmenin ne demek olduğunu yeniden hatırlayacaksınız.
+                             </p>
+                             <p style="text-align: justify;">
+                             Filmdeki terminal binası, aslında modern dünyanın ve sınırların insan ruhunu nasıl sıkıştırdığına dair kocaman bir metafor gibi karşımızda duruyor. Beklemenin sadece bir zaman kaybı değil, bazen bir hayat biçimi olduğunu anlatan bu sıcacık hikâyeyi izlerken, Viktor’un o naif inadına hayran kalacaksınız.
+                             </p>
+                             <div style="margin-top: 1rem;">
+                                <a href="https://www.imdb.com/title/tt0362227/" target="_blank" style="text-decoration: none; color: #f5c518; font-weight: bold; display: inline-flex; align-items: center; gap: 4px;">
+                                    <i class='bx bxl-imdb' style="font-size: 1.2rem;"></i> IMDb
+                                </a>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+            </details>
+
+            <details class="modern-details" style="margin-top: 1rem;">
+                <summary>
+                    <span class="summary-text" style="font-weight:bold; color:var(--primary-color);">9. Barfi!</span>
+                    <i class='bx bx-chevron-down summary-icon'></i>
+                </summary>
+                <div class="details-content">
+                    <div style="display: flex; gap: 1.5rem; align-items: flex-start;">
+                        <!-- Sol: Afiş -->
+                        <div style="flex-shrink: 0; width: 150px;">
+                            <img src="images/barfi_film.jpg" alt="Barfi!" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); display: block;">
+                        </div>
+                        
+                        <!-- Sağ: Açıklama -->
+                        <div style="flex-grow: 1;">
+                             <p style="text-align: justify; margin-top:0;">
+                             Dünyayı duyamıyor ya da konuşamıyor olabilirsiniz, ama bu durum hayatın tadını çıkarmanıza ve sırılsıklam aşık olmanıza engel mi? Kesinlikle hayır! Barfi!, her anı bir tablodan fırlamış gibi duran renkleri, büyüleyici müzikleri ve insanı hayata bağlayan neşesiyle tam bir görsel şölen. Ranbir Kapoor’un Charlie Chaplin naifliğindeki performansı, sizi o bildiğiniz klişe aşk hikâyelerinden alıp çok daha derin ve saf bir yere götürüyor.
+                             </p>
+                             <p style="text-align: justify;">
+                             Film, sevginin sadece sözcüklerden ibaret olmadığını, bazen bir bakışın bazen de küçük bir sakarlığın dünyadaki tüm cümlelerden daha anlamlı olabileceğini kanıtlayan koca bir metafor. İzlerken hem gözleriniz dolacak hem de kalbinizin ısındığını hissedeceksiniz. Eğer hayata karşı enerjinizin düştüğünü hissediyorsanız, bu film size ihtiyacınız olan o mutluluk aşısını fazlasıyla verecek.
+                             </p>
+                             <div style="margin-top: 1rem;">
+                                <a href="https://www.imdb.com/title/tt2082197/" target="_blank" style="text-decoration: none; color: #f5c518; font-weight: bold; display: inline-flex; align-items: center; gap: 4px;">
+                                    <i class='bx bxl-imdb' style="font-size: 1.2rem;"></i> IMDb
+                                </a>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+            </details>
+
+            <details class="modern-details" style="margin-top: 1rem;">
+                <summary>
+                    <span class="summary-text" style="font-weight:bold; color:var(--primary-color);">10. PK</span>
+                    <i class='bx bx-chevron-down summary-icon'></i>
+                </summary>
+                <div class="details-content">
+                    <div style="display: flex; gap: 1.5rem; align-items: flex-start;">
+                        <!-- Sol: Afiş -->
+                        <div style="flex-shrink: 0; width: 150px;">
+                            <img src="images/pk_film.jpg" alt="PK" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); display: block;">
+                        </div>
+                        
+                        <!-- Sağ: Açıklama -->
+                        <div style="flex-grow: 1;">
+                             <p style="text-align: justify; margin-top:0;">
+                             Dünyaya çok uzak bir gezegenden gelen bir yabancının, kaybettiği bir eşyayı bulmak için bizim karmaşık ritüellerimizle dolu dünyamıza ayak uydurmaya çalıştığını hayal edin. PK, dışarıdan bakan bir çift gözün, alışageldiğimiz toplumsal normlara ve farklı inanç pratiklerine sorduğu o naif ama sarsıcı soruların hikâyesi. Aamir Khan’ın çocuksu bir merakla canlandırdığı karakterin yaşadığı komik maceralar, aslında bizlerin "normal" kabul ettiği birçok davranışın ne kadar tuhaf olabileceğine dair devasa bir metafor.
+                             </p>
+                             <p style="text-align: justify;">
+                             İzlerken bir yandan kahkahalara boğulurken bir yandan da kendinizi "Sahi, neden böyle yapıyoruz?" diye düşünürken bulacaksınız. İnsani değerleri ve ön yargıları en saf haliyle ele alan bu film, bittiğinde dünyaya çok daha geniş bir pencereden bakmanızı sağlayacak.
+                             </p>
+                             <div style="margin-top: 1rem;">
+                                <a href="https://www.imdb.com/title/tt2338151/" target="_blank" style="text-decoration: none; color: #f5c518; font-weight: bold; display: inline-flex; align-items: center; gap: 4px;">
+                                    <i class='bx bxl-imdb' style="font-size: 1.2rem;"></i> IMDb
+                                </a>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+            </details>
         `
     }
 ];
