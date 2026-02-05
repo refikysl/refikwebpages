@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Film ve Dizi Tavsiyeleri | Prof. Dr. Refik YASLIKAYA</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 2rem;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 900px;
+            width: 100%;
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+
+        .page-header {
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 2px solid var(--primary-color);
+        }
+
+        .page-header h1 {
+            color: var(--primary-color);
+            margin: 0;
+            font-size: 1.8rem;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 1rem;
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+        .back-link:hover {
+            color: var(--primary-color);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- İsteğe bağlı geri dönüş linki -->
+        <!-- <a href="index.html" class="back-link"><i class='bx bx-arrow-back'></i> Ana Sayfaya Dön</a> -->
+
+        <div class="page-header">
+            <h1>Film ve Dizi Tavsiyeleri</h1>
+        </div>
+
+        <!-- Tavsiyeler buraya yüklenecek -->
+        <div id="film-tavsiyeleri-container">
+            <p>Yükleniyor...</p>
+        </div>
+    </div>
+
+    <!-- Veri Dosyası -->
+    <script src="data/tavsiyeler.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const container = document.getElementById('film-tavsiyeleri-container');
+
+            // Tavsiye 3 (ID: 3) Film ve Dizi Tavsiyeleri'ni bulup yükleyeceğiz
+            if (typeof tavsiyelerData !== 'undefined' && Array.isArray(tavsiyelerData)) {
+                // ID'si 3 olan veya başlığında "Film ve Dizi" geçen öğeyi bul
+                const filmItem = tavsiyelerData.find(item => item.id === 3 || item.title.includes('Film ve Dizi'));
+
+                if (filmItem) {
+                    container.innerHTML = ''; // "Yükleniyor" yazısını temizle
+
+                    // İçerik HTML ise direkt ekle
+                    if (filmItem.isHtml) {
+                        const contentDiv = document.createElement('div');
+                        contentDiv.innerHTML = filmItem.content;
+                        container.appendChild(contentDiv);
+                    } else {
+                        // Eğer düz metin olsaydı (burası bu senaryoda kullanılmayacak ama güvenlik için)
+                        const p = document.createElement('p');
+                        p.textContent = filmItem.content;
+                        container.appendChild(p);
+                    }
+
+                    // Detay elementlerinin açılıp kapanma animasyonları için event listener ekle
+                    // (Bu logic script.js'den uyarlandı)
+                    const detailsElements = container.querySelectorAll('details.modern-details');
+
+                    detailsElements.forEach(details => {
+                        details.addEventListener('toggle', function () {
+                            const icon = this.querySelector('.summary-icon');
+                            if (this.open) {
+                                icon.style.transform = 'rotate(180deg)';
+                            } else {
+                                icon.style.transform = 'rotate(0deg)';
+                            }
+                        });
+
+                        // Sadece bir tanesinin açık kalmasını isterseniz (accordion modu):
+                        details.addEventListener('click', function (e) {
+                            if (this.open) return; // Zaten açıksa işlem yapma (toggle event halleder)
+
+                            // Diğerlerinin hepsini kapat
+                            detailsElements.forEach(otherDetail => {
+                                if (otherDetail !== this && otherDetail.open) {
+                                    otherDetail.removeAttribute('open');
+                                }
+                            });
+                        });
+                    });
+
+                } else {
+                    container.innerHTML = '<p>Film ve dizi tavsiyeleri bulunamadı.</p>';
+                }
+            } else {
+                container.innerHTML = '<p>Veri yüklenemedi.</p>';
+            }
+        });
+    </script>
+</body>
+
+</html>
