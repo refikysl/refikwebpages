@@ -28,6 +28,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 document.querySelectorAll('.tavsiye-content').forEach(el => el.style.display = 'none');
                 document.querySelectorAll('.tavsiye-header .arrow-icon').forEach(el => el.style.transform = 'rotate(0deg)');
             }
+
+            // Eğer "derkenar" bölümüne geçildiyse, tüm açık <details> elementlerini kapat
+            if (targetId === 'derkenar') {
+                const details = document.querySelectorAll('#derkenar-container details');
+                details.forEach(detail => detail.removeAttribute('open'));
+            }
         }
         if (targetLink) {
             targetLink.classList.add('active');
@@ -372,5 +378,109 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Tavsiyeleri yükle
     loadTavsiyeler();
+
+    // --- DERKENAR VERİ YÜKLEME ---
+    function loadDerkenar() {
+        const container = document.getElementById('derkenar-container');
+        if (!container) return;
+
+        if (typeof derkenarData !== 'undefined') {
+            container.innerHTML = '';
+
+            // 1. INTRO KISMI (Sabit)
+            if (derkenarData.intro && derkenarData.intro.length > 0) {
+                derkenarData.intro.forEach(item => {
+                    const introDiv = document.createElement('div');
+                    introDiv.className = 'modern-card';
+                    introDiv.style.marginBottom = '2rem';
+                    introDiv.style.borderLeft = '4px solid var(--primary-color)';
+                    introDiv.style.backgroundColor = '#f8f9fa';
+
+                    if (item.content) {
+                        const paragraphs = item.content.split(/\n\s*\n/);
+                        paragraphs.forEach(paraText => {
+                            if (paraText.trim().length > 0) {
+                                const p = document.createElement('p');
+                                p.style.textAlign = 'justify';
+                                p.style.lineHeight = '1.6';
+                                p.style.marginBottom = '0.8rem';
+                                p.style.marginTop = '0';
+                                p.innerHTML = paraText.trim().replace(/\n/g, '<br>');
+                                introDiv.appendChild(p);
+                            }
+                        });
+                    }
+                    container.appendChild(introDiv);
+                });
+            }
+
+            // 2. KONULAR KISMI (Akordiyon)
+            if (derkenarData.konular && derkenarData.konular.length > 0) {
+                derkenarData.konular.forEach(item => {
+                    // <details> yapısı
+                    const details = document.createElement('details');
+                    details.className = 'modern-details';
+                    details.style.marginBottom = '1rem';
+
+                    // <summary>
+                    const summary = document.createElement('summary');
+                    summary.innerHTML = `
+                        <span class="summary-text" style="font-weight:bold; color:var(--primary-color);">${item.title}</span>
+                        <i class='bx bx-chevron-down summary-icon'></i>
+                    `;
+                    details.appendChild(summary);
+
+                    // İçerik Wrapper
+                    const detailsContent = document.createElement('div');
+                    detailsContent.className = 'details-content';
+
+                    const cardBody = document.createElement('div');
+                    cardBody.className = 'recommendation-card-body';
+                    cardBody.style.display = 'block';
+
+
+                    const contentDiv = document.createElement('div');
+                    contentDiv.className = 'recommendation-content';
+                    contentDiv.style.color = 'var(--text-dark)';
+
+                    if (item.image) {
+                        const img = document.createElement('img');
+                        img.src = item.image;
+                        img.alt = item.title;
+                        img.style.maxWidth = '100%';
+                        img.style.height = 'auto';
+                        img.style.marginBottom = '1rem';
+                        img.style.borderRadius = '4px';
+                        img.style.display = 'block';
+                        cardBody.appendChild(img);
+                    }
+
+                    if (item.content) {
+                        const paragraphs = item.content.split(/\n\s*\n/);
+                        paragraphs.forEach(paraText => {
+                            if (paraText.trim().length > 0) {
+                                const p = document.createElement('p');
+                                p.style.textAlign = 'justify';
+                                p.style.lineHeight = '1.6';
+                                p.style.marginBottom = '0.8rem';
+                                p.innerHTML = paraText.trim().replace(/\n/g, '<br>');
+                                contentDiv.appendChild(p);
+                            }
+                        });
+                    }
+
+                    cardBody.appendChild(contentDiv);
+                    detailsContent.appendChild(cardBody);
+                    details.appendChild(detailsContent);
+
+                    container.appendChild(details);
+                });
+            }
+        } else {
+            container.innerHTML = '<p>Derkenar içeriği henüz eklenmedi.</p>';
+        }
+    }
+
+    loadDerkenar();
 
 });
