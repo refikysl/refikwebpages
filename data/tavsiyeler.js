@@ -217,7 +217,32 @@ Yine notebookLM üzerinde sesli ve videolu özetler hazırlatıp konuyu size anl
 
         <details class="modern-details" style="margin-top: 1rem;">
             <summary>
-                <span class="summary-text" style="font-weight:bold; color:var(--primary-color);">7. Kemal Tahir: Devlet Ana</span>
+                <span class="summary-text" style="font-weight:bold; color:var(--primary-color);">7. Ahmet Hamdi Tanpınar: Saatleri Ayarlama Enstitüsü</span>
+                <i class='bx bx-chevron-down summary-icon'></i>
+            </summary>
+            <div class="details-content">
+                <div style="display: flex; gap: 1.5rem; align-items: flex-start;">
+                    <!-- Sol: Kitap Kapağı -->
+                    <div style="flex-shrink: 0; width: 150px;">
+                        <img src="images/saatleriayarlama_kitap.jpg" alt="Ahmet Hamdi Tanpınar - Saatleri Ayarlama Enstitüsü" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); display: block;">
+                    </div>
+                    
+                    <!-- Sağ: Açıklama -->
+                    <div style="flex-grow: 1;">
+                         <p style="text-align: justify; margin-top:0;">
+                         Roman, aslında hiçbir işlevi olmayan ancak devasa bir bürokratik mekanizmaya dönüşen bir kurumun ("Saatleri Ayarlama Enstitüsü") kuruluş ve yükseliş hikâyesidir. Halit Ayarcı’nın pragmatik ve vizyoner (fakat içi boş) liderliği ile Hayri İrdal’ın geleneksel ve teslimiyetçi karakteri arasındaki çatışma, Türkiye’nin modernleşme sancılarını simgeler. Tanpınar; saati, zamanı ve insanı merkezine alarak; tepeden inme reformların, anlamını yitirmiş ritüellerin ve "mış gibi yapan" bir bürokrasinin toplumu nasıl bir trajikomediye sürüklediğini anlatır.
+                         </p>
+                         <p style="text-align: justify;">
+                         Eser, kurumların insan ruhunu nasıl dönüştürdüğünü ve gerçeğin yerine inşa edilen "resmi yalanların" nasıl kurumsallaştığını dâhice bir ironiyle gözler önüne seren sosyolojik bir laboratuvar niteliğindedir.
+                         </p>
+                    </div>
+                </div>
+            </div>
+        </details>
+
+        <details class="modern-details" style="margin-top: 1rem;">
+            <summary>
+                <span class="summary-text" style="font-weight:bold; color:var(--primary-color);">8. Kemal Tahir: Devlet Ana</span>
                 <i class='bx bx-chevron-down summary-icon'></i>
             </summary>
             <div class="details-content">
@@ -242,7 +267,7 @@ Yine notebookLM üzerinde sesli ve videolu özetler hazırlatıp konuyu size anl
 
         <details class="modern-details" style="margin-top: 1rem;">
             <summary>
-                <span class="summary-text" style="font-weight:bold; color:var(--primary-color);">8. Ayn Rand: Atlas Shrugged (Atlas Vazgeçti)</span>
+                <span class="summary-text" style="font-weight:bold; color:var(--primary-color);">9. Ayn Rand: Atlas Shrugged (Atlas Vazgeçti)</span>
                 <i class='bx bx-chevron-down summary-icon'></i>
             </summary>
             <div class="details-content">
@@ -267,7 +292,7 @@ Yine notebookLM üzerinde sesli ve videolu özetler hazırlatıp konuyu size anl
 
         <details class="modern-details" style="margin-top: 1rem;">
             <summary>
-                <span class="summary-text" style="font-weight:bold; color:var(--primary-color);">9. Ömer Çaha: İçindeki Şakirti Öldürmek</span>
+                <span class="summary-text" style="font-weight:bold; color:var(--primary-color);">10. Ömer Çaha: İçindeki Şakirti Öldürmek</span>
                 <i class='bx bx-chevron-down summary-icon'></i>
             </summary>
             <div class="details-content">
@@ -292,7 +317,7 @@ Yine notebookLM üzerinde sesli ve videolu özetler hazırlatıp konuyu size anl
 
         <details class="modern-details" style="margin-top: 1rem;">
             <summary>
-                <span class="summary-text" style="font-weight:bold; color:var(--primary-color);">10. Ömer Çaha: Sayın Vekilim</span>
+                <span class="summary-text" style="font-weight:bold; color:var(--primary-color);">11. Ömer Çaha: Sayın Vekilim</span>
                 <i class='bx bx-chevron-down summary-icon'></i>
             </summary>
             <div class="details-content">
@@ -317,7 +342,7 @@ Yine notebookLM üzerinde sesli ve videolu özetler hazırlatıp konuyu size anl
 
         <details class="modern-details" style="margin-top: 1rem;">
             <summary>
-                <span class="summary-text" style="font-weight:bold; color:var(--primary-color);">11. Max Weber: Protestan Ahlakı ve Kapitalizmin Ruhu</span>
+                <span class="summary-text" style="font-weight:bold; color:var(--primary-color);">12. Max Weber: Protestan Ahlakı ve Kapitalizmin Ruhu</span>
                 <i class='bx bx-chevron-down summary-icon'></i>
             </summary>
             <div class="details-content">
@@ -342,7 +367,7 @@ Yine notebookLM üzerinde sesli ve videolu özetler hazırlatıp konuyu size anl
 
         <details class="modern-details" style="margin-top: 1rem;">
             <summary>
-                <span class="summary-text" style="font-weight:bold; color:var(--primary-color);">12. Buket Uzuner: Su Toprak Hava Ateş</span>
+                <span class="summary-text" style="font-weight:bold; color:var(--primary-color);">13. Buket Uzuner: Su Toprak Hava Ateş</span>
                 <i class='bx bx-chevron-down summary-icon'></i>
             </summary>
             <div class="details-content">
@@ -370,7 +395,7 @@ Yine notebookLM üzerinde sesli ve videolu özetler hazırlatıp konuyu size anl
 
         <details class="modern-details" style="margin-top: 1rem;">
             <summary>
-                <span class="summary-text" style="font-weight:bold; color:var(--primary-color);">13. Erich Scheurmann: Göğü Delen Adam</span>
+                <span class="summary-text" style="font-weight:bold; color:var(--primary-color);">14. Erich Scheurmann: Göğü Delen Adam</span>
                 <i class='bx bx-chevron-down summary-icon'></i>
             </summary>
             <div class="details-content">
@@ -395,7 +420,7 @@ Yine notebookLM üzerinde sesli ve videolu özetler hazırlatıp konuyu size anl
 
         <details class="modern-details" style="margin-top: 1rem;">
             <summary>
-                <span class="summary-text" style="font-weight:bold; color:var(--primary-color);">14. Daniel Quinn: İsmail</span>
+                <span class="summary-text" style="font-weight:bold; color:var(--primary-color);">15. Daniel Quinn: İsmail</span>
                 <i class='bx bx-chevron-down summary-icon'></i>
             </summary>
             <div class="details-content">
@@ -420,7 +445,7 @@ Yine notebookLM üzerinde sesli ve videolu özetler hazırlatıp konuyu size anl
 
         <details class="modern-details" style="margin-top: 1rem;">
             <summary>
-                <span class="summary-text" style="font-weight:bold; color:var(--primary-color);">15. Yuval Noah Harari: Homo Sapiens</span>
+                <span class="summary-text" style="font-weight:bold; color:var(--primary-color);">16. Yuval Noah Harari: Homo Sapiens</span>
                 <i class='bx bx-chevron-down summary-icon'></i>
             </summary>
             <div class="details-content">
@@ -445,7 +470,7 @@ Yine notebookLM üzerinde sesli ve videolu özetler hazırlatıp konuyu size anl
 
         <details class="modern-details" style="margin-top: 1rem;">
             <summary>
-                <span class="summary-text" style="font-weight:bold; color:var(--primary-color);">16. Kojin Karatani: İzonomi ve Felsefenin Kökenleri</span>
+                <span class="summary-text" style="font-weight:bold; color:var(--primary-color);">17. Kojin Karatani: İzonomi ve Felsefenin Kökenleri</span>
                 <i class='bx bx-chevron-down summary-icon'></i>
             </summary>
             <div class="details-content">
@@ -470,7 +495,7 @@ Yine notebookLM üzerinde sesli ve videolu özetler hazırlatıp konuyu size anl
 
         <details class="modern-details" style="margin-top: 1rem;">
             <summary>
-                <span class="summary-text" style="font-weight:bold; color:var(--primary-color);">17. Lee Mcintyre: Hakikat Sonrası</span>
+                <span class="summary-text" style="font-weight:bold; color:var(--primary-color);">18. Lee Mcintyre: Hakikat Sonrası</span>
                 <i class='bx bx-chevron-down summary-icon'></i>
             </summary>
             <div class="details-content">
@@ -487,6 +512,156 @@ Yine notebookLM üzerinde sesli ve videolu özetler hazırlatıp konuyu size anl
                          </p>
                          <p style="text-align: justify;">
                          Kitap, hakikati savunmanın artık sadece entelektüel bir uğraş değil, siyasi ve ahlaki bir zorunluluk olduğunu vurgulayan sert bir uyarı niteliğindedir.
+                         </p>
+                    </div>
+                </div>
+            </div>
+        </details>
+
+        <details class="modern-details" style="margin-top: 1rem;">
+            <summary>
+                <span class="summary-text" style="font-weight:bold; color:var(--primary-color);">19. Amin Maalouf: Ölümcül Kimlikler</span>
+                <i class='bx bx-chevron-down summary-icon'></i>
+            </summary>
+            <div class="details-content">
+                <div style="display: flex; gap: 1.5rem; align-items: flex-start;">
+                    <!-- Sol: Kitap Kapağı -->
+                    <div style="flex-shrink: 0; width: 150px;">
+                        <img src="images/olumculkimlikler_kitap.jpg" alt="Amin Maalouf - Ölümcül Kimlikler" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); display: block;">
+                    </div>
+                    
+                    <!-- Sağ: Açıklama -->
+                    <div style="flex-grow: 1;">
+                         <p style="text-align: justify; margin-top:0;">
+                         Amin Maalouf, bu sarsıcı denemesinde kimlik kavramının bireyi özgürleştiren bir aidiyetten ziyade, başkalarını yok etmeye programlı bir silaha dönüşme sürecini inceler. Yazara göre insan; diliyle, diniyle, mesleğiyle ve kökeniyle çok katmanlı bir varlıktır. Ancak ne zaman ki bu katmanlardan biri (örneğin din veya etnik köken) diğerlerinin üzerine çıkarak "tekil bir aidiyet" haline getirilirse, kimlik o noktada "ölümcül"leşmeye başlar.
+                         </p>
+                         <p style="text-align: justify;">
+                         Maalouf, küreselleşen dünyada insanların kendilerini tehdit altında hissettikçe daha dar ve dışlayıcı kimliklere sığındığını savunur. Kitap, "biz" ve "onlar" ayrımının nasıl inşa edildiğini deşifre ederken, bir arada yaşamanın anahtarının kimlikleri yarıştırmak değil, onların akışkanlığını ve çeşitliliğini kabul etmek olduğunu vurgulayan evrensel bir barış çağrısıdır.
+                         </p>
+                    </div>
+                </div>
+            </div>
+        </details>
+
+        <details class="modern-details" style="margin-top: 1rem;">
+            <summary>
+                <span class="summary-text" style="font-weight:bold; color:var(--primary-color);">20. Albert Camus: Yabancı</span>
+                <i class='bx bx-chevron-down summary-icon'></i>
+            </summary>
+            <div class="details-content">
+                <div style="display: flex; gap: 1.5rem; align-items: flex-start;">
+                    <!-- Sol: Kitap Kapağı -->
+                    <div style="flex-shrink: 0; width: 150px;">
+                        <img src="images/yabancı_kitap.jpg" alt="Albert Camus - Yabancı" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); display: block;">
+                    </div>
+                    
+                    <!-- Sağ: Açıklama -->
+                    <div style="flex-grow: 1;">
+                         <p style="text-align: justify; margin-top:0;">
+                         Roman, annesinin ölümü karşısında bile beklenen duygusal tepkileri vermeyen, hayatı bir dizi rastlantıdan ibaret gören Meursault’nun hikayesini konu alır. Bir gün sahilde, hiçbir geçerli sebebi yokken "güneşin gözünü alması" gibi absürt bir etkiyle bir Arabı öldüren Meursault, yargılanma sürecinde işlediği cinayetten ziyade, toplumun ahlak kurallarına uymadığı (örneğin annesinin cenazesinde ağlamadığı) için mahkûm edilir.
+                         </p>
+                         <p style="text-align: justify;">
+                         Camus; bireyin dünyaya, topluma ve hatta kendi benliğine duyduğu yabancılaşmayı Meursault’nun duygusuz ve mesafeli anlatımıyla işler. Eser; adaletin bir "hakikat" arayışı değil, toplumsal bir tiyatro olduğunu ve insanın kaçınılmaz ölümü karşısında evrenin derin sessizliğini ("saçma"yı) çarpıcı bir dille gözler önüne serer.
+                         </p>
+                    </div>
+                </div>
+            </div>
+        </details>
+
+        <details class="modern-details" style="margin-top: 1rem;">
+            <summary>
+                <span class="summary-text" style="font-weight:bold; color:var(--primary-color);">21. Zygmunt Bauman: Akışkan Modernite</span>
+                <i class='bx bx-chevron-down summary-icon'></i>
+            </summary>
+            <div class="details-content">
+                <div style="display: flex; gap: 1.5rem; align-items: flex-start;">
+                    <!-- Sol: Kitap Kapağı -->
+                    <div style="flex-shrink: 0; width: 150px;">
+                        <img src="images/akiskanmodernite_kitap.jpg" alt="Zygmunt Bauman - Akışkan Modernite" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); display: block;">
+                    </div>
+                    
+                    <!-- Sağ: Açıklama -->
+                    <div style="flex-grow: 1;">
+                         <p style="text-align: justify; margin-top:0;">
+                         Bauman’a göre "akışkan" dönemde hiçbir sosyal form (bağlar, kurumlar, değerler) kendi şeklini uzun süre koruyamaz; her şey bir an önce tüketilmek ve yenisiyle değiştirilmek üzere tasarlanmıştır. Bu yeni dünyada mekânlar işlevsizleşmiş, zaman hızlanmış ve birey "belirsizlik" denizi ortasında tek başına bırakılmıştır. Artık bir yere kök salmak değil, sürekli hareket halinde olmak ve esneklik birer erdem sayılır.
+                         </p>
+                         <p style="text-align: justify;">
+                         Ancak bu akışkanlık, beraberinde büyük bir güvenlik kaybını ve aidiyet krizini getirir. Bauman; iş yaşamından ikili ilişkilere, mülkiyetten toplumsal kimliğe kadar her şeyin "akışkan" bir kıvama geldiği bu çağda, insanın özgürleştiğini sanırken aslında sorumlulukları ve riskleriyle baş başa kalan bir "yalnız avcıya" dönüştüğünü dâhiçe bir üslupla anlatır.
+                         </p>
+                    </div>
+                </div>
+            </div>
+        </details>
+
+        <details class="modern-details" style="margin-top: 1rem;">
+            <summary>
+                <span class="summary-text" style="font-weight:bold; color:var(--primary-color);">22. Italo Calvino: Görünmez Kentler</span>
+                <i class='bx bx-chevron-down summary-icon'></i>
+            </summary>
+            <div class="details-content">
+                <div style="display: flex; gap: 1.5rem; align-items: flex-start;">
+                    <!-- Sol: Kitap Kapağı -->
+                    <div style="flex-shrink: 0; width: 150px;">
+                        <img src="images/gorunmezkentler_kitap.jpg" alt="Italo Calvino - Görünmez Kentler" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); display: block;">
+                    </div>
+                    
+                    <!-- Sağ: Açıklama -->
+                    <div style="flex-grow: 1;">
+                         <p style="text-align: justify; margin-top:0;">
+                         Marco Polo, Kubilay Han’a imparatorluğun uzak köşelerindeki elli beş farklı kenti anlatır. Ancak bu kentler bildiğimiz coğrafi mekanlar değil; arzuların, anıların, ölümlerin, gözlerin ve işaretlerin şekillendirdiği zihinsel kurgulardır. İsimleri kadın adlarından oluşan bu kentler aracılığıyla Calvino; kentin sadece taştan ve demirden ibaret olmadığını, aslında insan ilişkilerinin, hafızanın ve dilin bir örüntüsü olduğunu savunur.
+                         </p>
+                         <p style="text-align: justify;">
+                         Kitap boyunca Polo, aslında tek bir kenti, yani kendi şehri Venedik’i anlatmaktadır; çünkü her yeni şehir, eskisinin bir aynasıdır. Eser, okura modern metropollerin karmaşasından kaçıp, kentin ruhunu ve insan ruhuyla kurduğu o görünmez bağı keşfetme imkanı sunar.
+                         </p>
+                    </div>
+                </div>
+            </div>
+        </details>
+
+        <details class="modern-details" style="margin-top: 1rem;">
+            <summary>
+                <span class="summary-text" style="font-weight:bold; color:var(--primary-color);">23. William Golding: Sineklerin Tanrısı</span>
+                <i class='bx bx-chevron-down summary-icon'></i>
+            </summary>
+            <div class="details-content">
+                <div style="display: flex; gap: 1.5rem; align-items: flex-start;">
+                    <!-- Sol: Kitap Kapağı -->
+                    <div style="flex-shrink: 0; width: 150px;">
+                        <img src="images/sineklerintanrisi_kitap.png" alt="William Golding - Sineklerin Tanrısı" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); display: block;">
+                    </div>
+                    
+                    <!-- Sağ: Açıklama -->
+                    <div style="flex-grow: 1;">
+                         <p style="text-align: justify; margin-top:0;">
+                         Issız bir adaya düşen bir grup Britanyalı çocuğun, hayatta kalmak ve bir düzen kurmak için verdikleri mücadeleyi konu alır. Başlangıçta demokratik bir yönetim kurmaya çalışan çocuklar (deniz kabuğunun simgelediği ifade özgürlüğü ve meclis), kısa sürede ikiye bölünür. Ralph medeniyeti, rasyonaliteyi ve düzeni temsil ederken; Jack avcılığı, şiddeti ve otoriter hayvani dürtüleri simgeler.
+                         </p>
+                         <p style="text-align: justify;">
+                         Düzenin hızla çözüldüğü adada, korku (hayali canavar) bir yönetim aracına dönüşür ve çocuklar birbirlerini yok etmeye başlar. Golding, adada yaşanan bu mikro savaş üzerinden; devletin olmadığı bir ortamda ("doğa durumu") insanın özündeki şiddet eğiliminin nasıl galip geldiğini ve toplumsal kuralların aslında ne kadar kırılgan olduğunu kanıtlar.
+                         </p>
+                    </div>
+                </div>
+            </div>
+        </details>
+
+        <details class="modern-details" style="margin-top: 1rem;">
+            <summary>
+                <span class="summary-text" style="font-weight:bold; color:var(--primary-color);">24. Ray Bradbury: Fahrenheit 451</span>
+                <i class='bx bx-chevron-down summary-icon'></i>
+            </summary>
+            <div class="details-content">
+                <div style="display: flex; gap: 1.5rem; align-items: flex-start;">
+                    <!-- Sol: Kitap Kapağı -->
+                    <div style="flex-shrink: 0; width: 150px;">
+                        <img src="images/fahrenheit_kitap.jpg" alt="Ray Bradbury - Fahrenheit 451" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); display: block;">
+                    </div>
+                    
+                    <!-- Sağ: Açıklama -->
+                    <div style="flex-grow: 1;">
+                         <p style="text-align: justify; margin-top:0;">
+                         Roman; itfaiyecilerin yangın söndürmek yerine, insanların düşünmesini ve sorgulamasını sağlayan "tehlikeli" kitapları yakmakla görevli olduğu karanlık bir geleceği anlatır. Ana karakter Guy Montag, işini sorgulamadan yapan bir itfaiyeciyken, çaldığı bir kitabı okumasıyla sistemin işleyişine karşı bir uyanış yaşar.
+                         </p>
+                         <p style="text-align: justify;">
+                         Bradbury; kitapların neden yasaklandığını açıklarken, bunun sadece baskıcı bir devletin zorbalığı değil, aynı zamanda düşünmekten yorulan ve "basit eğlencelerle" mutlu olmayı seçen halkın bir tercihi (pasif rızası) olduğunu vurgular. Televizyon duvarlarıyla sarılı, derinliksiz ve hafızasız bir toplumda; kitapları korumaya çalışan "kitap insanlar"ın mücadelesi, entelektüel direnişin en güçlü metaforlarından biridir.
                          </p>
                     </div>
                 </div>
