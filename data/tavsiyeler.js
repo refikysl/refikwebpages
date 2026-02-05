@@ -953,6 +953,36 @@ Yine notebookLM üzerinde sesli ve videolu özetler hazırlatıp konuyu size anl
                     </div>
                 </div>
             </details>
+
+            <details class="modern-details" style="margin-top: 1rem;">
+                <summary>
+                    <span class="summary-text" style="font-weight:bold; color:var(--primary-color);">11. Lucy</span>
+                    <i class='bx bx-chevron-down summary-icon'></i>
+                </summary>
+                <div class="details-content">
+                    <div class="recommendation-card-body">
+                        <!-- Sol: Afiş -->
+                        <div class="recommendation-poster">
+                            <img src="images/lucy_film.jpg" alt="Lucy" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); display: block;">
+                        </div>
+                        
+                        <!-- Sağ: Açıklama -->
+                        <div class="recommendation-content">
+                             <p style="text-align: justify; margin-top:0;">
+                             Sıradan bir hayat yaşayan bir kadının, beklemediği bir anda kendisini kontrolü dışındaki bir deneyin merkezinde bulduğunu hayal edin. Lucy, insan zihninin sınırlarına dair o meşhur "ya kapasitemizin tamamını kullansaydık?" sorusunu merkeze alan, temposu hiç düşmeyen bir serüven. Scarlett Johansson’ın karakteri, adım adım fiziksel ve zihinsel bir değişim geçirirken, izleyiciyi de "insan olmanın sınırı nerede başlar?" diye sorduran bir metaforun içine çekiyor.
+                             </p>
+                             <p style="text-align: justify;">
+                             Bilginin ve algının nasıl bir güce dönüşebileceğini, aksiyon dolu sahnelerin arkasına ustaca gizleyen bu film, bittiğinde sizi kendi potansiyeliniz üzerine derin bir sessizliğe davet ediyor.
+                             </p>
+                             <div style="margin-top: 1rem;">
+                                <a href="https://www.imdb.com/title/tt2872718/" target="_blank" style="text-decoration: none; color: #f5c518; font-weight: bold; display: inline-flex; align-items: center; gap: 4px;">
+                                    <i class='bx bxl-imdb' style="font-size: 1.2rem;"></i> IMDb
+                                </a>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+            </details>
         `
     }
 ];
