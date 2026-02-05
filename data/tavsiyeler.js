@@ -65,14 +65,14 @@ Yine notebookLM üzerinde sesli ve videolu özetler hazırlatıp konuyu size anl
                 <i class='bx bx-chevron-down summary-icon'></i>
             </summary>
             <div class="details-content">
-                <div style="display: flex; gap: 1.5rem; align-items: flex-start;">
+                <div class="recommendation-card-body">
                     <!-- Sol: Kitap Kapağı (Sabit Genişlik) -->
-                    <div style="flex-shrink: 0; width: 150px;">
+                    <div class="recommendation-poster">
                         <img src="images/siyaset_kitap.jpg" alt="Halis Çetin - Siyaset" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); display: block;">
                     </div>
                     
                     <!-- Sağ: Açıklama -->
-                    <div style="flex-grow: 1;">
+                    <div class="recommendation-content">
                          <p style="text-align: justify; margin-top:0;">
                          Halis Çetin’in ilk baskısı <em>Cumhur ve Başkanı</em> adıyla yayımlanan, güncellenmiş ve genişletilmiş versiyonuyla ise kısaca <strong>Siyaset</strong> başlığını taşıyan eseri, Türk siyasal kültürünün röntgenini çeken özgün bir çalışma niteliğindedir.
                          </p>
@@ -93,14 +93,14 @@ Yine notebookLM üzerinde sesli ve videolu özetler hazırlatıp konuyu size anl
                 <i class='bx bx-chevron-down summary-icon'></i>
             </summary>
             <div class="details-content">
-                <div style="display: flex; gap: 1.5rem; align-items: flex-start;">
+                <div class="recommendation-card-body">
                     <!-- Sol: Kitap Kapağı -->
-                    <div style="flex-shrink: 0; width: 150px;">
+                    <div class="recommendation-poster">
                         <img src="images/kökenler_kitap.jpg" alt="Lewis Dartnell - Kökenler" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); display: block;">
                     </div>
                     
                     <!-- Sağ: Açıklama -->
-                    <div style="flex-grow: 1;">
+                    <div class="recommendation-content">
                          <p style="text-align: justify; margin-top:0;">
                          Lewis Dartnell’in <em>"Kökenler: Yeryüzünün Tarihi İnsanlık Tarihini Nasıl Şekillendirdi?"</em> başlıklı eseri, antropoloji ve tarih anlatısını alışılagelmiş kalıpların dışına çıkararak <strong>"büyük tarih" (big history)</strong> perspektifiyle ele alan etkileyici bir çalışmadır. Dartnell, insanlık serüvenini sadece siyasi kararlar veya ekonomik devrimlerle değil; levha tektoniği, iklim döngüleri ve jeolojik katmanların belirleyiciliği üzerinden okur.
                          </p>
@@ -121,14 +121,14 @@ Yine notebookLM üzerinde sesli ve videolu özetler hazırlatıp konuyu size anl
                 <i class='bx bx-chevron-down summary-icon'></i>
             </summary>
             <div class="details-content">
-                <div style="display: flex; gap: 1.5rem; align-items: flex-start;">
+                <div class="recommendation-card-body">
                     <!-- Sol: Kitap Kapağı -->
-                    <div style="flex-shrink: 0; width: 150px;">
+                    <div class="recommendation-poster">
                         <img src="images/düzeninyabancilasmasi_kitap.jpg" alt="İdris Küçükömer - Düzenin Yabancılaşması" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); display: block;">
                     </div>
                     
                     <!-- Sağ: Açıklama -->
-                    <div style="flex-grow: 1;">
+                    <div class="recommendation-content">
                          <p style="text-align: justify; margin-top:0;">
                          İdris Küçükömer’in Türk düşünce hayatında tabu deviren ve tartışmaları bugün dahi canlılığını koruyan kült eseri <em>"Düzenin Yabancılaşması"</em>, Türkiye’nin modernleşme serüvenine ve sınıfsal yapısına dair alışılagelmiş ezberleri sarsan bir başyapıttır. Küçükömer, Batılılaşma çabalarını bir "yabancılaşma" süreci olarak nitelerken, Türk siyasal hayatındaki geleneksel "sağ" ve "sol" kavramlarını tersyüz eden o meşhur tezini ileri sürer: Türkiye’de bürokratik seçkinlerin (ceberrut devlet geleneğinin temsilcileri) "ilerici" değil aslında statükocu; halkın değerlerini temsil eden geniş kitlelerin ise "gerici" değil, değişime açık ve sivil bir potansiyel barındırdığını savunur.
                          </p>
@@ -146,14 +146,14 @@ Yine notebookLM üzerinde sesli ve videolu özetler hazırlatıp konuyu size anl
                 <i class='bx bx-chevron-down summary-icon'></i>
             </summary>
             <div class="details-content">
-                <div style="display: flex; gap: 1.5rem; align-items: flex-start;">
+                <div class="recommendation-card-body">
                     <!-- Sol: Kitap Kapağı -->
-                    <div style="flex-shrink: 0; width: 150px;">
+                    <div class="recommendation-poster">
                         <img src="images/alternatiftarih_kitap.jpg" alt="Yıldıray Oğur - Alternatif Türkiye Tarihi I" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); display: block;">
                     </div>
                     
                     <!-- Sağ: Açıklama -->
-                    <div style="flex-grow: 1;">
+                    <div class="recommendation-content">
                          <p style="text-align: justify; margin-top:0;">
                          Yıldıray Oğur’un <em>"Alternatif Türkiye Tarihi 1"</em> başlıklı eseri, resmi tarih anlatısının gölgesinde kalmış, unutulmuş veya kasten perdelenmiş olayları ve şahsiyetleri merkeze alan bir iade-i itibar çalışmasıdır. Kitap, Türkiye’nin yakın tarihini kazananların yazdığı doğrusal bir metin olmaktan çıkarıp; kaybedenlerin, itiraz edenlerin ve satır aralarında kalanların perspektifinden yeniden kurgular. Oğur, titiz bir arşiv taraması ve akıcı bir anlatımla, bildiğimizi sandığımız tarihsel kırılma anlarının aslında ne kadar farklı dinamiklerle şekillendiğini çarpıcı örneklerle ortaya koyar.
                          </p>
@@ -171,14 +171,14 @@ Yine notebookLM üzerinde sesli ve videolu özetler hazırlatıp konuyu size anl
                 <i class='bx bx-chevron-down summary-icon'></i>
             </summary>
             <div class="details-content">
-                <div style="display: flex; gap: 1.5rem; align-items: flex-start;">
+                <div class="recommendation-card-body">
                     <!-- Sol: Kitap Kapağı -->
-                    <div style="flex-shrink: 0; width: 150px;">
+                    <div class="recommendation-poster">
                         <img src="images/tenvetas_kitap.jpg" alt="Richard Sennett - Ten ve Taş" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); display: block;">
                     </div>
                     
                     <!-- Sağ: Açıklama -->
-                    <div style="flex-grow: 1;">
+                    <div class="recommendation-content">
                          <p style="text-align: justify; margin-top:0;">
                          Richard Sennett’in modern bir klasik sayılan <em>"Ten ve Taş: Batı Uygarlığında Vücut ve Şehir"</em> adlı eseri, kentsel mekânın tarihini mimari formlardan ziyade insanın fiziksel deneyimi ve bedensel algısı üzerinden okuyan sarsıcı bir çalışmadır. Sennett, antik Atina’dan modern New York’a uzanan geniş bir tarihsel perspektifte, şehirlerin sadece taştan ve çelikten ibaret olmadığını; aksine insan bedeninin arzularını, acılarını ve toplumsal hiyerarşilerini yansıtan birer "deri" olduğunu savunur. Yazar, çıplaklığın demokrasideki rolünden disiplin altındaki bedenlere kadar, fiziksel yapının toplumsal ilişkileri nasıl şekillendirdiğini veya körelttiğini çarpıcı örneklerle irdeler.
                          </p>
@@ -196,14 +196,14 @@ Yine notebookLM üzerinde sesli ve videolu özetler hazırlatıp konuyu size anl
                 <i class='bx bx-chevron-down summary-icon'></i>
             </summary>
             <div class="details-content">
-                <div style="display: flex; gap: 1.5rem; align-items: flex-start;">
+                <div class="recommendation-card-body">
                     <!-- Sol: Kitap Kapağı -->
-                    <div style="flex-shrink: 0; width: 150px;">
+                    <div class="recommendation-poster">
                         <img src="images/bessehir_kitap.jpg" alt="Ahmet Hamdi Tanpınar - Beş Şehir" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); display: block;">
                     </div>
                     
                     <!-- Sağ: Açıklama -->
-                    <div style="flex-grow: 1;">
+                    <div class="recommendation-content">
                          <p style="text-align: justify; margin-top:0;">
                          Ahmet Hamdi Tanpınar’ın ölümsüz eseri <em>"Beş Şehir"</em>, Ankara, Erzurum, Konya, Bursa ve İstanbul’un ruhunu; tarih, kültür ve estetik imbiğinden süzerek anlatan eşsiz bir medeniyet okumasıdır. Tanpınar, bu şehirleri sadece coğrafi mekanlar ya da mimari yapılar toplamı olarak değil; süreklilik içindeki değişimlerin, hatıraların ve "terkip" kabiliyetimizin birer tezahürü olarak ele alır. Yazarın o meşhur "devam ederek değişmek, değişerek devam etmek" düşüncesinin en somut yansıması olan bu eser, kaybolan güzelliklerin ardından tutulan bir yas değil, o güzellikleri bugünün bilinciyle yeniden inşa etme çabasıdır.
                          </p>
@@ -221,14 +221,14 @@ Yine notebookLM üzerinde sesli ve videolu özetler hazırlatıp konuyu size anl
                 <i class='bx bx-chevron-down summary-icon'></i>
             </summary>
             <div class="details-content">
-                <div style="display: flex; gap: 1.5rem; align-items: flex-start;">
+                <div class="recommendation-card-body">
                     <!-- Sol: Kitap Kapağı -->
-                    <div style="flex-shrink: 0; width: 150px;">
+                    <div class="recommendation-poster">
                         <img src="images/saatleriayarlama_kitap.jpg" alt="Ahmet Hamdi Tanpınar - Saatleri Ayarlama Enstitüsü" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); display: block;">
                     </div>
                     
                     <!-- Sağ: Açıklama -->
-                    <div style="flex-grow: 1;">
+                    <div class="recommendation-content">
                          <p style="text-align: justify; margin-top:0;">
                          Roman, aslında hiçbir işlevi olmayan ancak devasa bir bürokratik mekanizmaya dönüşen bir kurumun ("Saatleri Ayarlama Enstitüsü") kuruluş ve yükseliş hikâyesidir. Halit Ayarcı’nın pragmatik ve vizyoner (fakat içi boş) liderliği ile Hayri İrdal’ın geleneksel ve teslimiyetçi karakteri arasındaki çatışma, Türkiye’nin modernleşme sancılarını simgeler. Tanpınar; saati, zamanı ve insanı merkezine alarak; tepeden inme reformların, anlamını yitirmiş ritüellerin ve "mış gibi yapan" bir bürokrasinin toplumu nasıl bir trajikomediye sürüklediğini anlatır.
                          </p>
@@ -246,14 +246,14 @@ Yine notebookLM üzerinde sesli ve videolu özetler hazırlatıp konuyu size anl
                 <i class='bx bx-chevron-down summary-icon'></i>
             </summary>
             <div class="details-content">
-                <div style="display: flex; gap: 1.5rem; align-items: flex-start;">
+                <div class="recommendation-card-body">
                     <!-- Sol: Kitap Kapağı -->
-                    <div style="flex-shrink: 0; width: 150px;">
+                    <div class="recommendation-poster">
                         <img src="images/devletana_kitap.jpg" alt="Kemal Tahir - Devlet Ana" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); display: block;">
                     </div>
                     
                     <!-- Sağ: Açıklama -->
-                    <div style="flex-grow: 1;">
+                    <div class="recommendation-content">
                          <p style="text-align: justify; margin-top:0;">
                          Kemal Tahir’in Türk edebiyatının zirve noktalarından biri kabul edilen dev eseri <em>"Devlet Ana"</em>, Osmanlı Devleti’nin kuruluş dönemini bir "aşiret" yapısından "devlet" formuna geçiş sancılarıyla ele alan epik bir romandır. Tahir, bu eserinde Batılı feodalizm ile Doğu’nun "Asya Tipi Üretim Tarzı" (ATÜT) arasındaki yapısal farkları sorunsallaştırarak, Türk devlet geleneğinin insancıl ve koruyucu niteliğini "Kerim Devlet" kavramı üzerinden temellendirir. Roman, sadece bir tarih anlatısı değil; aynı zamanda Batı’nın "şövalye" kültürüne karşı Doğu’nun "alp-eren" ahlakını ve mülkiyet rejimindeki farklılıkları savunan siyasi bir manifestodur.
                          </p>
@@ -271,14 +271,14 @@ Yine notebookLM üzerinde sesli ve videolu özetler hazırlatıp konuyu size anl
                 <i class='bx bx-chevron-down summary-icon'></i>
             </summary>
             <div class="details-content">
-                <div style="display: flex; gap: 1.5rem; align-items: flex-start;">
+                <div class="recommendation-card-body">
                     <!-- Sol: Kitap Kapağı -->
-                    <div style="flex-shrink: 0; width: 150px;">
+                    <div class="recommendation-poster">
                         <img src="images/atlasvazgeçti_kitap.jpg" alt="Ayn Rand - Atlas Vazgeçti" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); display: block;">
                     </div>
                     
                     <!-- Sağ: Açıklama -->
-                    <div style="flex-grow: 1;">
+                    <div class="recommendation-content">
                          <p style="text-align: justify; margin-top:0;">
                          Ayn Rand’ın dev eseri <em>"Atlas Vazgeçti"</em> (Atlas Shrugged), bireysel yaratıcılığın, akılcılığın ve serbest piyasa ahlakının ödünsüz bir savunusudur. Roman, dünyanın en üretken zihinlerinin —mucitlerin, sanayicilerin ve sanatçıların— kolektivist bir devlet baskısına ve "kamu yararı" adına yapılan haksız müdahalelere tepki olarak dünyadan elini eteğini çekmesini konu alır. Rand, "Dünyanın motoru durursa ne olur?" sorusunun peşinden giderek, yaratıcı azınlığın greve gitmesiyle çöküşe sürüklenen bir toplumun distopik tablosunu çizer.
                          </p>
@@ -296,14 +296,14 @@ Yine notebookLM üzerinde sesli ve videolu özetler hazırlatıp konuyu size anl
                 <i class='bx bx-chevron-down summary-icon'></i>
             </summary>
             <div class="details-content">
-                <div style="display: flex; gap: 1.5rem; align-items: flex-start;">
+                <div class="recommendation-card-body">
                     <!-- Sol: Kitap Kapağı -->
-                    <div style="flex-shrink: 0; width: 150px;">
+                    <div class="recommendation-poster">
                         <img src="images/sakirtioldürmek_kitap.jpg" alt="Ömer Çaha - İçindeki Şakirti Öldürmek" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); display: block;">
                     </div>
                     
                     <!-- Sağ: Açıklama -->
-                    <div style="flex-grow: 1;">
+                    <div class="recommendation-content">
                          <p style="text-align: justify; margin-top:0;">
                          Ömer Çaha’nın <em>"İçindeki Şakirti Öldürmek"</em> adlı romanı Türkiye’nin yakın siyasal tarihinde devlet ve toplum yapısına ciddi zararlar veren Fethullahçı Terör Örgütü’nün (FETÖ) zihniyet dünyasını, bireyi nasıl araçsallaştırdığını ve sosyolojik kodlarını analiz eden kritik bir çalışmadır. Çaha bu romanda örgüt yapısı içindeki "şakirt" kimliğinin, bireyin özgür iradesini ve eleştirel düşünme yetisini nasıl yok ederek onu mutlak bir itaat nesnesine dönüştürdüğünü irdeler. Kitap, kolektif bir körleşmenin ve irade teslimiyetinin yarattığı tahribatı merkeze alan bir yapı söküm çalışması niteliğindedir.
                          </p>
@@ -321,14 +321,14 @@ Yine notebookLM üzerinde sesli ve videolu özetler hazırlatıp konuyu size anl
                 <i class='bx bx-chevron-down summary-icon'></i>
             </summary>
             <div class="details-content">
-                <div style="display: flex; gap: 1.5rem; align-items: flex-start;">
+                <div class="recommendation-card-body">
                     <!-- Sol: Kitap Kapağı -->
-                    <div style="flex-shrink: 0; width: 150px;">
+                    <div class="recommendation-poster">
                         <img src="images/sayinvekilim_kitap.jpg" alt="Ömer Çaha - Sayın Vekilim" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); display: block;">
                     </div>
                     
                     <!-- Sağ: Açıklama -->
-                    <div style="flex-grow: 1;">
+                    <div class="recommendation-content">
                          <p style="text-align: justify; margin-top:0;">
                          Ömer Çaha’nın <em>"Sayın Vekilim"</em> adlı eseri, hayatını öğrencilerine ve akademik çalışmalara adamış bir siyaset bilimi profesörünün, teoride çok iyi bildiği siyasetin "mutfağına" girme çabasını anlatan çarpıcı bir romandır. Bir akademisyenin milletvekili adaylığı süreciyle başlayan bu yolculuk; kitaplardaki ideal rasyonel siyaset ile sahadaki geleneksel, pragmatik ve kimi zaman acımasız gerçeklik arasındaki derin çatışmayı tüm çıplaklığıyla gözler önüne serer.
                          </p>
@@ -346,14 +346,14 @@ Yine notebookLM üzerinde sesli ve videolu özetler hazırlatıp konuyu size anl
                 <i class='bx bx-chevron-down summary-icon'></i>
             </summary>
             <div class="details-content">
-                <div style="display: flex; gap: 1.5rem; align-items: flex-start;">
+                <div class="recommendation-card-body">
                     <!-- Sol: Kitap Kapağı -->
-                    <div style="flex-shrink: 0; width: 150px;">
+                    <div class="recommendation-poster">
                         <img src="images/protestanahlak_kitap.jpg" alt="Max Weber - Protestan Ahlakı ve Kapitalizmin Ruhu" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); display: block;">
                     </div>
                     
                     <!-- Sağ: Açıklama -->
-                    <div style="flex-grow: 1;">
+                    <div class="recommendation-content">
                          <p style="text-align: justify; margin-top:0;">
                          Max Weber’in sosyoloji ve ekonomi-politik alanında çığır açan eseri <em>"Protestan Ahlakı ve Kapitalizmin Ruhu"</em>, modern rasyonel kapitalizmin neden başka bir yerde değil de Batı Avrupa’da doğduğunu sorgulayan bir başyapıttır. Weber, Marx’ın aksine değişimi sadece maddi-ekonomik temellere dayandırmaz; zihniyet dünyasının, yani "fikirlerin" de tarihi şekillendirebileceğini savunur. Kitabın merkezinde, özellikle Kalvinizm öğretisinin birey üzerinde yarattığı psikolojik etkinin, farkında olmadan kapitalist bir çalışma disiplinine nasıl dönüştüğü yer alır.
                          </p>
@@ -371,14 +371,14 @@ Yine notebookLM üzerinde sesli ve videolu özetler hazırlatıp konuyu size anl
                 <i class='bx bx-chevron-down summary-icon'></i>
             </summary>
             <div class="details-content">
-                <div style="display: flex; gap: 1.5rem; align-items: flex-start;">
+                <div class="recommendation-card-body">
                     <!-- Sol: Kitap Kapağı -->
-                    <div style="flex-shrink: 0; width: 150px;">
+                    <div class="recommendation-poster">
                         <img src="images/toprakhavasu_kitap.jpg" alt="Buket Uzuner - Su Toprak Hava Ateş" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); display: block;">
                     </div>
                     
                     <!-- Sağ: Açıklama -->
-                    <div style="flex-grow: 1;">
+                    <div class="recommendation-content">
                          <p style="text-align: justify; margin-top:0;">
                          Buket Uzuner’in <em>"Uyumsuz Defne Kaman’ın Maceraları"</em> serisi, Türk mitolojisindeki "Kamanlık" (Şamanizm) geleneğiyle güncel ekolojik krizleri birleştiren bir "yeryüzü manifestosu" niteliğindedir. Dörtleme; polisiye kurguyu eko-eleştirel bir yaklaşımla ele alırken her kitapta bir doğa elementini merkeze alır:
                          </p>
@@ -399,14 +399,14 @@ Yine notebookLM üzerinde sesli ve videolu özetler hazırlatıp konuyu size anl
                 <i class='bx bx-chevron-down summary-icon'></i>
             </summary>
             <div class="details-content">
-                <div style="display: flex; gap: 1.5rem; align-items: flex-start;">
+                <div class="recommendation-card-body">
                     <!-- Sol: Kitap Kapağı -->
-                    <div style="flex-shrink: 0; width: 150px;">
+                    <div class="recommendation-poster">
                         <img src="images/gogudelenadam_kitap.jpg" alt="Erich Scheurmann - Göğü Delen Adam" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); display: block;">
                     </div>
                     
                     <!-- Sağ: Açıklama -->
-                    <div style="flex-grow: 1;">
+                    <div class="recommendation-content">
                          <p style="text-align: justify; margin-top:0;">
                          Erich Scheurmann tarafından kaleme alınan <em>"Göğü Delen Adam"</em> (Der Papalagi), Batı medeniyetine ve modern yaşam biçimine yönelik en çarpıcı, en ironik eleştirilerden biridir. Samoa yerlisi bir kabile reisinin (Tuiavii), Avrupa seyahati sonrası kendi halkını "beyaz adamın" (Papalagi) tuhaf ve doğadan kopuk yaşamına karşı uyarmak için yaptığı konuşmalardan oluşur.
                          </p>
@@ -424,14 +424,14 @@ Yine notebookLM üzerinde sesli ve videolu özetler hazırlatıp konuyu size anl
                 <i class='bx bx-chevron-down summary-icon'></i>
             </summary>
             <div class="details-content">
-                <div style="display: flex; gap: 1.5rem; align-items: flex-start;">
+                <div class="recommendation-card-body">
                     <!-- Sol: Kitap Kapağı -->
-                    <div style="flex-shrink: 0; width: 150px;">
+                    <div class="recommendation-poster">
                         <img src="images/ismail_kitap.jpg" alt="Daniel Quinn - İsmail" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); display: block;">
                     </div>
                     
                     <!-- Sağ: Açıklama -->
-                    <div style="flex-grow: 1;">
+                    <div class="recommendation-content">
                          <p style="text-align: justify; margin-top:0;">
                          Daniel Quinn tarafından kaleme alınan <em>"İsmail"</em> (Ishmael), insan merkezli dünya görüşünü kökten sarsan, Sokratik diyalog yöntemini kullanan çarpıcı bir felsefi romandır. Bir gazete ilanının peşine düşen anlatıcı, "öğretmen" olarak karşısında konuşabilen bir gorili bulur. İsmail adındaki bu bilge canlı, insanlık tarihini "Alanlar" (modern medeniyet) ve "Bırakanlar" (doğayla uyumlu yaşayan kabileler) şeklinde ikiye ayırarak büyük bir kültürel eleştiri sunar.
                          </p>
@@ -443,45 +443,21 @@ Yine notebookLM üzerinde sesli ve videolu özetler hazırlatıp konuyu size anl
             </div>
         </details>
 
-        <details class="modern-details" style="margin-top: 1rem;">
-            <summary>
-                <span class="summary-text" style="font-weight:bold; color:var(--primary-color);">16. Yuval Noah Harari: Homo Sapiens</span>
-                <i class='bx bx-chevron-down summary-icon'></i>
-            </summary>
-            <div class="details-content">
-                <div style="display: flex; gap: 1.5rem; align-items: flex-start;">
-                    <!-- Sol: Kitap Kapağı -->
-                    <div style="flex-shrink: 0; width: 150px;">
-                        <img src="images/sapiens_kitap.jpg" alt="Yuval Noah Harari - Homo Sapiens" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); display: block;">
-                    </div>
-                    
-                    <!-- Sağ: Açıklama -->
-                    <div style="flex-grow: 1;">
-                         <p style="text-align: justify; margin-top:0;">
-                         Yuval Noah Harari’nin dünya çapında ses getiren eseri <em>"Sapiens: Hayvanlardan Tanrılara"</em>, sıradan bir primat türünün nasıl olup da gezegenin mutlak hâkimi haline geldiğini provokatif bir dille sorgulayan bir insanlık tarihidir. Harari’nin temel tezi, insanı diğer türlerden ayıran asıl gücün fiziksel kapasitesi değil, devlet, para, din ve hukuk gibi "kolektif mitler" yaratabilme ve bu hayali kurgular etrafında milyonlarca yabancıyla iş birliği yapabilme yeteneğidir.
-                         </p>
-                         <p style="text-align: justify;">
-                         Tarım Devrimi’ni "tarihin en büyük aldatmacası" olarak niteleyen ve yerleşik hayata geçişi bir ilerleme değil, özgürlüğün kaybı olarak sunan eser; biyolojiden antropolojiye uzanan geniş bir düzlemde modern dünyanın temellerini sarsan bir perspektif sunar.
-                         </p>
-                    </div>
-                </div>
-            </div>
-        </details>
 
         <details class="modern-details" style="margin-top: 1rem;">
             <summary>
-                <span class="summary-text" style="font-weight:bold; color:var(--primary-color);">17. Kojin Karatani: İzonomi ve Felsefenin Kökenleri</span>
+                <span class="summary-text" style="font-weight:bold; color:var(--primary-color);">16. Kojin Karatani: İzonomi ve Felsefenin Kökenleri</span>
                 <i class='bx bx-chevron-down summary-icon'></i>
             </summary>
             <div class="details-content">
-                <div style="display: flex; gap: 1.5rem; align-items: flex-start;">
+                <div class="recommendation-card-body">
                     <!-- Sol: Kitap Kapağı -->
-                    <div style="flex-shrink: 0; width: 150px;">
+                    <div class="recommendation-poster">
                         <img src="images/izonomi_kitap.jpg" alt="Kojin Karatani - İzonomi ve Felsefenin Kökenleri" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); display: block;">
                     </div>
                     
                     <!-- Sağ: Açıklama -->
-                    <div style="flex-grow: 1;">
+                    <div class="recommendation-content">
                          <p style="text-align: justify; margin-top:0;">
                          Karatani, izonomi kavramını; yöneten ve yönetilen ayrımının olmadığı, insanların hem özgür hem de eşit olduğu bir "hareket tarzı" olarak tanımlar. Atina demokrasisinin aslında mülkiyet sahibi bir azınlığın tahakkümü olduğunu ve "çoğunluğun diktatörlüğüne" dönüştüğünü iddia ederken; İyonya’daki izonomik yapının, mülkiyet hırsından arınmış, göçebe ruhlu ve sınıfsız bir toplumsal düzen sunduğunu belirtir.
                          </p>
@@ -495,18 +471,18 @@ Yine notebookLM üzerinde sesli ve videolu özetler hazırlatıp konuyu size anl
 
         <details class="modern-details" style="margin-top: 1rem;">
             <summary>
-                <span class="summary-text" style="font-weight:bold; color:var(--primary-color);">18. Lee Mcintyre: Hakikat Sonrası</span>
+                <span class="summary-text" style="font-weight:bold; color:var(--primary-color);">17. Lee Mcintyre: Hakikat Sonrası</span>
                 <i class='bx bx-chevron-down summary-icon'></i>
             </summary>
             <div class="details-content">
-                <div style="display: flex; gap: 1.5rem; align-items: flex-start;">
+                <div class="recommendation-card-body">
                     <!-- Sol: Kitap Kapağı -->
-                    <div style="flex-shrink: 0; width: 150px;">
+                    <div class="recommendation-poster">
                         <img src="images/hakikatsonrası_kitap.jpg" alt="Lee Mcintyre - Hakikat Sonrası" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); display: block;">
                     </div>
                     
                     <!-- Sağ: Açıklama -->
-                    <div style="flex-grow: 1;">
+                    <div class="recommendation-content">
                          <p style="text-align: justify; margin-top:0;">
                          Mcintyre, hakikat-sonrası çağın köklerini; bilimsel şüpheciliğin istismar edilmesine, sosyal medya algoritmalarının yarattığı yankı odalarına ve ana akım medyanın gerilemesine dayandırır. Yazar, insanların artık "gerçeğin ne olduğunu" değil, "neyin doğru olmasını istediklerini" referans aldıklarını iddia eder. Bilişsel önyargılarımızın (özellikle doğrulama yanlılığının) bizi manipülasyona ne kadar açık hale getirdiğini örneklerle açıklarken; bu durumun demokrasiyi, bilimi ve toplumsal güveni nasıl temelinden sarstığını gösterir.
                          </p>
@@ -520,18 +496,18 @@ Yine notebookLM üzerinde sesli ve videolu özetler hazırlatıp konuyu size anl
 
         <details class="modern-details" style="margin-top: 1rem;">
             <summary>
-                <span class="summary-text" style="font-weight:bold; color:var(--primary-color);">19. Amin Maalouf: Ölümcül Kimlikler</span>
+                <span class="summary-text" style="font-weight:bold; color:var(--primary-color);">18. Amin Maalouf: Ölümcül Kimlikler</span>
                 <i class='bx bx-chevron-down summary-icon'></i>
             </summary>
             <div class="details-content">
-                <div style="display: flex; gap: 1.5rem; align-items: flex-start;">
+                <div class="recommendation-card-body">
                     <!-- Sol: Kitap Kapağı -->
-                    <div style="flex-shrink: 0; width: 150px;">
+                    <div class="recommendation-poster">
                         <img src="images/olumculkimlikler_kitap.jpg" alt="Amin Maalouf - Ölümcül Kimlikler" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); display: block;">
                     </div>
                     
                     <!-- Sağ: Açıklama -->
-                    <div style="flex-grow: 1;">
+                    <div class="recommendation-content">
                          <p style="text-align: justify; margin-top:0;">
                          Amin Maalouf, bu sarsıcı denemesinde kimlik kavramının bireyi özgürleştiren bir aidiyetten ziyade, başkalarını yok etmeye programlı bir silaha dönüşme sürecini inceler. Yazara göre insan; diliyle, diniyle, mesleğiyle ve kökeniyle çok katmanlı bir varlıktır. Ancak ne zaman ki bu katmanlardan biri (örneğin din veya etnik köken) diğerlerinin üzerine çıkarak "tekil bir aidiyet" haline getirilirse, kimlik o noktada "ölümcül"leşmeye başlar.
                          </p>
@@ -545,18 +521,18 @@ Yine notebookLM üzerinde sesli ve videolu özetler hazırlatıp konuyu size anl
 
         <details class="modern-details" style="margin-top: 1rem;">
             <summary>
-                <span class="summary-text" style="font-weight:bold; color:var(--primary-color);">20. Albert Camus: Yabancı</span>
+                <span class="summary-text" style="font-weight:bold; color:var(--primary-color);">19. Albert Camus: Yabancı</span>
                 <i class='bx bx-chevron-down summary-icon'></i>
             </summary>
             <div class="details-content">
-                <div style="display: flex; gap: 1.5rem; align-items: flex-start;">
+                <div class="recommendation-card-body">
                     <!-- Sol: Kitap Kapağı -->
-                    <div style="flex-shrink: 0; width: 150px;">
+                    <div class="recommendation-poster">
                         <img src="images/yabancı_kitap.jpg" alt="Albert Camus - Yabancı" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); display: block;">
                     </div>
                     
                     <!-- Sağ: Açıklama -->
-                    <div style="flex-grow: 1;">
+                    <div class="recommendation-content">
                          <p style="text-align: justify; margin-top:0;">
                          Roman, annesinin ölümü karşısında bile beklenen duygusal tepkileri vermeyen, hayatı bir dizi rastlantıdan ibaret gören Meursault’nun hikayesini konu alır. Bir gün sahilde, hiçbir geçerli sebebi yokken "güneşin gözünü alması" gibi absürt bir etkiyle bir Arabı öldüren Meursault, yargılanma sürecinde işlediği cinayetten ziyade, toplumun ahlak kurallarına uymadığı (örneğin annesinin cenazesinde ağlamadığı) için mahkûm edilir.
                          </p>
@@ -570,18 +546,18 @@ Yine notebookLM üzerinde sesli ve videolu özetler hazırlatıp konuyu size anl
 
         <details class="modern-details" style="margin-top: 1rem;">
             <summary>
-                <span class="summary-text" style="font-weight:bold; color:var(--primary-color);">21. Zygmunt Bauman: Akışkan Modernite</span>
+                <span class="summary-text" style="font-weight:bold; color:var(--primary-color);">20. Zygmunt Bauman: Akışkan Modernite</span>
                 <i class='bx bx-chevron-down summary-icon'></i>
             </summary>
             <div class="details-content">
-                <div style="display: flex; gap: 1.5rem; align-items: flex-start;">
+                <div class="recommendation-card-body">
                     <!-- Sol: Kitap Kapağı -->
-                    <div style="flex-shrink: 0; width: 150px;">
+                    <div class="recommendation-poster">
                         <img src="images/akiskanmodernite_kitap.jpg" alt="Zygmunt Bauman - Akışkan Modernite" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); display: block;">
                     </div>
                     
                     <!-- Sağ: Açıklama -->
-                    <div style="flex-grow: 1;">
+                    <div class="recommendation-content">
                          <p style="text-align: justify; margin-top:0;">
                          Bauman’a göre "akışkan" dönemde hiçbir sosyal form (bağlar, kurumlar, değerler) kendi şeklini uzun süre koruyamaz; her şey bir an önce tüketilmek ve yenisiyle değiştirilmek üzere tasarlanmıştır. Bu yeni dünyada mekânlar işlevsizleşmiş, zaman hızlanmış ve birey "belirsizlik" denizi ortasında tek başına bırakılmıştır. Artık bir yere kök salmak değil, sürekli hareket halinde olmak ve esneklik birer erdem sayılır.
                          </p>
@@ -595,18 +571,18 @@ Yine notebookLM üzerinde sesli ve videolu özetler hazırlatıp konuyu size anl
 
         <details class="modern-details" style="margin-top: 1rem;">
             <summary>
-                <span class="summary-text" style="font-weight:bold; color:var(--primary-color);">22. Italo Calvino: Görünmez Kentler</span>
+                <span class="summary-text" style="font-weight:bold; color:var(--primary-color);">21. Italo Calvino: Görünmez Kentler</span>
                 <i class='bx bx-chevron-down summary-icon'></i>
             </summary>
             <div class="details-content">
-                <div style="display: flex; gap: 1.5rem; align-items: flex-start;">
+                <div class="recommendation-card-body">
                     <!-- Sol: Kitap Kapağı -->
-                    <div style="flex-shrink: 0; width: 150px;">
+                    <div class="recommendation-poster">
                         <img src="images/gorunmezkentler_kitap.jpg" alt="Italo Calvino - Görünmez Kentler" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); display: block;">
                     </div>
                     
                     <!-- Sağ: Açıklama -->
-                    <div style="flex-grow: 1;">
+                    <div class="recommendation-content">
                          <p style="text-align: justify; margin-top:0;">
                          Marco Polo, Kubilay Han’a imparatorluğun uzak köşelerindeki elli beş farklı kenti anlatır. Ancak bu kentler bildiğimiz coğrafi mekanlar değil; arzuların, anıların, ölümlerin, gözlerin ve işaretlerin şekillendirdiği zihinsel kurgulardır. İsimleri kadın adlarından oluşan bu kentler aracılığıyla Calvino; kentin sadece taştan ve demirden ibaret olmadığını, aslında insan ilişkilerinin, hafızanın ve dilin bir örüntüsü olduğunu savunur.
                          </p>
@@ -620,18 +596,18 @@ Yine notebookLM üzerinde sesli ve videolu özetler hazırlatıp konuyu size anl
 
         <details class="modern-details" style="margin-top: 1rem;">
             <summary>
-                <span class="summary-text" style="font-weight:bold; color:var(--primary-color);">23. William Golding: Sineklerin Tanrısı</span>
+                <span class="summary-text" style="font-weight:bold; color:var(--primary-color);">22. William Golding: Sineklerin Tanrısı</span>
                 <i class='bx bx-chevron-down summary-icon'></i>
             </summary>
             <div class="details-content">
-                <div style="display: flex; gap: 1.5rem; align-items: flex-start;">
+                <div class="recommendation-card-body">
                     <!-- Sol: Kitap Kapağı -->
-                    <div style="flex-shrink: 0; width: 150px;">
+                    <div class="recommendation-poster">
                         <img src="images/sineklerintanrisi_kitap.png" alt="William Golding - Sineklerin Tanrısı" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); display: block;">
                     </div>
                     
                     <!-- Sağ: Açıklama -->
-                    <div style="flex-grow: 1;">
+                    <div class="recommendation-content">
                          <p style="text-align: justify; margin-top:0;">
                          Issız bir adaya düşen bir grup Britanyalı çocuğun, hayatta kalmak ve bir düzen kurmak için verdikleri mücadeleyi konu alır. Başlangıçta demokratik bir yönetim kurmaya çalışan çocuklar (deniz kabuğunun simgelediği ifade özgürlüğü ve meclis), kısa sürede ikiye bölünür. Ralph medeniyeti, rasyonaliteyi ve düzeni temsil ederken; Jack avcılığı, şiddeti ve otoriter hayvani dürtüleri simgeler.
                          </p>
@@ -645,18 +621,18 @@ Yine notebookLM üzerinde sesli ve videolu özetler hazırlatıp konuyu size anl
 
         <details class="modern-details" style="margin-top: 1rem;">
             <summary>
-                <span class="summary-text" style="font-weight:bold; color:var(--primary-color);">24. Ray Bradbury: Fahrenheit 451</span>
+                <span class="summary-text" style="font-weight:bold; color:var(--primary-color);">23. Ray Bradbury: Fahrenheit 451</span>
                 <i class='bx bx-chevron-down summary-icon'></i>
             </summary>
             <div class="details-content">
-                <div style="display: flex; gap: 1.5rem; align-items: flex-start;">
+                <div class="recommendation-card-body">
                     <!-- Sol: Kitap Kapağı -->
-                    <div style="flex-shrink: 0; width: 150px;">
+                    <div class="recommendation-poster">
                         <img src="images/fahrenheit_kitap.jpg" alt="Ray Bradbury - Fahrenheit 451" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); display: block;">
                     </div>
                     
                     <!-- Sağ: Açıklama -->
-                    <div style="flex-grow: 1;">
+                    <div class="recommendation-content">
                          <p style="text-align: justify; margin-top:0;">
                          Roman; itfaiyecilerin yangın söndürmek yerine, insanların düşünmesini ve sorgulamasını sağlayan "tehlikeli" kitapları yakmakla görevli olduğu karanlık bir geleceği anlatır. Ana karakter Guy Montag, işini sorgulamadan yapan bir itfaiyeciyken, çaldığı bir kitabı okumasıyla sistemin işleyişine karşı bir uyanış yaşar.
                          </p>
@@ -684,14 +660,14 @@ Yine notebookLM üzerinde sesli ve videolu özetler hazırlatıp konuyu size anl
                     <i class='bx bx-chevron-down summary-icon'></i>
                 </summary>
                 <div class="details-content">
-                    <div style="display: flex; gap: 1.5rem; align-items: flex-start;">
+                    <div class="recommendation-card-body">
                         <!-- Sol: Afiş -->
-                        <div style="flex-shrink: 0; width: 150px;">
+                        <div class="recommendation-poster">
                             <img src="images/capernaum_film.jpg" alt="Capernaum" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); display: block;">
                         </div>
                         
                         <!-- Sağ: Açıklama -->
-                        <div style="flex-grow: 1;">
+                        <div class="recommendation-content">
                              <p style="text-align: justify; margin-top:0;">
                              Capernaum, Beyrut’un tozlu ve kalabalık sokaklarında, sistemin çoktan vazgeçtiği çocukların çığlığı gibi bir film. Başrolündeki Zain’in hikayesi üzerinden; bir insanın sadece "var olduğu" için verdiği o ağır mücadeleyi, göçün insanı nasıl köksüz ve kimliksiz bıraktığını iliklerinize kadar hissediyorsunuz.
                              </p>
@@ -714,14 +690,14 @@ Yine notebookLM üzerinde sesli ve videolu özetler hazırlatıp konuyu size anl
                     <i class='bx bx-chevron-down summary-icon'></i>
                 </summary>
                 <div class="details-content">
-                    <div style="display: flex; gap: 1.5rem; align-items: flex-start;">
+                    <div class="recommendation-card-body">
                         <!-- Sol: Afiş -->
-                        <div style="flex-shrink: 0; width: 150px;">
+                        <div class="recommendation-poster">
                             <img src="images/themanfromearth_film.jpg" alt="The Man From Earth" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); display: block;">
                         </div>
                         
                         <!-- Sağ: Açıklama -->
-                        <div style="flex-grow: 1;">
+                        <div class="recommendation-content">
                              <p style="text-align: justify; margin-top:0;">
                              Hayal edin; bir akşam arkadaşlarınızla veda kahvesi içiyorsunuz ve içlerinden biri aniden, "Ben tam 14 bin yıldır yaşıyorum," diyor. The Man from Earth, işte bu akılalmaz iddiayla başlayıp sizi oturduğunuz koltuğa çivileyen, kelimenin tam anlamıyla bir "beyin fırtınası" şöleni. Ne özel efekt var ne de büyük bütçeli sahneler; sadece bir oda, bir avuç insan ve insanlık tarihini, inançları, sanatı yeniden sorgulatan o büyüleyici hikâye.
                              </p>
@@ -744,14 +720,14 @@ Yine notebookLM üzerinde sesli ve videolu özetler hazırlatıp konuyu size anl
                     <i class='bx bx-chevron-down summary-icon'></i>
                 </summary>
                 <div class="details-content">
-                    <div style="display: flex; gap: 1.5rem; align-items: flex-start;">
+                    <div class="recommendation-card-body">
                         <!-- Sol: Afiş -->
-                        <div style="flex-shrink: 0; width: 150px;">
+                        <div class="recommendation-poster">
                             <img src="images/olagansupheliler_film.webp" alt="Olağan Şüpheliler" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); display: block;">
                         </div>
                         
                         <!-- Sağ: Açıklama -->
-                        <div style="flex-grow: 1;">
+                        <div class="recommendation-content">
                              <p style="text-align: justify; margin-top:0;">
                              Bir limanda patlayan gemi, arkada bırakılan onlarca ceset ve polisin elindeki tek koz: Sağ kurtulan ve olan biteni anlatmaya dünden razı, "topal" bir dolandırıcı. Ama sakın anlatılanlara hemen inanmayın; çünkü bu film, bir yalanın ne kadar kusursuz bir sanat eserine dönüşebileceğinin en büyük kanıtı. "Kayser Söze" isminin gizemi etrafında dönen hikâye, sizi karmaşık bir yapbozun içine öyle bir fırlatıyor ki, her parçayı yerleştirdiğinizi sandığınız an oyun yeniden başlıyor.
                              </p>
@@ -774,14 +750,14 @@ Yine notebookLM üzerinde sesli ve videolu özetler hazırlatıp konuyu size anl
                     <i class='bx bx-chevron-down summary-icon'></i>
                 </summary>
                 <div class="details-content">
-                    <div style="display: flex; gap: 1.5rem; align-items: flex-start;">
+                    <div class="recommendation-card-body">
                         <!-- Sol: Afiş -->
-                        <div style="flex-shrink: 0; width: 150px;">
+                        <div class="recommendation-poster">
                             <img src="images/yagmuradam_film.jpg" alt="Yağmur Adam" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); display: block;">
                         </div>
                         
                         <!-- Sağ: Açıklama -->
-                        <div style="flex-grow: 1;">
+                        <div class="recommendation-content">
                              <p style="text-align: justify; margin-top:0;">
                              Biri hayatı sadece sayılarla ve kurallarla algılayan bir dahi, diğeri ise dünyayı sadece çıkarlardan ibaret sanan hırslı bir kardeş... Yağmur Adam, babasından kalan mirasın peşine düşen bencil bir adamın, varlığından bile haberdar olmadığı abisiyle çıktığı o meşhur yolculuğun hikâyesi. Ama bu bildiğiniz yol filmlerinden değil; bu, birbirine dokunmanın bile imkânsız olduğu iki farklı dünyanın çarpışıp sonunda birbirine karışması.
                              </p>
@@ -804,14 +780,14 @@ Yine notebookLM üzerinde sesli ve videolu özetler hazırlatıp konuyu size anl
                     <i class='bx bx-chevron-down summary-icon'></i>
                 </summary>
                 <div class="details-content">
-                    <div style="display: flex; gap: 1.5rem; align-items: flex-start;">
+                    <div class="recommendation-card-body">
                         <!-- Sol: Afiş -->
-                        <div style="flex-shrink: 0; width: 150px;">
+                        <div class="recommendation-poster">
                             <img src="images/houseofcards_dizi.jpg" alt="House of Cards" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); display: block;">
                         </div>
                         
                         <!-- Sağ: Açıklama -->
-                        <div style="flex-grow: 1;">
+                        <div class="recommendation-content">
                              <p style="text-align: justify; margin-top:0;">
                              "Politika denen şey aslında nedir?" diye merak ediyorsanız, bu dizi size o çok konuşulan "kapalı kapılar ardındaki" dünyayı bir balyoz gibi indiriyor. Demokrasinin aslında ne kadar karanlık koridorlardan geçtiğini görmek istiyorsanız, Frank Underwood ile tanışma vaktiniz gelmiş demektir. House of Cards, bir adamın iktidar basamaklarını tırmanırken önüne çıkan her şeyi ve herkesi nasıl soğukkanlılıkla ezebileceğinin hikâyesi.
                              </p>
@@ -834,14 +810,14 @@ Yine notebookLM üzerinde sesli ve videolu özetler hazırlatıp konuyu size anl
                     <i class='bx bx-chevron-down summary-icon'></i>
                 </summary>
                 <div class="details-content">
-                    <div style="display: flex; gap: 1.5rem; align-items: flex-start;">
+                    <div class="recommendation-card-body">
                         <!-- Sol: Afiş -->
-                        <div style="flex-shrink: 0; width: 150px;">
+                        <div class="recommendation-poster">
                             <img src="images/mother_film.png" alt="Mother!" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); display: block;">
                         </div>
                         
                         <!-- Sağ: Açıklama -->
-                        <div style="flex-grow: 1;">
+                        <div class="recommendation-content">
                              <p style="text-align: justify; margin-top:0;">
                              Peşinen uyarayım sizi. Bu film "mısırımı alayım da rahat rahat izleyeyim" diyebileceğiniz bir film değil, sizi ruhsal bir türbülansa sokacak bir deneyim var karşımızda. Darren Aronofsky, Mother! ile sinir uçlarınızla oynamaya geliyor. Kendi kabuğuna çekilmiş, huzur dolu bir ev hayal edin; sonra bu eve davetsiz misafirlerin birer birer doluştuğunu ve o çok değer verdiğiniz sükuneti bir kaosa çevirdiğini... Mother!, başladığı andan itibaren tırnaklarınızı koltuğa geçirtecek kadar gerilimli, bir o kadar da sürreal bir yolculuk.
                              </p>
@@ -864,14 +840,14 @@ Yine notebookLM üzerinde sesli ve videolu özetler hazırlatıp konuyu size anl
                     <i class='bx bx-chevron-down summary-icon'></i>
                 </summary>
                 <div class="details-content">
-                    <div style="display: flex; gap: 1.5rem; align-items: flex-start;">
+                    <div class="recommendation-card-body">
                         <!-- Sol: Afiş -->
-                        <div style="flex-shrink: 0; width: 150px;">
+                        <div class="recommendation-poster">
                             <img src="images/Karthik_film.jpg" alt="Karthik Calling Karthik" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); display: block;">
                         </div>
                         
                         <!-- Sağ: Açıklama -->
-                        <div style="flex-grow: 1;">
+                        <div class="recommendation-content">
                              <p style="text-align: justify; margin-top:0;">
                              Karthik Calling Karthik, klasik Bollywood filmlerinden çok farklı, psikolojik derinliği olan tam bir "merak uyandırıcı" hikâye. Kendi gölgesinden bile çekinen, hayatta pek de görünür olmayan sıradan bir adamın, bir sabah gelen gizemli bir telefonla tüm dünyasının değiştiğini düşünün. Telefonun ucundaki ses ise kendisine tıpatıp benzeyen bir başkası! Karthik Calling Karthik, bir adamın özgüven kazanma yolculuğu gibi başlayıp, adım adım sizi gerilimin ve belirsizliğin içine çeken müthiş bir kurgu.
                              </p>
@@ -894,14 +870,14 @@ Yine notebookLM üzerinde sesli ve videolu özetler hazırlatıp konuyu size anl
                     <i class='bx bx-chevron-down summary-icon'></i>
                 </summary>
                 <div class="details-content">
-                    <div style="display: flex; gap: 1.5rem; align-items: flex-start;">
+                    <div class="recommendation-card-body">
                         <!-- Sol: Afiş -->
-                        <div style="flex-shrink: 0; width: 150px;">
+                        <div class="recommendation-poster">
                             <img src="images/terminal_film.jpg" alt="The Terminal" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); display: block;">
                         </div>
                         
                         <!-- Sağ: Açıklama -->
-                        <div style="flex-grow: 1;">
+                        <div class="recommendation-content">
                              <p style="text-align: justify; margin-top:0;">
                              Bir gün bir havaalanına iniyorsunuz ve tam o sırada ülkenizde darbe olduğu için pasaportunuzun geçersiz kaldığını öğreniyorsunuz. Ne geri dönebiliyorsunuz ne de havaalanından dışarı adım atabiliyorsunuz; artık siz hiçbir yere ait olmayan, "transit" bir insansınız. The Terminal, işte bu trajikomik durumun içinden devasa bir yaşam dersi çıkarıyor. Tom Hanks’in canlandırdığı Viktor Navorski karakterinin, o soğuk ve bürokratik havaalanı terminalini nasıl bir "yuvaya" dönüştürdüğünü izlerken, sabrın ve insan kalabilmenin ne demek olduğunu yeniden hatırlayacaksınız.
                              </p>
@@ -924,14 +900,14 @@ Yine notebookLM üzerinde sesli ve videolu özetler hazırlatıp konuyu size anl
                     <i class='bx bx-chevron-down summary-icon'></i>
                 </summary>
                 <div class="details-content">
-                    <div style="display: flex; gap: 1.5rem; align-items: flex-start;">
+                    <div class="recommendation-card-body">
                         <!-- Sol: Afiş -->
-                        <div style="flex-shrink: 0; width: 150px;">
+                        <div class="recommendation-poster">
                             <img src="images/barfi_film.jpg" alt="Barfi!" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); display: block;">
                         </div>
                         
                         <!-- Sağ: Açıklama -->
-                        <div style="flex-grow: 1;">
+                        <div class="recommendation-content">
                              <p style="text-align: justify; margin-top:0;">
                              Dünyayı duyamıyor ya da konuşamıyor olabilirsiniz, ama bu durum hayatın tadını çıkarmanıza ve sırılsıklam aşık olmanıza engel mi? Kesinlikle hayır! Barfi!, her anı bir tablodan fırlamış gibi duran renkleri, büyüleyici müzikleri ve insanı hayata bağlayan neşesiyle tam bir görsel şölen. Ranbir Kapoor’un Charlie Chaplin naifliğindeki performansı, sizi o bildiğiniz klişe aşk hikâyelerinden alıp çok daha derin ve saf bir yere götürüyor.
                              </p>
@@ -954,14 +930,14 @@ Yine notebookLM üzerinde sesli ve videolu özetler hazırlatıp konuyu size anl
                     <i class='bx bx-chevron-down summary-icon'></i>
                 </summary>
                 <div class="details-content">
-                    <div style="display: flex; gap: 1.5rem; align-items: flex-start;">
+                    <div class="recommendation-card-body">
                         <!-- Sol: Afiş -->
-                        <div style="flex-shrink: 0; width: 150px;">
+                        <div class="recommendation-poster">
                             <img src="images/pk_film.jpg" alt="PK" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); display: block;">
                         </div>
                         
                         <!-- Sağ: Açıklama -->
-                        <div style="flex-grow: 1;">
+                        <div class="recommendation-content">
                              <p style="text-align: justify; margin-top:0;">
                              Dünyaya çok uzak bir gezegenden gelen bir yabancının, kaybettiği bir eşyayı bulmak için bizim karmaşık ritüellerimizle dolu dünyamıza ayak uydurmaya çalıştığını hayal edin. PK, dışarıdan bakan bir çift gözün, alışageldiğimiz toplumsal normlara ve farklı inanç pratiklerine sorduğu o naif ama sarsıcı soruların hikâyesi. Aamir Khan’ın çocuksu bir merakla canlandırdığı karakterin yaşadığı komik maceralar, aslında bizlerin "normal" kabul ettiği birçok davranışın ne kadar tuhaf olabileceğine dair devasa bir metafor.
                              </p>
