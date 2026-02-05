@@ -56,7 +56,7 @@ Yine notebookLM üzerinde sesli ve videolu özetler hazırlatıp konuyu size anl
     },
     {
         "id": 2,
-        "title": "Kitap Tavsiyeleri",
+        "title": "Tavsiye 2. Kitap Tavsiyeleri",
         "isHtml": true,
         "content": `
         <details class="modern-details">
@@ -667,6 +667,196 @@ Yine notebookLM üzerinde sesli ve videolu özetler hazırlatıp konuyu size anl
                 </div>
             </div>
         </details>
+        `
+    },
+    {
+        "id": 3,
+        "title": "Tavsiye 3. Film ve Dizi Tavsiyeleri",
+        "isHtml": true,
+        "content": `
+            <div style="margin-bottom: 1.5rem; font-style: italic; color: var(--text-color);">
+                Burada tavsiye edilen filmler ve diziler tamamen hocanın kişisel beğenisini yansıtmaktadır. Herkes tarafından bilinen film ve diziler yerine az bilinenler gözden kaçmışlar tercih edilmiştir. Ama önerilen her film ya da dizi sıradanlıktan uzak konusu, tarzı ya da sonucuyla çarpıcı örneklerdir. Önerilerin sayısı zaman içinde arttırılacaktır.
+            </div>
+
+            <details class="modern-details">
+                <summary>
+                    <span class="summary-text" style="font-weight:bold; color:var(--primary-color);">1. Capernaum (Kefernahum)</span>
+                    <i class='bx bx-chevron-down summary-icon'></i>
+                </summary>
+                <div class="details-content">
+                    <div style="display: flex; gap: 1.5rem; align-items: flex-start;">
+                        <!-- Sol: Afiş -->
+                        <div style="flex-shrink: 0; width: 150px;">
+                            <img src="images/capernaum_film.jpg" alt="Capernaum" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); display: block;">
+                        </div>
+                        
+                        <!-- Sağ: Açıklama -->
+                        <div style="flex-grow: 1;">
+                             <p style="text-align: justify; margin-top:0;">
+                             Capernaum, Beyrut’un tozlu ve kalabalık sokaklarında, sistemin çoktan vazgeçtiği çocukların çığlığı gibi bir film. Başrolündeki Zain’in hikayesi üzerinden; bir insanın sadece "var olduğu" için verdiği o ağır mücadeleyi, göçün insanı nasıl köksüz ve kimliksiz bıraktığını iliklerinize kadar hissediyorsunuz.
+                             </p>
+                             <p style="text-align: justify;">
+                             Labaki, bizi sadece bir dramla değil, evrakların ve sınırların arasına sıkışmış, hiçbir yere ait olamamanın getirdiği o büyük yıkımla yüzleştiriyor. Göçün sadece bir yer değiştirme değil, bir insanın çocukluğunu, geleceğini ve hatta ismini nasıl elinden aldığını izlerken; Zain’in "beni neden dünyaya getirdiniz?" sorusu, modern dünyanın vicdanına sorulmuş en sert soru olarak hafızanıza kazınıyor.
+                             </p>
+                             <div style="margin-top: 1rem;">
+                                <a href="https://www.imdb.com/title/tt8267604/" target="_blank" style="text-decoration: none; color: #f5c518; font-weight: bold; display: inline-flex; align-items: center; gap: 4px;">
+                                    <i class='bx bxl-imdb' style="font-size: 1.2rem;"></i> IMDb
+                                </a>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+            </details>
+
+            <details class="modern-details" style="margin-top: 1rem;">
+                <summary>
+                    <span class="summary-text" style="font-weight:bold; color:var(--primary-color);">2. The Man From Earth (Dünyalı)</span>
+                    <i class='bx bx-chevron-down summary-icon'></i>
+                </summary>
+                <div class="details-content">
+                    <div style="display: flex; gap: 1.5rem; align-items: flex-start;">
+                        <!-- Sol: Afiş -->
+                        <div style="flex-shrink: 0; width: 150px;">
+                            <img src="images/themanfromearth_film.jpg" alt="The Man From Earth" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); display: block;">
+                        </div>
+                        
+                        <!-- Sağ: Açıklama -->
+                        <div style="flex-grow: 1;">
+                             <p style="text-align: justify; margin-top:0;">
+                             Hayal edin; bir akşam arkadaşlarınızla veda kahvesi içiyorsunuz ve içlerinden biri aniden, "Ben tam 14 bin yıldır yaşıyorum," diyor. The Man from Earth, işte bu akılalmaz iddiayla başlayıp sizi oturduğunuz koltuğa çivileyen, kelimenin tam anlamıyla bir "beyin fırtınası" şöleni. Ne özel efekt var ne de büyük bütçeli sahneler; sadece bir oda, bir avuç insan ve insanlık tarihini, inançları, sanatı yeniden sorgulatan o büyüleyici hikâye.
+                             </p>
+                             <p style="text-align: justify;">
+                             İzlerken kendinizi o odadaki misafirlerden biri gibi hissedecek, anlatılanların gerçek olup olmadığını çözmeye çalışırken zamanın nasıl geçtiğini anlamayacaksınız. "Bir film sadece konuşarak ne kadar sürükleyici olabilir?" diyorsanız, bu deneyimi kaçırmayın; bittiğinde dünyaya bakış açınızın biraz değiştiğini fark edeceksiniz.
+                             </p>
+                             <div style="margin-top: 1rem;">
+                                <a href="https://www.imdb.com/title/tt0756683/" target="_blank" style="text-decoration: none; color: #f5c518; font-weight: bold; display: inline-flex; align-items: center; gap: 4px;">
+                                    <i class='bx bxl-imdb' style="font-size: 1.2rem;"></i> IMDb
+                                </a>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+            </details>
+
+            <details class="modern-details" style="margin-top: 1rem;">
+                <summary>
+                    <span class="summary-text" style="font-weight:bold; color:var(--primary-color);">3. The Usual Suspects (Olağan Şüpheliler)</span>
+                    <i class='bx bx-chevron-down summary-icon'></i>
+                </summary>
+                <div class="details-content">
+                    <div style="display: flex; gap: 1.5rem; align-items: flex-start;">
+                        <!-- Sol: Afiş -->
+                        <div style="flex-shrink: 0; width: 150px;">
+                            <img src="images/olagansupheliler_film.webp" alt="Olağan Şüpheliler" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); display: block;">
+                        </div>
+                        
+                        <!-- Sağ: Açıklama -->
+                        <div style="flex-grow: 1;">
+                             <p style="text-align: justify; margin-top:0;">
+                             Bir limanda patlayan gemi, arkada bırakılan onlarca ceset ve polisin elindeki tek koz: Sağ kurtulan ve olan biteni anlatmaya dünden razı, "topal" bir dolandırıcı. Ama sakın anlatılanlara hemen inanmayın; çünkü bu film, bir yalanın ne kadar kusursuz bir sanat eserine dönüşebileceğinin en büyük kanıtı. "Kayser Söze" isminin gizemi etrafında dönen hikâye, sizi karmaşık bir yapbozun içine öyle bir fırlatıyor ki, her parçayı yerleştirdiğinizi sandığınız an oyun yeniden başlıyor.
+                             </p>
+                             <p style="text-align: justify;">
+                             Sinema tarihinin en efsanevi final sahnelerinden birine sahip olan bu yapım, bittiğinde sizi ekran karşısında dakikalarca donup kalmaya davet ediyor. Şeytanın yaptığı en büyük kurnazlığın, dünyayı kendisinin var olmadığına inandırmak olduğunu bu filmle iliklerinize kadar hissedeceksiniz.
+                             </p>
+                             <div style="margin-top: 1rem;">
+                                <a href="https://www.imdb.com/title/tt0114814/" target="_blank" style="text-decoration: none; color: #f5c518; font-weight: bold; display: inline-flex; align-items: center; gap: 4px;">
+                                    <i class='bx bxl-imdb' style="font-size: 1.2rem;"></i> IMDb
+                                </a>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+            </details>
+
+            <details class="modern-details" style="margin-top: 1rem;">
+                <summary>
+                    <span class="summary-text" style="font-weight:bold; color:var(--primary-color);">4. Rain Man (Yağmur Adam)</span>
+                    <i class='bx bx-chevron-down summary-icon'></i>
+                </summary>
+                <div class="details-content">
+                    <div style="display: flex; gap: 1.5rem; align-items: flex-start;">
+                        <!-- Sol: Afiş -->
+                        <div style="flex-shrink: 0; width: 150px;">
+                            <img src="images/yagmuradam_film.jpg" alt="Yağmur Adam" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); display: block;">
+                        </div>
+                        
+                        <!-- Sağ: Açıklama -->
+                        <div style="flex-grow: 1;">
+                             <p style="text-align: justify; margin-top:0;">
+                             Biri hayatı sadece sayılarla ve kurallarla algılayan bir dahi, diğeri ise dünyayı sadece çıkarlardan ibaret sanan hırslı bir kardeş... Yağmur Adam, babasından kalan mirasın peşine düşen bencil bir adamın, varlığından bile haberdar olmadığı abisiyle çıktığı o meşhur yolculuğun hikâyesi. Ama bu bildiğiniz yol filmlerinden değil; bu, birbirine dokunmanın bile imkânsız olduğu iki farklı dünyanın çarpışıp sonunda birbirine karışması.
+                             </p>
+                             <p style="text-align: justify;">
+                             Dustin Hoffman’ın o büyüleyici performansı ve Tom Cruise’un karakterindeki o insani değişim, izlerken bazen yüzünüzde kocaman bir tebessüm bırakacak, bazen de boğazınızı düğümleyecek.
+                             </p>
+                             <div style="margin-top: 1rem;">
+                                <a href="https://www.imdb.com/title/tt0095953/" target="_blank" style="text-decoration: none; color: #f5c518; font-weight: bold; display: inline-flex; align-items: center; gap: 4px;">
+                                    <i class='bx bxl-imdb' style="font-size: 1.2rem;"></i> IMDb
+                                </a>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+            </details>
+
+            <details class="modern-details" style="margin-top: 1rem;">
+                <summary>
+                    <span class="summary-text" style="font-weight:bold; color:var(--primary-color);">5. House of Cards (Dizi)</span>
+                    <i class='bx bx-chevron-down summary-icon'></i>
+                </summary>
+                <div class="details-content">
+                    <div style="display: flex; gap: 1.5rem; align-items: flex-start;">
+                        <!-- Sol: Afiş -->
+                        <div style="flex-shrink: 0; width: 150px;">
+                            <img src="images/houseofcards_dizi.jpg" alt="House of Cards" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); display: block;">
+                        </div>
+                        
+                        <!-- Sağ: Açıklama -->
+                        <div style="flex-grow: 1;">
+                             <p style="text-align: justify; margin-top:0;">
+                             "Politika denen şey aslında nedir?" diye merak ediyorsanız, bu dizi size o çok konuşulan "kapalı kapılar ardındaki" dünyayı bir balyoz gibi indiriyor. Demokrasinin aslında ne kadar karanlık koridorlardan geçtiğini görmek istiyorsanız, Frank Underwood ile tanışma vaktiniz gelmiş demektir. House of Cards, bir adamın iktidar basamaklarını tırmanırken önüne çıkan her şeyi ve herkesi nasıl soğukkanlılıkla ezebileceğinin hikâyesi.
+                             </p>
+                             <p style="text-align: justify;">
+                             Ama asıl büyüleyici olan, Frank’in zaman zaman kameraya, yani doğrudan sizin gözlerinizin içine bakıp o kirli oyunun parçası haline getirmesi. Güç tutkusunun bir insanı ne kadar acımasız kılabileceğini, sadakatin nasıl bir pazarlık payına dönüştüğünü izlerken hem dehşete düşecek hem de kendinizi bu manipülasyon ustasının zekasına hayran kalmaktan alıkoyamayacaksınız. "İktidar, gayrimenkul gibidir; önemli olan konumdur," diyen bir dünyada, her bölüm bittiğinde kendinizi derin bir nefes alma ihtiyacı içinde bulacaksınız.
+                             </p>
+                             <div style="margin-top: 1rem;">
+                                <a href="https://www.imdb.com/title/tt1856010/" target="_blank" style="text-decoration: none; color: #f5c518; font-weight: bold; display: inline-flex; align-items: center; gap: 4px;">
+                                    <i class='bx bxl-imdb' style="font-size: 1.2rem;"></i> IMDb
+                                </a>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+            </details>
+
+            <details class="modern-details" style="margin-top: 1rem;">
+                <summary>
+                    <span class="summary-text" style="font-weight:bold; color:var(--primary-color);">6. Mother! (Anne)</span>
+                    <i class='bx bx-chevron-down summary-icon'></i>
+                </summary>
+                <div class="details-content">
+                    <div style="display: flex; gap: 1.5rem; align-items: flex-start;">
+                        <!-- Sol: Afiş -->
+                        <div style="flex-shrink: 0; width: 150px;">
+                            <img src="images/mother_film.png" alt="Mother!" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); display: block;">
+                        </div>
+                        
+                        <!-- Sağ: Açıklama -->
+                        <div style="flex-grow: 1;">
+                             <p style="text-align: justify; margin-top:0;">
+                             Peşinen uyarayım sizi. Bu film "mısırımı alayım da rahat rahat izleyeyim" diyebileceğiniz bir film değil, sizi ruhsal bir türbülansa sokacak bir deneyim var karşımızda. Darren Aronofsky, Mother! ile sinir uçlarınızla oynamaya geliyor. Kendi kabuğuna çekilmiş, huzur dolu bir ev hayal edin; sonra bu eve davetsiz misafirlerin birer birer doluştuğunu ve o çok değer verdiğiniz sükuneti bir kaosa çevirdiğini... Mother!, başladığı andan itibaren tırnaklarınızı koltuğa geçirtecek kadar gerilimli, bir o kadar da sürreal bir yolculuk.
+                             </p>
+                             <p style="text-align: justify;">
+                             Jennifer Lawrence’ın adeta eviyle bütünleşen o tedirgin haliyle, Javier Bardem’in yaratma sancısı çeken gizemli duruşu arasında sıkışıp kalıyorsunuz. Bittiğinde "az önce ne izledim ben?" dedirten,  saatlerce üzerine kafa yormak isteyeceğiniz, ezber bozan bir yapım arıyorsanız; kendinizi bu çılgın evin içine bırakın. Ama uyarayım, kapı çalındığında artık hiçbir şey eskisi gibi olmayacak.
+                             </p>
+                             <div style="margin-top: 1rem;">
+                                <a href="https://www.imdb.com/title/tt5109784/" target="_blank" style="text-decoration: none; color: #f5c518; font-weight: bold; display: inline-flex; align-items: center; gap: 4px;">
+                                    <i class='bx bxl-imdb' style="font-size: 1.2rem;"></i> IMDb
+                                </a>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+            </details>
         `
     }
 ];
