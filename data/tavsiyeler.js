@@ -1226,6 +1226,41 @@ Yine notebookLM üzerinde sesli ve videolu özetler hazırlatıp konuyu size anl
                     </div>
                 </div>
             </details>
+
+            <details class="modern-details" style="margin-top: 1rem;">
+                <summary>
+                    <span class="summary-text" style="font-weight:bold; color:var(--primary-color);">16. Predestination</span>
+                    <i class='bx bx-chevron-down summary-icon'></i>
+                </summary>
+                <div class="details-content">
+                    <div class="recommendation-card-body">
+                        <!-- Sol: Afiş -->
+                        <div class="recommendation-poster">
+                            <img src="images/predestination_film.jpg" alt="Predestination" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); display: block;">
+                        </div>
+                        
+                        <!-- Sağ: Açıklama -->
+                        <div class="recommendation-content">
+                             <div style="margin-bottom: 0.8rem; font-size: 0.95rem; color: #555;">
+                                <strong>Yönetmen:</strong> Michael Spierig, Peter Spierig <br>
+                                <strong>Oyuncular:</strong> Ethan Hawke, Sarah Snook <br>
+                                <strong>Çıkış Tarihi:</strong> 28 Ağustos 2014
+                            </div>
+                             <p style="text-align: justify; margin-top:0;">
+                             Sizden önce gelen kişi, yine sizseniz; yolun sonu nereye varır?" Predestination, zamanda yolculuk yaparak suçları daha işlenmeden önlemeye çalışan bir ajanın hikâyesi gibi başlasa da, aslında sizi sinema tarihinin en akıl almaz düğümlerinden birine davet ediyor. Ethan Hawke’ın müthiş performansıyla sürüklediği bu filmde, kimliklerin, zamanın ve kaderin nasıl iç içe geçtiğini izlerken mantığınızın sınırları zorlanacak.
+                             </p>
+                             <p style="text-align: justify;">
+                             Her sahnesi, insanın kendi varlığını oluşturma çabasına dair devasa ve sarsıcı bir metafor. Film ilerledikçe karşınıza çıkan her ipucu, sizi daha büyük bir yapbozun parçası haline getirecek. Sakın "ben bu türü biliyorum, sonunu tahmin ederim" demeyin; çünkü bu film, bittiğinde sizi her şeyi en baştan düşünmeye zorlayacak o nadir başyapıtlardan.
+                             </p>
+                             <div style="margin-top: 1rem;">
+                                <a href="https://www.imdb.com/title/tt2397135/" target="_blank" style="text-decoration: none; color: #f5c518; font-weight: bold; display: inline-flex; align-items: center; gap: 4px;">
+                                    <i class='bx bxl-imdb' style="font-size: 1.2rem;"></i> IMDb
+                                </a>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+            </details>
         `
     }
 ];
