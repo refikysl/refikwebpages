@@ -693,6 +693,30 @@ Yine notebookLM üzerinde sesli ve videolu özetler hazırlatıp konuyu size anl
                 </div>
             </div>
         </details>
+        <details class="modern-details" style="margin-top: 1rem;">
+            <summary>
+                <span class="summary-text" style="font-weight:bold; color:var(--primary-color);">26. Anthony Giddens: Modernliğin Sonuçları</span>
+                <i class='bx bx-chevron-down summary-icon'></i>
+            </summary>
+            <div class="details-content">
+                <div class="recommendation-card-body">
+                    <!-- Sol: Kitap Kapağı -->
+                    <div class="recommendation-poster">
+                        <img src="images/modernliginsonuçlari_kitap.jpg" alt="Anthony Giddens - Modernliğin Sonuçları" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); display: block;">
+                    </div>
+                    
+                    <!-- Sağ: Açıklama -->
+                    <div class="recommendation-content">
+                         <p style="text-align: justify; margin-top:0;">
+                         Anthony Giddens, bu ufuk açıcı eserinde modernliği, durdurulamaz ve rotası tam olarak kestirilemez bir "yol silindiri" (juggernaut) benzetmesiyle ele alarak, çağdaş toplumun karmaşık doğasını deşifre ediyor. Yazar; yerinden yurdundan edilme (disembedding), uzmanlık sistemlerine duyulan güven ve bireyin kendi yaşamını sürekli sorguladığı "düşünümsellik" kavramları üzerinden, modernitenin sunduğu fırsatların yanı sıra yarattığı küresel risklere de dikkat çekiyor.
+                         </p>
+                         <p style="text-align: justify;">
+                         Geleneksel yapıların çözüldüğü ve küresel ölçekli belirsizliklerin gündelik hayatı kuşattığı günümüzde, üzerinde yaşadığımız toplumsal zemini ve kurumsal dönüşümleri anlamak isteyenler için bu kitap, vazgeçilmez bir teorik pusula niteliğindedir.
+                         </p>
+                    </div>
+                </div>
+            </div>
+        </details>
         `
     },
     {
@@ -1289,6 +1313,40 @@ Yine notebookLM üzerinde sesli ve videolu özetler hazırlatıp konuyu size anl
                              </p>
                              <div style="margin-top: 1rem;">
                                 <a href="https://www.imdb.com/title/tt1063669/" target="_blank" style="text-decoration: none; color: #f5c518; font-weight: bold; display: inline-flex; align-items: center; gap: 4px;">
+                                    <i class='bx bxl-imdb' style="font-size: 1.2rem;"></i> IMDb
+                                </a>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+            </details>
+            <details class="modern-details" style="margin-top: 1rem;">
+                <summary>
+                    <span class="summary-text" style="font-weight:bold; color:var(--primary-color);">18. Doc Martin</span>
+                    <i class='bx bx-chevron-down summary-icon'></i>
+                </summary>
+                <div class="details-content">
+                    <div class="recommendation-card-body">
+                        <!-- Sol: Afiş -->
+                        <div class="recommendation-poster">
+                            <img src="images/docmartin_dizi.jpg" alt="Doc Martin" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); display: block;">
+                        </div>
+                        
+                        <!-- Sağ: Açıklama -->
+                        <div class="recommendation-content">
+                             <div style="margin-bottom: 0.8rem; font-size: 0.95rem; color: #555;">
+                                <strong>Yaratıcı:</strong> Dominic Minghella <br>
+                                <strong>Oyuncular:</strong> Martin Clunes, Caroline Catz <br>
+                                <strong>Yayın Yılı:</strong> 2004–2022
+                            </div>
+                             <p style="text-align: justify; margin-top:0;">
+                             Cornwall’ın büyüleyici sahil kasabası Portwenn’de geçen Doc Martin, başarılı bir vasküler cerrahken kan tutması (hemofobi) nedeniyle pratisyen hekimliğe geçiş yapan Dr. Martin Ellingham’ın hikâyesini anlatıyor. Diziyi sıradan bir medikal dramadan ayıran temel unsur, başkarakterin parlak zekâsına eşlik eden aşırı asosyalliği ve katı profesyonel tutumudur.
+                             </p>
+                             <p style="text-align: justify;">
+                             Kasaba halkının samimi, düzensiz ve bazen irrasyonel yapısı ile doktorun rasyonel ve tavizsiz kişiliği arasındaki o bitmek bilmeyen gerilim, izleyiciye harika bir kara mizah sunuyor.
+                             </p>
+                             <div style="margin-top: 1rem;">
+                                <a href="https://www.imdb.com/title/tt0408381/" target="_blank" style="text-decoration: none; color: #f5c518; font-weight: bold; display: inline-flex; align-items: center; gap: 4px;">
                                     <i class='bx bxl-imdb' style="font-size: 1.2rem;"></i> IMDb
                                 </a>
                              </div>
