@@ -314,6 +314,184 @@ Yine notebookLM üzerinde sesli ve videolu özetler hazırlatıp konuyu size anl
                 </div>
             </div>
         </details>
+
+        <details class="modern-details" style="margin-top: 1rem;">
+            <summary>
+                <span class="summary-text" style="font-weight:bold; color:var(--primary-color);">11. Max Weber: Protestan Ahlakı ve Kapitalizmin Ruhu</span>
+                <i class='bx bx-chevron-down summary-icon'></i>
+            </summary>
+            <div class="details-content">
+                <div style="display: flex; gap: 1.5rem; align-items: flex-start;">
+                    <!-- Sol: Kitap Kapağı -->
+                    <div style="flex-shrink: 0; width: 150px;">
+                        <img src="images/protestanahlak_kitap.jpg" alt="Max Weber - Protestan Ahlakı ve Kapitalizmin Ruhu" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); display: block;">
+                    </div>
+                    
+                    <!-- Sağ: Açıklama -->
+                    <div style="flex-grow: 1;">
+                         <p style="text-align: justify; margin-top:0;">
+                         Max Weber’in sosyoloji ve ekonomi-politik alanında çığır açan eseri <em>"Protestan Ahlakı ve Kapitalizmin Ruhu"</em>, modern rasyonel kapitalizmin neden başka bir yerde değil de Batı Avrupa’da doğduğunu sorgulayan bir başyapıttır. Weber, Marx’ın aksine değişimi sadece maddi-ekonomik temellere dayandırmaz; zihniyet dünyasının, yani "fikirlerin" de tarihi şekillendirebileceğini savunur. Kitabın merkezinde, özellikle Kalvinizm öğretisinin birey üzerinde yarattığı psikolojik etkinin, farkında olmadan kapitalist bir çalışma disiplinine nasıl dönüştüğü yer alır.
+                         </p>
+                         <p style="text-align: justify;">
+                         Weber’e göre Protestanlık, özellikle de "dünyevi asketizm" (çilecilik), çalışmayı Tanrı’nın bir inayeti ve kişisel bir "çağrı" (Beruf) olarak kutsar. Bireyin kurtuluşa erip ermediğine dair duyduğu derin kaygı, onu daha çok çalışmaya ama kazandığını lüks tüketime değil, yeniden yatırıma yöneltmeye iter. Bu süreç, zamanla dinsel köklerinden koparak rasyonel, kâr odaklı ve "çelik kafes" olarak adlandırılan modern bürokratik/kapitalist düzeni doğurmuştur. Eser, din sosyolojisi ile ekonomi tarihi arasındaki o görünmez bağı deşifre eden en temel metinlerden biridir.
+                         </p>
+                    </div>
+                </div>
+            </div>
+        </details>
+
+        <details class="modern-details" style="margin-top: 1rem;">
+            <summary>
+                <span class="summary-text" style="font-weight:bold; color:var(--primary-color);">12. Buket Uzuner: Su Toprak Hava Ateş</span>
+                <i class='bx bx-chevron-down summary-icon'></i>
+            </summary>
+            <div class="details-content">
+                <div style="display: flex; gap: 1.5rem; align-items: flex-start;">
+                    <!-- Sol: Kitap Kapağı -->
+                    <div style="flex-shrink: 0; width: 150px;">
+                        <img src="images/toprakhavasu_kitap.jpg" alt="Buket Uzuner - Su Toprak Hava Ateş" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); display: block;">
+                    </div>
+                    
+                    <!-- Sağ: Açıklama -->
+                    <div style="flex-grow: 1;">
+                         <p style="text-align: justify; margin-top:0;">
+                         Buket Uzuner’in <em>"Uyumsuz Defne Kaman’ın Maceraları"</em> serisi, Türk mitolojisindeki "Kamanlık" (Şamanizm) geleneğiyle güncel ekolojik krizleri birleştiren bir "yeryüzü manifestosu" niteliğindedir. Dörtleme; polisiye kurguyu eko-eleştirel bir yaklaşımla ele alırken her kitapta bir doğa elementini merkeze alır:
+                         </p>
+                         <ul style="list-style-type: none; padding-left: 0; margin-top: 0.5rem;">
+                            <li style="margin-bottom: 0.5rem;"><strong>Su (İstanbul):</strong> Kadın cinayetleri ve su kaynaklarının kirliliğini işlerken "Umay Nine" üzerinden kadim bilgeliği tanıtır.</li>
+                            <li style="margin-bottom: 0.5rem;"><strong>Toprak (Çorum):</strong> Hititlerden bugüne tohumun kutsallığını, tarihî eser kaçakçılığını ve biyolojik çeşitliliğin korunmasını odağına alır.</li>
+                            <li style="margin-bottom: 0.5rem;"><strong>Hava (Kayseri):</strong> Hava kirliliği ve nükleer enerji gibi meseleleri "Hava Han" sembolizmi ve insan hakları ekseninde tartışır.</li>
+                            <li style="margin-bottom: 0.5rem;"><strong>Ateş (Mardin):</strong> Enerji sorunları ve toplumsal yangınları (savaş, göç) ele alarak; doğa ile insan arasındaki dengenin toplumsal barıştan geçtiğini savunur.</li>
+                         </ul>
+                    </div>
+                </div>
+            </div>
+        </details>
+
+        <details class="modern-details" style="margin-top: 1rem;">
+            <summary>
+                <span class="summary-text" style="font-weight:bold; color:var(--primary-color);">13. Erich Scheurmann: Göğü Delen Adam</span>
+                <i class='bx bx-chevron-down summary-icon'></i>
+            </summary>
+            <div class="details-content">
+                <div style="display: flex; gap: 1.5rem; align-items: flex-start;">
+                    <!-- Sol: Kitap Kapağı -->
+                    <div style="flex-shrink: 0; width: 150px;">
+                        <img src="images/gogudelenadam_kitap.jpg" alt="Erich Scheurmann - Göğü Delen Adam" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); display: block;">
+                    </div>
+                    
+                    <!-- Sağ: Açıklama -->
+                    <div style="flex-grow: 1;">
+                         <p style="text-align: justify; margin-top:0;">
+                         Erich Scheurmann tarafından kaleme alınan <em>"Göğü Delen Adam"</em> (Der Papalagi), Batı medeniyetine ve modern yaşam biçimine yönelik en çarpıcı, en ironik eleştirilerden biridir. Samoa yerlisi bir kabile reisinin (Tuiavii), Avrupa seyahati sonrası kendi halkını "beyaz adamın" (Papalagi) tuhaf ve doğadan kopuk yaşamına karşı uyarmak için yaptığı konuşmalardan oluşur.
+                         </p>
+                         <p style="text-align: justify;">
+                         Kitap, "medeni" insanın zamanı parçalara bölüp ona köle olmasını, bedeni giysilerle hapsetmesini, parayı bir put haline getirmesini ve "taş kutularda" (evlerde) yaşayarak gökyüzüyle bağını koparmasını son derece sade ama bir o kadar sarsıcı bir dille eleştirir. Modern insanın eşya tutkusunu ve doğayı mülkleştirme çabasını "ilkel" bir gözün saf mantığıyla deşifre eden eser, okura "İlerleme dediğimiz şey aslında büyük bir yabancılaşma mı?" sorusunu sordurur.
+                         </p>
+                    </div>
+                </div>
+            </div>
+        </details>
+
+        <details class="modern-details" style="margin-top: 1rem;">
+            <summary>
+                <span class="summary-text" style="font-weight:bold; color:var(--primary-color);">14. Daniel Quinn: İsmail</span>
+                <i class='bx bx-chevron-down summary-icon'></i>
+            </summary>
+            <div class="details-content">
+                <div style="display: flex; gap: 1.5rem; align-items: flex-start;">
+                    <!-- Sol: Kitap Kapağı -->
+                    <div style="flex-shrink: 0; width: 150px;">
+                        <img src="images/ismail_kitap.jpg" alt="Daniel Quinn - İsmail" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); display: block;">
+                    </div>
+                    
+                    <!-- Sağ: Açıklama -->
+                    <div style="flex-grow: 1;">
+                         <p style="text-align: justify; margin-top:0;">
+                         Daniel Quinn tarafından kaleme alınan <em>"İsmail"</em> (Ishmael), insan merkezli dünya görüşünü kökten sarsan, Sokratik diyalog yöntemini kullanan çarpıcı bir felsefi romandır. Bir gazete ilanının peşine düşen anlatıcı, "öğretmen" olarak karşısında konuşabilen bir gorili bulur. İsmail adındaki bu bilge canlı, insanlık tarihini "Alanlar" (modern medeniyet) ve "Bırakanlar" (doğayla uyumlu yaşayan kabileler) şeklinde ikiye ayırarak büyük bir kültürel eleştiri sunar.
+                         </p>
+                         <p style="text-align: justify;">
+                         Eser; tarım devrimiyle başlayan "dünyanın insana ait olduğu" mitini yıkarak, insanın dünyanın sahibi değil, onun bir parçası olduğunu savunur. Modern insanın ilerleme dediği şeyin aslında ekolojik bir felakete giden "serbest düşüş" olduğunu iddia eden kitap, okuru kendi türünün hikayesini yeniden kurgulamaya davet eder.
+                         </p>
+                    </div>
+                </div>
+            </div>
+        </details>
+
+        <details class="modern-details" style="margin-top: 1rem;">
+            <summary>
+                <span class="summary-text" style="font-weight:bold; color:var(--primary-color);">15. Yuval Noah Harari: Homo Sapiens</span>
+                <i class='bx bx-chevron-down summary-icon'></i>
+            </summary>
+            <div class="details-content">
+                <div style="display: flex; gap: 1.5rem; align-items: flex-start;">
+                    <!-- Sol: Kitap Kapağı -->
+                    <div style="flex-shrink: 0; width: 150px;">
+                        <img src="images/sapiens_kitap.jpg" alt="Yuval Noah Harari - Homo Sapiens" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); display: block;">
+                    </div>
+                    
+                    <!-- Sağ: Açıklama -->
+                    <div style="flex-grow: 1;">
+                         <p style="text-align: justify; margin-top:0;">
+                         Yuval Noah Harari’nin dünya çapında ses getiren eseri <em>"Sapiens: Hayvanlardan Tanrılara"</em>, sıradan bir primat türünün nasıl olup da gezegenin mutlak hâkimi haline geldiğini provokatif bir dille sorgulayan bir insanlık tarihidir. Harari’nin temel tezi, insanı diğer türlerden ayıran asıl gücün fiziksel kapasitesi değil, devlet, para, din ve hukuk gibi "kolektif mitler" yaratabilme ve bu hayali kurgular etrafında milyonlarca yabancıyla iş birliği yapabilme yeteneğidir.
+                         </p>
+                         <p style="text-align: justify;">
+                         Tarım Devrimi’ni "tarihin en büyük aldatmacası" olarak niteleyen ve yerleşik hayata geçişi bir ilerleme değil, özgürlüğün kaybı olarak sunan eser; biyolojiden antropolojiye uzanan geniş bir düzlemde modern dünyanın temellerini sarsan bir perspektif sunar.
+                         </p>
+                    </div>
+                </div>
+            </div>
+        </details>
+
+        <details class="modern-details" style="margin-top: 1rem;">
+            <summary>
+                <span class="summary-text" style="font-weight:bold; color:var(--primary-color);">16. Kojin Karatani: İzonomi ve Felsefenin Kökenleri</span>
+                <i class='bx bx-chevron-down summary-icon'></i>
+            </summary>
+            <div class="details-content">
+                <div style="display: flex; gap: 1.5rem; align-items: flex-start;">
+                    <!-- Sol: Kitap Kapağı -->
+                    <div style="flex-shrink: 0; width: 150px;">
+                        <img src="images/izonomi_kitap.jpg" alt="Kojin Karatani - İzonomi ve Felsefenin Kökenleri" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); display: block;">
+                    </div>
+                    
+                    <!-- Sağ: Açıklama -->
+                    <div style="flex-grow: 1;">
+                         <p style="text-align: justify; margin-top:0;">
+                         Karatani, izonomi kavramını; yöneten ve yönetilen ayrımının olmadığı, insanların hem özgür hem de eşit olduğu bir "hareket tarzı" olarak tanımlar. Atina demokrasisinin aslında mülkiyet sahibi bir azınlığın tahakkümü olduğunu ve "çoğunluğun diktatörlüğüne" dönüştüğünü iddia ederken; İyonya’daki izonomik yapının, mülkiyet hırsından arınmış, göçebe ruhlu ve sınıfsız bir toplumsal düzen sunduğunu belirtir.
+                         </p>
+                         <p style="text-align: justify;">
+                         Thales’ten Herakleitos’a kadar uzanan İyonya filozoflarının düşüncelerini, bu siyasi ve toplumsal arka planla ilişkilendirerek; felsefenin aslında bir "polis" (şehir) içi iktidar kavgası değil, bir yaşam biçimi arayışı olduğunu gösterir. Yazara göre izonomi, devletin baskıcı aygıtları ve piyasa ekonomisinin eşitsizliği arasında sıkışan modern insan için, kökleri Anadolu’da olan radikal bir çıkış yoludur.
+                         </p>
+                    </div>
+                </div>
+            </div>
+        </details>
+
+        <details class="modern-details" style="margin-top: 1rem;">
+            <summary>
+                <span class="summary-text" style="font-weight:bold; color:var(--primary-color);">17. Lee Mcintyre: Hakikat Sonrası</span>
+                <i class='bx bx-chevron-down summary-icon'></i>
+            </summary>
+            <div class="details-content">
+                <div style="display: flex; gap: 1.5rem; align-items: flex-start;">
+                    <!-- Sol: Kitap Kapağı -->
+                    <div style="flex-shrink: 0; width: 150px;">
+                        <img src="images/hakikatsonrası_kitap.jpg" alt="Lee Mcintyre - Hakikat Sonrası" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); display: block;">
+                    </div>
+                    
+                    <!-- Sağ: Açıklama -->
+                    <div style="flex-grow: 1;">
+                         <p style="text-align: justify; margin-top:0;">
+                         Mcintyre, hakikat-sonrası çağın köklerini; bilimsel şüpheciliğin istismar edilmesine, sosyal medya algoritmalarının yarattığı yankı odalarına ve ana akım medyanın gerilemesine dayandırır. Yazar, insanların artık "gerçeğin ne olduğunu" değil, "neyin doğru olmasını istediklerini" referans aldıklarını iddia eder. Bilişsel önyargılarımızın (özellikle doğrulama yanlılığının) bizi manipülasyona ne kadar açık hale getirdiğini örneklerle açıklarken; bu durumun demokrasiyi, bilimi ve toplumsal güveni nasıl temelinden sarstığını gösterir.
+                         </p>
+                         <p style="text-align: justify;">
+                         Kitap, hakikati savunmanın artık sadece entelektüel bir uğraş değil, siyasi ve ahlaki bir zorunluluk olduğunu vurgulayan sert bir uyarı niteliğindedir.
+                         </p>
+                    </div>
+                </div>
+            </div>
+        </details>
         `
     }
 ];
