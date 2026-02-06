@@ -64,42 +64,29 @@ document.addEventListener('DOMContentLoaded', () => {
     showSection('anasayfa');
 
     // --- DUYURU SİSTEMİ (Copy-Paste Logic) ---
-    async function fetchAnnouncements() {
+    // --- DUYURU SİSTEMİ (Local Logic) ---
+    function loadAnnouncements() {
         const container = document.getElementById('duyuru-container');
         if (!container) return;
 
-        try {
-            const response = await fetch(API_URL, {
-                method: 'POST',
-                headers: { 'Content-Type': 'text/plain;charset=utf-8' },
-                body: JSON.stringify({ action: 'get_announcements' })
+        if (typeof duyurularData !== 'undefined' && duyurularData.length > 0) {
+            container.innerHTML = '';
+            duyurularData.forEach(item => {
+                // Modern Card HTML
+                const card = document.createElement('div');
+                card.className = 'announcement-card';
+                card.innerHTML = `
+                    <h4 class="announcement-title">${item.title}</h4>
+                    <p class="announcement-summary">${item.summary}</p>
+                    <span class="announcement-date" style="font-size:0.8rem; color:#666; display:block; margin-top:0.5rem;">${item.date}</span>
+                `;
+
+                // Click event
+                card.addEventListener('click', () => openModal(item));
+                container.appendChild(card);
             });
-
-            const result = await response.json();
-
-            if (result.result === 'success' && result.data && result.data.length > 0) {
-                container.innerHTML = '';
-
-                result.data.forEach(item => {
-                    // Modern Card HTML
-                    const card = document.createElement('div');
-                    card.className = 'announcement-card';
-                    card.innerHTML = `
-                        <h4 class="announcement-title">${item.title}</h4>
-                        <p class="announcement-summary">${item.summary}</p>
-                    `;
-
-                    // Click event
-                    card.addEventListener('click', () => openModal(item));
-                    container.appendChild(card);
-                });
-            } else {
-                container.innerHTML = '<div class="modern-card">Duyuru bulunamadı.</div>';
-            }
-
-        } catch (error) {
-            console.error(error);
-            container.innerHTML = '<div class="modern-card">Bağlantı hatası.</div>';
+        } else {
+            container.innerHTML = '<div class="modern-card">Henüz duyuru bulunmamaktadır.</div>';
         }
     }
 
@@ -131,7 +118,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    fetchAnnouncements();
+    loadAnnouncements();
 
 
     // --- İLETİŞİM FORMU ---
@@ -309,178 +296,245 @@ document.addEventListener('DOMContentLoaded', () => {
     loadBooks();
 
     // --- HOCADAN TAVSİYELER VERİ YÜKLEME ---
-    function loadTavsiyeler() {
-        const container = document.getElementById('tavsiyeler-container');
-        if (!container) return;
 
-        if (typeof tavsiyelerData !== 'undefined' && Array.isArray(tavsiyelerData)) {
-            container.innerHTML = '';
 
-            tavsiyelerData.forEach(item => {
-                const div = document.createElement('div');
-                div.className = 'modern-card tavsiye-item';
-                div.style.marginBottom = '1rem';
-                div.style.padding = '0'; // Padding'i CSS ile içeride yöneteceğiz
+        function loadTavsiyeler() {
+            const container = document.getElementById('tavsiyeler-container');
+            if (!container) return;
 
-                // Başlık
-                const header = document.createElement('div');
-                header.className = 'tavsiye-header';
-                header.style.padding = '1rem';
-                header.style.cursor = 'pointer';
-                header.style.display = 'flex';
-                header.style.alignItems = 'center';
-                header.style.justifyContent = 'space-between';
+            if (typeof tavsiyelerData !== 'undefined' && Array.isArray(tavsiyelerData)) {
+                container.innerHTML = '';
 
-                header.innerHTML = `
+                tavsiyelerData.forEach(item => {
+                    const div = document.createElement('div');
+                    div.className = 'modern-card tavsiye-item';
+                    div.style.marginBottom = '1rem';
+                    div.style.padding = '0';
+
+                    // Başlık
+                    const header = document.createElement('div');
+                    header.className = 'tavsiye-header';
+                    header.style.padding = '1rem';
+                    header.style.cursor = 'pointer';
+                    header.style.display = 'flex';
+                    header.style.alignItems = 'center';
+                    header.style.justifyContent = 'space-between';
+
+                    header.innerHTML = `
                     <h3 style="margin:0; color:var(--primary-color); font-size:1.1rem; display:flex; align-items:center; gap:0.5rem;">
                         <i class='bx bx-chevron-right arrow-icon' style="transition:transform 0.3s;"></i> ${item.title}
                     </h3>
                 `;
 
-                // İçerik
-                const content = document.createElement('div');
-                content.className = 'tavsiye-content';
-                content.style.display = 'none';
-                content.style.padding = '0 1.5rem 1.5rem 1.5rem';
-                content.style.borderTop = '1px solid #eee';
+                    // İçerik Logic
+                    const content = document.createElement('div');
+                    content.className = 'tavsiye-content';
+                    content.style.display = 'none';
+                    content.style.padding = '0 1.5rem 1.5rem 1.5rem';
+                    content.style.borderTop = '1px solid #eee';
 
-                content.innerHTML = `
-                    <p style="color:var(--text-dark); line-height:1.7; margin-top:1rem;">
-                        ${item.content.replace(/\n/g, '<br>')}
-                    </p>
-                `;
+                    let innerHTML = '';
 
-                if (item.isHtml) {
-                    content.innerHTML = `<div style="margin-top:1rem;">${item.content}</div>`;
-                }
-
-                // Tıklama Logic
-                header.addEventListener('click', () => {
-                    const arrow = header.querySelector('.arrow-icon');
-                    if (content.style.display === 'none') {
-                        content.style.display = 'block';
-                        arrow.style.transform = 'rotate(90deg)';
-                    } else {
-                        content.style.display = 'none';
-                        arrow.style.transform = 'rotate(0deg)';
-                    }
-                });
-
-                div.appendChild(header);
-                div.appendChild(content);
-                container.appendChild(div);
-            });
-        } else {
-            console.error('Veri bulunamadı (tavsiyelerData)');
-            container.innerHTML = '<p>Tavsiye listesi yüklenemedi.</p>';
-        }
-    }
-
-    // Tavsiyeleri yükle
-    loadTavsiyeler();
-
-    // --- DERKENAR VERİ YÜKLEME ---
-    function loadDerkenar() {
-        const container = document.getElementById('derkenar-container');
-        if (!container) return;
-
-        if (typeof derkenarData !== 'undefined') {
-            container.innerHTML = '';
-
-            // 1. INTRO KISMI (Sabit)
-            if (derkenarData.intro && derkenarData.intro.length > 0) {
-                derkenarData.intro.forEach(item => {
-                    const introDiv = document.createElement('div');
-                    introDiv.className = 'modern-card';
-                    introDiv.style.marginBottom = '2rem';
-                    introDiv.style.borderLeft = '4px solid var(--primary-color)';
-                    introDiv.style.backgroundColor = '#f8f9fa';
-
-                    if (item.content) {
-                        const paragraphs = item.content.split(/\n\s*\n/);
-                        paragraphs.forEach(paraText => {
-                            if (paraText.trim().length > 0) {
-                                const p = document.createElement('p');
-                                p.style.textAlign = 'justify';
-                                p.style.lineHeight = '1.6';
-                                p.style.marginBottom = '0.8rem';
-                                p.style.marginTop = '0';
-                                p.innerHTML = paraText.trim().replace(/\n/g, '<br>');
-                                introDiv.appendChild(p);
-                            }
+                    // --- SPECIAL HANDLING FOR BOOKS (ID: 2) ---
+                    if (item.id === 2 && typeof kitapTavsiyeleriData !== 'undefined') {
+                        kitapTavsiyeleriData.forEach(book => {
+                            innerHTML += `
+                        <details class="modern-details" style="margin-top: 1rem;">
+                            <summary>
+                                <span class="summary-text" style="font-weight:bold; color:var(--primary-color);">${book.title}</span>
+                                <i class='bx bx-chevron-down summary-icon'></i>
+                            </summary>
+                            <div class="details-content">
+                                <div class="recommendation-card-body">
+                                    <div class="recommendation-poster">
+                                        <img src="${book.image}" alt="${book.title}" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); display: block;">
+                                    </div>
+                                    <div class="recommendation-content">
+                                        <p style="text-align: justify; margin-top:0;">${book.content.replace(/\n\n/g, '</p><p style="text-align: justify;">').replace(/\n/g, '<br>')}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </details>`;
                         });
                     }
-                    container.appendChild(introDiv);
+                    // --- SPECIAL HANDLING FOR MOVIES (ID: 3) ---
+                    else if (item.id === 3 && typeof filmTavsiyeleriData !== 'undefined') {
+                        // Intro note for movies
+                        innerHTML += `<div style="margin-bottom: 1.5rem; font-style: italic; color: var(--text-color);">
+                        Burada tavsiye edilen filmler ve diziler tamamen hocanın kişisel beğenisini yansıtmaktadır. Herkes tarafından bilinen film ve diziler yerine az bilinenler gözden kaçmışlar tercih edilmiştir. Ama önerilen her film ya da dizi sıradanlıktan uzak konusu, tarzı ya da sonucuyla çarpıcı örneklerdir. Önerilerin sayısı zaman içinde arttırılacaktır.
+                    </div>`;
+
+                        filmTavsiyeleriData.forEach(movie => {
+                            let metaHtml = '';
+                            if (movie.meta) {
+                                metaHtml = `<div style="margin-bottom: 0.8rem; font-size: 0.95rem; color: #555;">${movie.meta.replace(/\n/g, '<br>')}</div>`;
+                            }
+
+                            let imdbHtml = '';
+                            if (movie.imdb) {
+                                imdbHtml = `<div style="margin-top: 1rem;">
+                                <a href="${movie.imdb}" target="_blank" style="text-decoration: none; color: #f5c518; font-weight: bold; display: inline-flex; align-items: center; gap: 4px;">
+                                    <i class='bx bxl-imdb' style="font-size: 1.2rem;"></i> IMDb
+                                </a>
+                             </div>`;
+                            }
+
+                            innerHTML += `
+                        <details class="modern-details" style="margin-top: 1rem;">
+                            <summary>
+                                <span class="summary-text" style="font-weight:bold; color:var(--primary-color);">${movie.title}</span>
+                                <i class='bx bx-chevron-down summary-icon'></i>
+                            </summary>
+                            <div class="details-content">
+                                <div class="recommendation-card-body">
+                                    <div class="recommendation-poster">
+                                        <img src="${movie.image}" alt="${movie.title}" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); display: block;">
+                                    </div>
+                                    <div class="recommendation-content">
+                                        ${metaHtml}
+                                        <p style="text-align: justify; margin-top:0;">${movie.content.replace(/\n\n/g, '</p><p style="text-align: justify;">').replace(/\n/g, '<br>')}</p>
+                                        ${imdbHtml}
+                                    </div>
+                                </div>
+                            </div>
+                        </details>`;
+                        });
+                    }
+                    // --- DEFAULT ---
+                    else {
+                        if (item.isHtml) innerHTML = `<div style="margin-top:1rem;">${item.content}</div>`;
+                        else innerHTML = `<p style="color:var(--text-dark); line-height:1.7; margin-top:1rem;">${item.content.replace(/\n/g, '<br>')}</p>`;
+                    }
+
+                    content.innerHTML = innerHTML;
+
+                    // Tıklama Logic
+                    header.addEventListener('click', () => {
+                        const arrow = header.querySelector('.arrow-icon');
+                        if (content.style.display === 'none') {
+                            content.style.display = 'block';
+                            arrow.style.transform = 'rotate(90deg)';
+                        } else {
+                            content.style.display = 'none';
+                            arrow.style.transform = 'rotate(0deg)';
+                        }
+                    });
+
+                    div.appendChild(header);
+                    div.appendChild(content);
+                    container.appendChild(div);
                 });
+            } else {
+                console.error('Veri bulunamadı (tavsiyelerData)');
+                container.innerHTML = '<p>Tavsiye listesi yüklenemedi.</p>';
             }
+        }
 
-            // 2. KONULAR KISMI (Akordiyon)
-            if (derkenarData.konular && derkenarData.konular.length > 0) {
-                derkenarData.konular.forEach(item => {
-                    // <details> yapısı
-                    const details = document.createElement('details');
-                    details.className = 'modern-details';
-                    details.style.marginBottom = '1rem';
+        // Tavsiyeleri yükle
+        loadTavsiyeler();
 
-                    // <summary>
-                    const summary = document.createElement('summary');
-                    summary.innerHTML = `
+        // --- DERKENAR VERİ YÜKLEME ---
+        function loadDerkenar() {
+            const container = document.getElementById('derkenar-container');
+            if (!container) return;
+
+            if (typeof derkenarData !== 'undefined') {
+                container.innerHTML = '';
+
+                // 1. INTRO KISMI (Sabit)
+                if (derkenarData.intro && derkenarData.intro.length > 0) {
+                    derkenarData.intro.forEach(item => {
+                        const introDiv = document.createElement('div');
+                        introDiv.className = 'modern-card';
+                        introDiv.style.marginBottom = '2rem';
+                        introDiv.style.borderLeft = '4px solid var(--primary-color)';
+                        introDiv.style.backgroundColor = '#f8f9fa';
+
+                        if (item.content) {
+                            const paragraphs = item.content.split(/\n\s*\n/);
+                            paragraphs.forEach(paraText => {
+                                if (paraText.trim().length > 0) {
+                                    const p = document.createElement('p');
+                                    p.style.textAlign = 'justify';
+                                    p.style.lineHeight = '1.6';
+                                    p.style.marginBottom = '0.8rem';
+                                    p.style.marginTop = '0';
+                                    p.innerHTML = paraText.trim().replace(/\n/g, '<br>');
+                                    introDiv.appendChild(p);
+                                }
+                            });
+                        }
+                        container.appendChild(introDiv);
+                    });
+                }
+
+                // 2. KONULAR KISMI (Akordiyon)
+                if (derkenarData.konular && derkenarData.konular.length > 0) {
+                    derkenarData.konular.forEach(item => {
+                        // <details> yapısı
+                        const details = document.createElement('details');
+                        details.className = 'modern-details';
+                        details.style.marginBottom = '1rem';
+
+                        // <summary>
+                        const summary = document.createElement('summary');
+                        summary.innerHTML = `
                         <span class="summary-text" style="font-weight:bold; color:var(--primary-color);">${item.title}</span>
                         <i class='bx bx-chevron-down summary-icon'></i>
                     `;
-                    details.appendChild(summary);
+                        details.appendChild(summary);
 
-                    // İçerik Wrapper
-                    const detailsContent = document.createElement('div');
-                    detailsContent.className = 'details-content';
+                        // İçerik Wrapper
+                        const detailsContent = document.createElement('div');
+                        detailsContent.className = 'details-content';
 
-                    const cardBody = document.createElement('div');
-                    cardBody.className = 'recommendation-card-body';
-                    cardBody.style.display = 'block';
+                        const cardBody = document.createElement('div');
+                        cardBody.className = 'recommendation-card-body';
+                        cardBody.style.display = 'block';
 
 
-                    const contentDiv = document.createElement('div');
-                    contentDiv.className = 'recommendation-content';
-                    contentDiv.style.color = 'var(--text-dark)';
+                        const contentDiv = document.createElement('div');
+                        contentDiv.className = 'recommendation-content';
+                        contentDiv.style.color = 'var(--text-dark)';
 
-                    if (item.image) {
-                        const img = document.createElement('img');
-                        img.src = item.image;
-                        img.alt = item.title;
-                        img.style.maxWidth = '100%';
-                        img.style.height = 'auto';
-                        img.style.marginBottom = '1rem';
-                        img.style.borderRadius = '4px';
-                        img.style.display = 'block';
-                        cardBody.appendChild(img);
-                    }
+                        if (item.image) {
+                            const img = document.createElement('img');
+                            img.src = item.image;
+                            img.alt = item.title;
+                            img.style.maxWidth = '100%';
+                            img.style.height = 'auto';
+                            img.style.marginBottom = '1rem';
+                            img.style.borderRadius = '4px';
+                            img.style.display = 'block';
+                            cardBody.appendChild(img);
+                        }
 
-                    if (item.content) {
-                        const paragraphs = item.content.split(/\n\s*\n/);
-                        paragraphs.forEach(paraText => {
-                            if (paraText.trim().length > 0) {
-                                const p = document.createElement('p');
-                                p.style.textAlign = 'justify';
-                                p.style.lineHeight = '1.6';
-                                p.style.marginBottom = '0.8rem';
-                                p.innerHTML = paraText.trim().replace(/\n/g, '<br>');
-                                contentDiv.appendChild(p);
-                            }
-                        });
-                    }
+                        if (item.content) {
+                            const paragraphs = item.content.split(/\n\s*\n/);
+                            paragraphs.forEach(paraText => {
+                                if (paraText.trim().length > 0) {
+                                    const p = document.createElement('p');
+                                    p.style.textAlign = 'justify';
+                                    p.style.lineHeight = '1.6';
+                                    p.style.marginBottom = '0.8rem';
+                                    p.innerHTML = paraText.trim().replace(/\n/g, '<br>');
+                                    contentDiv.appendChild(p);
+                                }
+                            });
+                        }
 
-                    cardBody.appendChild(contentDiv);
-                    detailsContent.appendChild(cardBody);
-                    details.appendChild(detailsContent);
+                        cardBody.appendChild(contentDiv);
+                        detailsContent.appendChild(cardBody);
+                        details.appendChild(detailsContent);
 
-                    container.appendChild(details);
-                });
+                        container.appendChild(details);
+                    });
+                }
+            } else {
+                container.innerHTML = '<p>Derkenar içeriği henüz eklenmedi.</p>';
             }
-        } else {
-            container.innerHTML = '<p>Derkenar içeriği henüz eklenmedi.</p>';
         }
-    }
 
-    loadDerkenar();
+        loadDerkenar();
 
-});
+    });
