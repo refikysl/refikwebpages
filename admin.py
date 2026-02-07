@@ -3,6 +3,7 @@ import os
 import re
 import json
 import datetime
+import time
 
 # --- CONFIGURATION ---
 DERKENAR_FILE = "data/derkenar.js"
@@ -10,7 +11,14 @@ DUYURULAR_FILE = "data/duyurular.js"
 KITAP_TAVSIYE_FILE = "data/tavsiyeler_kitap.js"
 FILM_TAVSIYE_FILE = "data/tavsiyeler_film.js"
 GENEL_TAVSIYE_FILE = "data/tavsiyeler.js"
+MAKALELER_FILE = "data/makaleler.js"
+KITAPLAR_FILE = "data/kitaplar.js" # Publications (Books/Chapters)
+BILDIRILER_FILE = "data/bildiriler.js" 
 IMAGES_DIR = "images"
+MAKALELER_DIR = "makaleler"
+KITAPLAR_DIR = "kitaplar" 
+BILDIRILER_DIR = "makaleler" # Storing proceedings in same dir as articles/pubs if not specified otherwise, or separate? Let's use makaleler for now or create generic 'yayinlar'? Existing structure uses 'makaleler' and 'kitaplar'. Let's use 'bildiriler' to be clean.
+BILDIRILER_DIR_ACTUAL = "bildiriler"
 
 st.set_page_config(
     page_title="R.Y. Yönetim Paneli",
@@ -38,7 +46,6 @@ def parse_js_object_array(content, array_name=None):
         else:
             return []
 
-    # Simple tokenizer/parser because regex is fragile with nested braces
     objects_strings = []
     brace_count = 0
     current_obj = ""
@@ -62,13 +69,8 @@ def parse_js_object_array(content, array_name=None):
                 
     for obj_str in objects_strings:
         item = {}
-        # Generic key extraction
-        # Matches: key: value, "key": value, "key": "value", "key": `value`
-        # We need specific extractors for known fields to be safe
         
         def extract(key):
-            # Try matches for: key: "..." | key: `...` | key: 123
-            # value can be in quotes, backticks, or bare number/bool
             m = re.search(r'["\']?' + key + r'["\']?\s*:\s*(`[\s\S]*?`|"(.*?)"|(\d+)|true|false)', obj_str)
             if m:
                 val = m.group(1)
@@ -77,13 +79,18 @@ def parse_js_object_array(content, array_name=None):
                 return val
             return None
 
-        for key in ['id', 'title', 'date', 'summary', 'content', 'image', 'meta', 'imdb', 'yazar', 'yil', 'baslik', 'yayin', 'link']:
+        keys_to_extract = [
+            'id', 'title', 'date', 'summary', 'content', 'image', 'meta', 'imdb', 
+            'yazar', 'yil', 'baslik', 'yayin', 'link',
+            'citation', 'dergi', 'cilt', 'sayi', 'sayfa', 'doi'
+        ]
+        
+        for key in keys_to_extract:
             val = extract(key)
             if val is not None:
                 if key == 'id': item[key] = int(val)
                 else: item[key] = val
                 
-        # Handle 'isHtml' specifically
         if "isHtml" in obj_str:
             item['isHtml'] = True
             
@@ -98,6 +105,15 @@ def save_image(image_file):
     with open(path, "wb") as f:
         f.write(image_file.getbuffer())
     return f"images/{image_file.name}"
+
+def save_pdf(pdf_file, directory):
+    if not os.path.exists(directory):
+        os.makedirs(directory)
+    path = os.path.join(directory, pdf_file.name)
+    with open(path, "wb") as f:
+        f.write(pdf_file.getbuffer())
+    rel_dir = os.path.basename(directory)
+    return f"{rel_dir}/{pdf_file.name}"
 
 # --- MANAGER CLASSES ---
 
@@ -213,7 +229,7 @@ class KitapTavsiyeManager(BaseManager):
     def add(self, title, content, image_path=None):
         new_id = self.generate_id()
         item = {"id": new_id, "title": title, "content": content, "image": image_path or ""}
-        self.items.insert(0, item) # Insert at top
+        self.items.append(item)
         self.save()
 
     def delete(self, id):
@@ -255,7 +271,7 @@ class FilmTavsiyeManager(BaseManager):
             "imdb": imdb, 
             "image": image_path or ""
         }
-        self.items.insert(0, item)
+        self.items.append(item)
         self.save()
 
     def delete(self, id):
@@ -287,9 +303,6 @@ class GenelTavsiyeManager(BaseManager):
 
     def add(self, title, content):
         new_id = self.generate_id()
-        # Ensure we don't conflict with reserved IDs if any, although 1, 2, 3 are used.
-        # User adds "General Advice".
-        # We should check max id safely.
         while any(i['id'] == new_id for i in self.items):
             new_id += 1
             
@@ -298,23 +311,160 @@ class GenelTavsiyeManager(BaseManager):
         self.save()
         
     def delete(self, id):
-        # Prevent deleting the placeholder IDs 2 and 3 potentially?
-        # User might want to delete them if they don't want them displayed?
-        # But script.js depends on them existing? No, script.js checks if item.id == 2.
-        # If user deletes ID 2, "Kitap Tavsiyeleri" header disappears.
-        # We should probably protect ID 2 and 3 or warn.
         if id in [2, 3]:
-            # Actually, let's allow deleting it if they want to hide the section.
             pass
         self.items = [i for i in self.items if i['id'] != id]
         self.save()
+        
+class MakaleManager(BaseManager):
+    def load(self):
+        super().load()
+        self.items = parse_js_object_array(self.raw_content)
+        
+    def save(self):
+        output = "const makalelerData = [\n"
+        for i, item in enumerate(self.items):
+            lines = []
+            if item.get('citation'):
+                cit_esc = item['citation'].replace('`', '\\`')
+                lines.append(f'"citation": `{cit_esc}`')
+                lines.append(f'"link": "{item.get("link", "")}"')
+            else:
+                def safe_get(key): return item.get(key, "").replace('"', '\\"')
+                lines.append(f'"yazar": "{safe_get("yazar")}"')
+                lines.append(f'"yil": "{safe_get("yil")}"')
+                lines.append(f'"baslik": "{safe_get("baslik")}"')
+                lines.append(f'"dergi": "{safe_get("dergi")}"')
+                lines.append(f'"cilt": "{safe_get("cilt")}"')
+                lines.append(f'"sayi": "{safe_get("sayi")}"')
+                lines.append(f'"sayfa": "{safe_get("sayfa")}"')
+                lines.append(f'"doi": "{safe_get("doi")}"')
+                lines.append(f'"link": "{safe_get("link")}"')
+            
+            entry = "    {\n        " + ",\n        ".join(lines) + "\n    }"
+            if i < len(self.items) - 1: entry += ","
+            output += entry + "\n"
+        output += "];\n"
+        with open(self.filepath, "w", encoding="utf-8") as f: f.write(output)
+
+    def add(self, citation, link=None):
+        item = {
+            "citation": citation,
+            "link": link or ""
+        }
+        self.items.insert(0, item)
+        self.save()
+        
+    def delete(self, idx):
+        if 0 <= idx < len(self.items):
+            self.items.pop(idx)
+            self.save()
+
+class BildiriManager(BaseManager):
+    def load(self):
+        super().load()
+        self.items = parse_js_object_array(self.raw_content)
+        
+    def save(self):
+        output = "const bildirilerData = [\n"
+        for i, item in enumerate(self.items):
+            lines = []
+            # Almost same as Makale but simpler usually
+            if item.get('citation'):
+                cit_esc = item['citation'].replace('`', '\\`')
+                lines.append(f'"citation": `{cit_esc}`')
+                lines.append(f'"link": "{item.get("link", "")}"')
+            else:
+                # Should not happen for new entries, but for robustness
+                def safe_get(key): return item.get(key, "").replace('"', '\\"')
+                lines.append(f'"yazar": "{safe_get("yazar")}"')
+                lines.append(f'"baslik": "{safe_get("baslik")}"')
+                lines.append(f'"link": "{safe_get("link")}"')
+            
+            entry = "    {\n        " + ",\n        ".join(lines) + "\n    }"
+            if i < len(self.items) - 1: entry += ","
+            output += entry + "\n"
+        output += "];\n"
+        with open(self.filepath, "w", encoding="utf-8") as f: f.write(output)
+
+    def add(self, citation, link=None):
+        item = {
+            "citation": citation,
+            "link": link or ""
+        }
+        self.items.insert(0, item)
+        self.save()
+        
+    def delete(self, idx):
+        if 0 <= idx < len(self.items):
+            self.items.pop(idx)
+            self.save()
+
+class KitapYayinManager(BaseManager):
+    def __init__(self, filepath):
+        self.kitaplar = []
+        self.bolumler = []
+        super().__init__(filepath)
+
+    def load(self):
+        super().load()
+        self.kitaplar = parse_js_object_array(self.raw_content, "kitaplar")
+        self.bolumler = parse_js_object_array(self.raw_content, "bolumler")
+
+    def save(self):
+        output = "const kitaplarData = {\n"
+        
+        def format_list(lst):
+            blocks = []
+            for item in lst:
+                lines = []
+                if item.get('citation'):
+                    cit_esc = item['citation'].replace('`', '\\`')
+                    lines.append(f'"citation": `{cit_esc}`')
+                    lines.append(f'"link": "{item.get("link", "")}"')
+                else:
+                    def safe_get(key): return item.get(key, "").replace('"', '\\"')
+                    lines.append(f'"yazar": "{safe_get("yazar")}"')
+                    lines.append(f'"yil": "{safe_get("yil")}"')
+                    lines.append(f'"baslik": "{safe_get("baslik")}"')
+                    lines.append(f'"yayin": "{safe_get("yayin")}"')
+                    lines.append(f'"link": "{safe_get("link")}"')
+                
+                blocks.append("        {\n            " + ",\n            ".join(lines) + "\n        }")
+            return ",\n".join(blocks)
+
+        output += '    "kitaplar": [\n' + format_list(self.kitaplar) + '\n    ],\n'
+        output += '    "bolumler": [\n' + format_list(self.bolumler) + '\n    ]\n'
+        output += "};\n"
+        with open(self.filepath, "w", encoding="utf-8") as f: f.write(output)
+
+    def add_kitap(self, citation, link=None):
+        self.kitaplar.insert(0, {"citation": citation, "link": link or ""})
+        self.save()
+        
+    def add_bolum(self, citation, link=None):
+        self.bolumler.insert(0, {"citation": citation, "link": link or ""})
+        self.save()
+        
+    def delete_kitap(self, idx):
+        if 0 <= idx < len(self.kitaplar):
+            self.kitaplar.pop(idx)
+            self.save()
+            
+    def delete_bolum(self, idx):
+        if 0 <= idx < len(self.bolumler):
+            self.bolumler.pop(idx)
+            self.save()
 
 # --- SIDEBAR & MAIN LOGIC ---
 
 st.sidebar.title("Yönetim Paneli")
 module = st.sidebar.radio("Modül Seçin", [
     "📢 Duyurular", 
-    "📚 Derkenar", 
+    "📚 Derkenar",
+    "📄 Makaleler",
+    "🎤 Bildiriler",
+    "📖 Kitaplar (Yayın)", 
     "📘 Kitap Tavsiyeleri", 
     "🎬 Film/Dizi Tavsiyeleri",
     "📝 Genel Tavsiyeler"
@@ -333,7 +483,9 @@ if module == "📢 Duyurular":
             d_content = st.text_area("İçerik (Detaylı metin)", height=150)
             if st.form_submit_button("Duyuruyu Yayınla"):
                 mgr.add(d_title, d_sum, d_content)
+                st.balloons()
                 st.success("Duyuru eklendi!")
+                time.sleep(1)
                 st.rerun()
 
     with tab2:
@@ -342,7 +494,9 @@ if module == "📢 Duyurular":
             c1.info(f"**{item.get('date')}** - {item['title']}")
             if c2.button("Sil", key=f"del_duyuru_{item['id']}"):
                 mgr.delete(item['id'])
+                st.balloons()
                 st.success("Silindi!")
+                time.sleep(1)
                 st.rerun()
 
 elif module == "📚 Derkenar":
@@ -359,7 +513,9 @@ elif module == "📚 Derkenar":
             if st.form_submit_button("Kaydet"):
                 path = save_image(img) if img else None
                 mgr.add(title, content, path)
+                st.balloons()
                 st.success("Kaydedildi!")
+                time.sleep(1)
                 st.rerun()
                 
     else:
@@ -373,17 +529,158 @@ elif module == "📚 Derkenar":
                 new_title = st.text_input("Başlık", value=item['title'])
                 new_content = st.text_area("İçerik", value=item['content'], height=200)
                 st.write(f"Mevcut Resim: {item.get('image', 'Yok')}")
-                # Optional: Update image logic could be added here
                 if st.form_submit_button("Güncelle"):
                     item['title'] = new_title
                     item['content'] = new_content
                     mgr.save()
+                    st.balloons()
                     st.success("Güncellendi!")
+                    time.sleep(1)
                     st.rerun()
             
             if st.button("Bu Kaydı Sil", type="primary"):
                 mgr.delete(sel_id)
+                st.balloons()
                 st.success("Silindi!")
+                time.sleep(1)
+                st.rerun()
+
+elif module == "📄 Makaleler":
+    st.header("📄 Makale Yönetimi")
+    mgr = MakaleManager(MAKALELER_FILE)
+    
+    tab1, tab2 = st.tabs(["Makale Ekle", "Listele/Sil"])
+    
+    with tab1:
+        st.info("Makale künyesini APA formatında yapıştırınız ve ilgili PDF dosyasını seçiniz.")
+        with st.form("makale_add"):
+            citation = st.text_area("Makale Künyesi (APA Formatında)")
+            pdf = st.file_uploader("Makale dosyası (PDF)", type=["pdf"])
+            
+            if st.form_submit_button("Makaleyi Ekle"):
+                if not citation:
+                    st.error("Lütfen künye bilgisini giriniz.")
+                else:
+                    path = save_pdf(pdf, MAKALELER_DIR) if pdf else None
+                    mgr.add(citation, path)
+                    st.balloons()
+                    st.success("Makale eklendi!")
+                    time.sleep(1)
+                    st.rerun()
+                    
+    with tab2:
+        for idx, item in enumerate(mgr.items):
+            with st.container():
+                c1, c2 = st.columns([5, 1])
+                display_text = item.get('citation') or f"{item.get('yazar')} - {item.get('baslik')}"
+                c1.write(display_text[:150] + "..." if len(display_text) > 150 else display_text)
+                if item.get('link'):
+                    c1.caption(f"Dosya: {item['link']}")
+                
+                if c2.button("Sil", key=f"del_art_{idx}"):
+                    mgr.delete(idx)
+                    st.balloons()
+                    st.success("Silindi!")
+                    time.sleep(1)
+                    st.rerun()
+                st.divider()
+
+elif module == "🎤 Bildiriler":
+    st.header("🎤 Bildiri Yönetimi")
+    mgr = BildiriManager(BILDIRILER_FILE)
+    
+    tab1, tab2 = st.tabs(["Bildiri Ekle", "Listele/Sil"])
+    
+    with tab1:
+        st.info("Bildiri künyesini APA formatında yapıştırınız ve varsa PDF dosyasını ekleyiniz.")
+        with st.form("bildiri_add"):
+            citation = st.text_area("Bildiri Künyesi (APA Formatında)")
+            pdf = st.file_uploader("Bildiri Dosyası (PDF)", type=["pdf"])
+            
+            if st.form_submit_button("Bildiriyi Ekle"):
+                if not citation:
+                    st.error("Lütfen künye bilgisini giriniz.")
+                else:
+                    path = save_pdf(pdf, BILDIRILER_DIR_ACTUAL) if pdf else None
+                    mgr.add(citation, path)
+                    st.balloons()
+                    st.success("Bildiri Eklendi!")
+                    time.sleep(1)
+                    st.rerun()
+
+    with tab2:
+        for idx, item in enumerate(mgr.items):
+            with st.container():
+                c1, c2 = st.columns([5, 1])
+                display_text = item.get('citation') or f"{item.get('baslik')}"
+                c1.write(display_text)
+                if item.get('link'):
+                     c1.caption(f"Dosya: {item['link']}")
+                
+                if c2.button("Sil", key=f"del_bil_{idx}"):
+                    mgr.delete(idx)
+                    st.balloons()
+                    st.success("Silindi!")
+                    time.sleep(1)
+                    st.rerun()
+                st.divider()
+
+elif module == "📖 Kitaplar (Yayın)":
+    st.header("📖 Kitap ve Kitap Bölümleri")
+    mgr = KitapYayinManager(KITAPLAR_FILE)
+    
+    tab1, tab2 = st.tabs(["Ekle", "Listele/Sil"])
+    
+    with tab1:
+        st.info("Kitap veya Kitap Bölümü künyesini APA formatında ekleyebilirsiniz.")
+        type_choice = st.radio("Tür Seçin", ["Kitap", "Kitap Bölümü"], horizontal=True)
+        
+        with st.form("kitap_yayin_add"):
+            citation = st.text_area("Künye (APA Formatında)")
+            pdf = st.file_uploader("Yayın Dosyası (PDF)", type=["pdf"])
+            
+            if st.form_submit_button("Kaydet"):
+                if not citation:
+                    st.error("Lütfen künye bilgisini giriniz.")
+                else:
+                    path = save_pdf(pdf, KITAPLAR_DIR) if pdf else None
+                    if type_choice == "Kitap":
+                        mgr.add_kitap(citation, path)
+                        st.success("Kitap Eklendi!")
+                    else:
+                        mgr.add_bolum(citation, path)
+                        st.success("Kitap Bölümü Eklendi!")
+                    
+                    st.balloons()
+                    time.sleep(1)
+                    st.rerun()
+
+    with tab2:
+        st.subheader("Kitaplar")
+        for idx, item in enumerate(mgr.kitaplar):
+            c1, c2 = st.columns([5, 1])
+            display_text = item.get('citation') or f"{item.get('yazar')} - {item.get('baslik')}"
+            c1.write(display_text)
+            if item.get('link'): c1.caption(f"Dosya: {item['link']}")
+            if c2.button("Sil", key=f"del_bk_{idx}"):
+                mgr.delete_kitap(idx)
+                st.balloons()
+                st.success("Silindi!")
+                time.sleep(1)
+                st.rerun()
+        
+        st.divider()
+        st.subheader("Kitap Bölümleri")
+        for idx, item in enumerate(mgr.bolumler):
+            c1, c2 = st.columns([5, 1])
+            display_text = item.get('citation') or f"{item.get('yazar')} - {item.get('baslik')}"
+            c1.write(display_text)
+            if item.get('link'): c1.caption(f"Dosya: {item['link']}")
+            if c2.button("Sil", key=f"del_ch_{idx}"):
+                mgr.delete_bolum(idx)
+                st.balloons()
+                st.success("Silindi!")
+                time.sleep(1)
                 st.rerun()
 
 elif module == "📘 Kitap Tavsiyeleri":
@@ -400,7 +697,9 @@ elif module == "📘 Kitap Tavsiyeleri":
             if st.form_submit_button("Ekle"):
                 path = save_image(img) if img else None
                 mgr.add(title, content, path)
+                st.balloons()
                 st.success("Kitap Eklendi!")
+                time.sleep(1)
                 st.rerun()
     else:
         for item in mgr.items:
@@ -415,6 +714,9 @@ elif module == "📘 Kitap Tavsiyeleri":
                     st.write(item['content'])
                 if st.button("Sil", key=f"del_ktav_{item['id']}"):
                     mgr.delete(item['id'])
+                    st.balloons()
+                    st.success("Silindi!")
+                    time.sleep(1)
                     st.rerun()
 
 elif module == "🎬 Film/Dizi Tavsiyeleri":
@@ -433,7 +735,9 @@ elif module == "🎬 Film/Dizi Tavsiyeleri":
             if st.form_submit_button("Ekle"):
                 path = save_image(img) if img else None
                 mgr.add(title, content, meta, imdb, path)
+                st.balloons()
                 st.success("Film Eklendi!")
+                time.sleep(1)
                 st.rerun()
     else:
         for item in mgr.items:
@@ -451,6 +755,9 @@ elif module == "🎬 Film/Dizi Tavsiyeleri":
                     st.write(item['content'])
                 if st.button("Sil", key=f"del_ftav_{item['id']}"):
                     mgr.delete(item['id'])
+                    st.balloons()
+                    st.success("Silindi!")
+                    time.sleep(1)
                     st.rerun()
 
 elif module == "📝 Genel Tavsiyeler":
@@ -463,7 +770,9 @@ elif module == "📝 Genel Tavsiyeler":
             content = st.text_area("İçerik")
             if st.form_submit_button("Ekle"):
                 mgr.add(title, content)
+                st.balloons()
                 st.success("Eklendi!")
+                time.sleep(1)
                 st.rerun()
     
     st.info("Not: 'Kitap Tavsiyeleri' ve 'Film Tavsiyeleri' başlıkları burada listelenir ancak içerikleri diğer menülerden yönetilir. Onları buradan silmeyiniz.")
@@ -471,10 +780,12 @@ elif module == "📝 Genel Tavsiyeler":
     for item in mgr.items:
         with st.expander(f"{item['id']} - {item['title']}"):
             st.write(item['content'])
-            # Protect magic IDs?
             if item['id'] not in [2, 3]:
                 if st.button("Sil", key=f"del_gtav_{item['id']}"):
                     mgr.delete(item['id'])
+                    st.balloons()
+                    st.success("Silindi!")
+                    time.sleep(1)
                     st.rerun()
             else:
                 st.caption("Bu bir kategori başlığıdır, silinemez.")
