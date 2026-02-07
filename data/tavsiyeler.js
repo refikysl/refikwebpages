@@ -1,7 +1,7 @@
 const tavsiyelerData = [
     {
         "id": 1,
-        "title": "Tavsiye 1. Ders çalışırken yapay zeka kullanımı",
+        "title": "Ders çalışırken yapay zeka kullanımı",
         "content": `Öğrenciler olarak sınavlara çalışırken elinizde muazzam imkanlar var ama kullanmıyorsunuz. Örneğin yapay zeka (AI). Hepinizin cep telefonlarında chatgpt, gemini gibi uygulamalar mutlaka vardır. Yoksa da olmalı bence. Ama siz bu araçları yanlış kullanıyorsunuz. Yapay zeka sizin oyun arkadaşınız, bugün ne giysem diye soracağınız ya da yemek tarifi isteyebileceğiniz bir şey olmamalı bence. Bunları yapan pek çok uygulama zaten var. Yapay zekayı akademik işlerde kullanırken de yanlış kullanıyorsunuz. Chatgpt’ye soruyorsunuz. “Fransa kamu yönetimi sistemini anlat”. Yapay zeka genel geçer pek çok bilgiyi verir ama sınava bunlardan girmiyorsunuz. Hocanın anlattığı konular daha spesifik konular olabiliyor. Bu yüzden aldığınız cevaplar da hiçbir işinize yaramıyor. 
         
 Yapay zekayı daraltılmış alanlarda soru sormak için kullanmak gerekiyor. 
@@ -21,18 +21,46 @@ Sonra her bir başlığı yazıp bu başlık altında kaynak neyi anlatmaktadır
 <strong>SBKY 2. Sınıf dersi Yerel Siyaset için mesela şu soruları sorabilirsiniz:</strong>
 <br>
 ... (Örnek Sorular) ...
+1. Yazar, kamu yönetimi kavramlarını açıklarken neden teknik/didaktik bir dil yerine, "hayali bir devlet kurma" senaryosu (metaforu) kullanmayı tercih etmiştir? Bu yöntemin akademik metinlerdeki mesafeyi nasıl etkilediğini açıklayınız.
+2. İnsanoğlunun yerleşik hayata geçiş sürecinde, "yönetme" ihtiyacı ve ilk devlet yapılanmaları (yöneten-yönetilen ayrımı) hangi tarihsel ve sosyolojik koşulların sonucunda ortaya çıkmıştır?
+3. Max Weber devleti tanımlarken hangi "tekel" özelliğine vurgu yapmıştır ve bu özellik devletin hangi temel fonksiyonunu yerine getirmesini sağlar?
+4. Tarihsel süreçte devletlerin ilk kurulan bakanlıkları (fonksiyonları) genellikle hangileridir? Modern zamanlardaki "sosyal devlet" anlayışı bu yapılanmayı nasıl değiştirmiştir?
+Devlet Sistemleri (Üniter, Federal, Bölgeli)
+5. Üniter devlet ile federal devletin oluşum süreçlerini karşılaştırdığımızda; üniter devletin bir "oluş", federal devletin ise bir "oldurulmuş" süreç olması ne anlama gelmektedir?
+6. Federal devlet sisteminde egemenlik paylaşımı nasıldır? Federal devleti oluşturan birimlerin (eyaletlerin) yasama, yürütme ve yargı yetkileri açısından üniter devletin taşra birimlerinden farkı nedir?
+7. "Bölgeli Devlet" (örneğin İspanya) sistemini federal devletten ayıran temel farklar nelerdir? Özellikle anayasa yapma yetkisi ve yetkilerin kaynağı (devredilmiş yetkiler) açısından karşılaştırınız.
+8. Üniter ve federal devletlerde yerel yönetimlerin "vergi koyma" yetkileri arasında nasıl bir temel farklılık bulunmaktadır?
+Hükümet Sistemleri
+9. "Kuvvetler birliği" ilkesine dayanan hükümet sistemleri nelerdir? Türkiye tarihinde "Meclis Hükümeti" sistemine verilebilecek örnek hangisidir?,
+10. Yürütme organının seçimi ve yasama ile ilişkisi bağlamında; Parlamenter Sistem, Başkanlık Sistemi ve Yarı Başkanlık Sistemi arasındaki temel farklar nelerdir?
+11. Başkanlık sistemindeki "sert kuvvetler ayrılığı" ile parlamenter sistemdeki "yumuşak kuvvetler ayrılığı" tanımlamaları neye dayanarak yapılmaktadır?,
+Merkezden Yönetim (Centralization)
+12. Merkezden yönetimin sunduğu kamu hizmetlerinin en önemli avantajlarından biri olan "hizmetlerde yeknesaklık (standartlaşma)" ve "ölçek ekonomisi" kavramlarını açıklayınız.,
+13. Merkezi yönetimin aşırı büyümesi ve hizmetleri tek merkezden yürütmesinin doğurduğu temel sakıncalar nelerdir?
+14. Hangi kamu hizmetleri (örneğin adalet, savunma) doğası gereği mutlaka merkezi yönetim tarafından yürütülmek zorundadır?
+Taşra Yönetimi ve Yetki Genişliği
+15. Taşra yönetimlerinin temel kuruluş amacı nedir? "Deconcentration" (yetki genişliği/odaklanmanın azaltılması) kavramı, merkezin yükünü hafifletme bağlamında neyi ifade eder?,
+16. Türk idare hukukunda kullanılan "yetki genişliği" (tevsi-i mezuniyet) kavramı ile valilerin sahip olduğu yetkiler arasındaki ilişkiyi açıklayınız. Bu yetki valiye hangi imkanları tanır?,
+Yerinden Yönetim (Decentralization)
+17. Yerel yönetimlerin "demokratik" işlevi nedir? Vatandaşın ulusal siyasete etkisi ile yerel siyasete etkisi arasındaki farkı "mesafe" kavramı üzerinden tartışınız.,
+18. "Yerel Yönetimler" (mahalli idareler) ile "Hizmet Yerinden Yönetim" kuruluşları (örneğin Üniversiteler, KİT'ler) arasındaki dört temel farkı (tüzel kişilik türü, uzmanlık alanı, organların seçimi vb.) sıralayınız.
+19. Bir kamu hizmetinin (örneğin TRT gibi yayıncılık hizmetlerinin) merkezi idare bürokrasisi dışına çıkarılarak özerk bir "hizmet yerinden yönetim" kuruluşuna devredilmesinin gerekçeleri nelerdir?,
+Subsidiyarite İlkesi ve Görev Paylaşımı
+20. "Subsidiyarite" (hizmette yerellik) ilkesi nedir? Merkezi yönetim ile yerel yönetimler arasındaki görev paylaşımında kullanılan "Liste Yöntemi" ve "Genel Yetki İlkesi"ni açıklayınız.,,
+Özerklik, Vesayet ve İdarenin Bütünlüğü
+21. Yerel yönetimlerin özerkliğini dengeleyen "vesayet denetimi" nedir? Hiyerarşik denetimden farkı nedir ve "idarenin bütünlüğü" ilkesi açısından neden gereklidir
 <br><br>
 Yine notebookLM üzerinde sesli ve videolu özetler hazırlatıp konuyu size anlatmasını sağlayabilirsiniz. Sesli özetler podcast mantığıyla üretilmekte ve iki kişinin karşılıklı konuşmasıyla ilerlemektedir. Dosyayı indirip cep telefonunuza yükleyip boş kaldığınız zamanlarda ya da yatarken 15 dakika dinlerseniz kalıcı bilgilere sahip olursunuz.`
     },
     {
         "id": 2,
-        "title": "Tavsiye 2. Kitap Tavsiyeleri",
+        "title": "Heybedeki Kitaplar",
         "isHtml": true,
         "content": `<p>Kitap tavsiyeleri yükleniyor...</p>`
     },
     {
         "id": 3,
-        "title": "Tavsiye 3. Film ve Dizi Tavsiyeleri",
+        "title": "Heybedeki Filmler",
         "isHtml": true,
         "content": `<p>Film ve dizi tavsiyeleri yükleniyor...</p>`
     }
