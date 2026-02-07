@@ -25,11 +25,12 @@ MAKALELER_FILE = "data/makaleler.js"
 KITAPLAR_FILE = "data/kitaplar.js" # Publications (Books/Chapters)
 BILDIRILER_FILE = "data/bildiriler.js" 
 ANLAR_FILE = "data/anlar.js"
+YOUTUBE_TAVSIYE_FILE = "data/tavsiyeler_youtube.js"
 IMAGES_DIR = "images"
 ANLAR_IMAGES_DIR = "images/anlar"
 MAKALELER_DIR = "makaleler"
-KITAPLAR_DIR = "kitaplar" 
-BILDIRILER_DIR = "makaleler" # Storing proceedings in same dir as articles/pubs if not specified otherwise, or separate? Let's use makaleler for now or create generic 'yayinlar'? Existing structure uses 'makaleler' and 'kitaplar'. Let's use 'bildiriler' to be clean.
+KITAPLAR_DIR = "kitaplar"
+BILDIRILER_DIR = "makaleler" 
 BILDIRILER_DIR_ACTUAL = "bildiriler"
 
 st.set_page_config(
@@ -525,6 +526,44 @@ class KitapYayinManager(BaseManager):
             self.bolumler.pop(idx)
             self.save()
 
+class YoutubeTavsiyeManager(BaseManager):
+    def load(self):
+        super().load()
+        self.items = parse_js_object_array(self.raw_content)
+
+    def save(self):
+        output = "const youtubeTavsiyeleriData = [\n"
+        for i, item in enumerate(self.items):
+            # Escape backticks, quotes AND newlines to prevent JS syntax errors
+            desc_esc = item.get('description', '').replace('`', '\\`').replace('"', '\\"').replace('\n', '\\n')
+            
+            entry = f"""    {{
+        "id": {item['id']},
+        "title": "{item.get('title', '')}",
+        "description": "{desc_esc}",
+        "link": "{item.get('link', '')}"
+    }}"""
+            if i < len(self.items) - 1: entry += ","
+            output += entry + "\n"
+        output += "];\n"
+        
+        # Add module.exports for Node.js compatibility
+        output += "\nif (typeof module !== 'undefined' && module.exports) {\n"
+        output += "    module.exports = youtubeTavsiyeleriData;\n"
+        output += "}\n"
+
+        with open(self.filepath, "w", encoding="utf-8") as f: f.write(output)
+
+    def add(self, title, link, description=""):
+        new_id = self.generate_id()
+        item = {"id": new_id, "title": title, "link": link, "description": description}
+        self.items.append(item)
+        self.save()
+
+    def delete(self, id):
+        self.items = [i for i in self.items if i['id'] != id]
+        self.save()
+
 # --- SIDEBAR & MAIN LOGIC ---
 
 st.sidebar.title("Yönetim Paneli")
@@ -537,6 +576,7 @@ module = st.sidebar.radio("Modül Seçin", [
     "📖 Kitaplar (Yayın)", 
     "📘 Kitap Tavsiyeleri", 
     "🎬 Film/Dizi Tavsiyeleri",
+    "📺 Youtube Tavsiyeleri",
     "📝 Genel Tavsiyeler"
 ])
 
@@ -982,6 +1022,52 @@ elif module == "📸 Anlar ve Anılar":
                                     st.success("Güncellendi!")
                                     time.sleep(1)
                                     st.rerun()
+
+elif module == "📺 Youtube Tavsiyeleri":
+    st.header("📺 Youtube Kanal Tavsiyeleri")
+    mgr = YoutubeTavsiyeManager(YOUTUBE_TAVSIYE_FILE)
+    
+    tab1, tab2 = st.tabs(["Kanal Ekle", "Listele/Sil"])
+    
+    with tab1:
+        st.info("Youtube kanalı bilgilerini giriniz.")
+        with st.form("youtube_add"):
+            title = st.text_input("Kanal Adı (Kısa Başlık)")
+            description = st.text_area("Kanal Tanıtımı / Açıklama (Opsiyonel)", height=100)
+            link = st.text_input("Youtube Kanal Linki (URL)")
+            
+            if st.form_submit_button("Kanalı Ekle"):
+                if not title:
+                    st.error("Lütfen başlık girin.")
+                elif not link:
+                    st.error("Lütfen link girin.")
+                else:
+                    mgr.add(title, link, description)
+                    st.balloons()
+                    st.success("Youtube kanalı eklendi!")
+                    time.sleep(1)
+                    st.rerun()
+                    
+    with tab2:
+        if not mgr.items:
+            st.warning("Henüz Youtube tavsiyesi eklenmemiş.")
+        else:
+            st.write(f"**Toplam {len(mgr.items)} kanal**")
+            for item in mgr.items:
+                with st.container():
+                    c1, c2 = st.columns([5, 1])
+                    c1.markdown(f"**{item.get('title', '')}**")
+                    if item.get('description'):
+                        c1.caption(item['description'])
+                    c1.markdown(f"🔗 [{item['link']}]({item['link']})")
+                    
+                    if c2.button("Sil", key=f"del_yt_{item['id']}", type="primary"):
+                        mgr.delete(item['id'])
+                        st.balloons()
+                        st.success("Silindi!")
+                        time.sleep(1)
+                        st.rerun()
+                    st.divider()
 
 elif module == "📝 Genel Tavsiyeler":
     st.header("📝 Genel Tavsiye Yönetimi (Metin Odaklı)")
