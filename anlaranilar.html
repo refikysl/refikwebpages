@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anlar ve Anılar | Prof. Dr. Refik YASLIKAYA</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        :root {
+            --primary-color: #1e40af;
+            --accent-color: #3b82f6;
+            --text-primary: #1e293b;
+            --text-secondary: #64748b;
+            --bg-light: #f8fafc;
+            --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+        }
+
+        /* Header Styles */
+        .gallery-header {
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(10px);
+            padding: 1.5rem 2rem;
+            box-shadow: var(--shadow-lg);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 3px solid var(--accent-color);
+        }
+
+        .header-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .page-title {
+            margin: 0;
+            color: var(--primary-color);
+            font-size: 2rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .page-title i {
+            font-size: 2.2rem;
+            color: var(--accent-color);
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.5rem;
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: var(--shadow-md);
+        }
+
+        .back-link:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        /* Gallery Container */
+        .gallery-container {
+            max-width: 1400px;
+            margin: 2rem auto;
+            padding: 0 2rem 2rem;
+        }
+
+        .gallery-intro {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 2rem;
+            border-radius: 20px;
+            margin-bottom: 2rem;
+            box-shadow: var(--shadow-lg);
+            text-align: center;
+        }
+
+        .gallery-intro p {
+            color: var(--text-secondary);
+            line-height: 1.8;
+            margin: 0;
+            font-size: 1.1rem;
+        }
+
+        /* Masonry Grid */
+        .masonry-grid {
+            column-count: 4;
+            column-gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 1200px) {
+            .masonry-grid {
+                column-count: 3;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .masonry-grid {
+                column-count: 2;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .masonry-grid {
+                column-count: 1;
+            }
+        }
+
+        .gallery-item {
+            break-inside: avoid;
+            margin-bottom: 1.5rem;
+            position: relative;
+            cursor: pointer;
+            overflow: hidden;
+            border-radius: 16px;
+            box-shadow: var(--shadow-md);
+            transition: all 0.3s ease;
+            background: white;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            display: block;
+            border-radius: 16px;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+
+        .gallery-item-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+            color: white;
+            padding: 1.5rem;
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover .gallery-item-overlay {
+            transform: translateY(0);
+        }
+
+        .overlay-title {
+            font-weight: 600;
+            font-size: 1rem;
+            margin: 0 0 0.5rem 0;
+        }
+
+        .overlay-date {
+            font-size: 0.85rem;
+            opacity: 0.9;
+            margin: 0;
+        }
+
+        /* Modal / Lightbox */
+        .lightbox-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.95);
+            z-index: 1000;
+            align-items: center;
+            justify-content: center;
+            animation: fadeIn 0.3s ease;
+        }
+
+        .lightbox-modal.active {
+            display: flex;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .lightbox-content {
+            position: relative;
+            max-width: 90%;
+            max-height: 90%;
+            animation: zoomIn 0.3s ease;
+        }
+
+        @keyframes zoomIn {
+            from {
+                transform: scale(0.8);
+                opacity: 0;
+            }
+
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        .lightbox-content img {
+            max-width: 100%;
+            max-height: 90vh;
+            border-radius: 8px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+        }
+
+        .lightbox-close {
+            position: absolute;
+            top: -50px;
+            right: 0;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            color: white;
+            border: none;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            font-size: 2rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .lightbox-close:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: rotate(90deg);
+        }
+
+        .lightbox-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            color: white;
+            border: none;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            font-size: 2rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .lightbox-nav:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        .lightbox-prev {
+            left: 2rem;
+        }
+
+        .lightbox-next {
+            right: 2rem;
+        }
+
+        .lightbox-info {
+            position: absolute;
+            bottom: -80px;
+            left: 0;
+            right: 0;
+            text-align: center;
+            color: white;
+        }
+
+        .lightbox-info h3 {
+            margin: 0 0 0.5rem 0;
+            font-size: 1.5rem;
+        }
+
+        .lightbox-info p {
+            margin: 0;
+            opacity: 0.8;
+        }
+
+        /* Loading Animation */
+        .loading {
+            text-align: center;
+            padding: 3rem;
+            color: white;
+            font-size: 1.2rem;
+        }
+
+        .loading i {
+            font-size: 3rem;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="gallery-header">
+        <div class="header-content">
+            <h1 class="page-title">
+                <i class='bx bx-photo-album'></i>
+                Anlar ve Anılar
+            </h1>
+            <a href="index.html" class="back-link">
+                <i class='bx bx-arrow-back'></i>
+                Ana Sayfaya Dön
+            </a>
+        </div>
+    </header>
+
+    <!-- Gallery Container -->
+    <div class="gallery-container">
+        <div class="gallery-intro">
+            <p>
+                Geçmişten bugüne, akademik yolculuğumdan ve yaşamımdan anlar... Her fotoğraf bir hikaye, her an bir
+                hatıra.
+                <br>Tıklayarak büyük boyutta görüntüleyebilirsiniz.
+            </p>
+        </div>
+
+        <!-- Masonry Grid -->
+        <div class="masonry-grid" id="gallery-grid">
+            <!-- Photo items will be loaded here -->
+            <div class="loading">
+                <i class='bx bx-loader-alt'></i>
+                <p>Fotoğraflar yükleniyor...</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox-modal" id="lightbox">
+        <div class="lightbox-content">
+            <button class="lightbox-close" id="lightbox-close">
+                <i class='bx bx-x'></i>
+            </button>
+            <button class="lightbox-nav lightbox-prev" id="lightbox-prev">
+                <i class='bx bx-chevron-left'></i>
+            </button>
+            <button class="lightbox-nav lightbox-next" id="lightbox-next">
+                <i class='bx bx-chevron-right'></i>
+            </button>
+            <img id="lightbox-image" src="" alt="">
+            <div class="lightbox-info">
+                <h3 id="lightbox-title"></h3>
+                <p id="lightbox-date"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Load photo data -->
+    <script src="data/anlar.js"></script>
+
+    <script>
+        // Use photos from data file, fallback to demo photos if not available
+        const photos = typeof anlarData !== 'undefined' ? anlarData : [
+            {
+                id: 1,
+                src: 'https://picsum.photos/400/300?random=1',
+                title: 'Akademik Çalışma',
+                date: '2020',
+                width: 400,
+                height: 300
+            },
+            {
+                id: 2,
+                src: 'https://picsum.photos/400/600?random=2',
+                title: 'Konferans Sunumu',
+                date: '2019',
+                width: 400,
+                height: 600
+            },
+            {
+                id: 3,
+                src: 'https://picsum.photos/400/500?random=3',
+                title: 'Kampüs Gezisi',
+                date: '2018',
+                width: 400,
+                height: 500
+            },
+            {
+                id: 4,
+                src: 'https://picsum.photos/400/400?random=4',
+                title: 'Mezuniyet Töreni',
+                date: '2021',
+                width: 400,
+                height: 400
+            },
+            {
+                id: 5,
+                src: 'https://picsum.photos/400/550?random=5',
+                title: 'Kütüphane',
+                date: '2017',
+                width: 400,
+                height: 550
+            },
+            {
+                id: 6,
+                src: 'https://picsum.photos/400/350?random=6',
+                title: 'Seminer',
+                date: '2022',
+                width: 400,
+                height: 350
+            },
+            {
+                id: 7,
+                src: 'https://picsum.photos/400/450?random=7',
+                title: 'Ofis Çalışması',
+                date: '2016',
+                width: 400,
+                height: 450
+            },
+            {
+                id: 8,
+                src: 'https://picsum.photos/400/600?random=8',
+                title: 'Toplantı',
+                date: '2023',
+                width: 400,
+                height: 600
+            },
+            {
+                id: 9,
+                src: 'https://picsum.photos/400/380?random=9',
+                title: 'Workshop',
+                date: '2015',
+                width: 400,
+                height: 380
+            },
+            {
+                id: 10,
+                src: 'https://picsum.photos/400/520?random=10',
+                title: 'Panel',
+                date: '2024',
+                width: 400,
+                height: 520
+            },
+            {
+                id: 11,
+                src: 'https://picsum.photos/400/300?random=11',
+                title: 'Sınıf',
+                date: '2014',
+                width: 400,
+                height: 300
+            },
+            {
+                id: 12,
+                src: 'https://picsum.photos/400/480?random=12',
+                title: 'Araştırma',
+                date: '2025',
+                width: 400,
+                height: 480
+            }
+        ];
+
+        let currentPhotoIndex = 0;
+
+        // Load gallery
+        function loadGallery() {
+            const grid = document.getElementById('gallery-grid');
+            grid.innerHTML = '';
+
+            photos.forEach((photo, index) => {
+                const item = document.createElement('div');
+                item.className = 'gallery-item';
+                item.innerHTML = `
+                    <img src="${photo.src}" alt="${photo.title}" loading="lazy">
+                    <div class="gallery-item-overlay">
+                        <h3 class="overlay-title">${photo.title}</h3>
+                        <p class="overlay-date">${photo.date}</p>
+                    </div>
+                `;
+                item.addEventListener('click', () => openLightbox(index));
+                grid.appendChild(item);
+            });
+        }
+
+        // Lightbox functions
+        function openLightbox(index) {
+            currentPhotoIndex = index;
+            updateLightbox();
+            document.getElementById('lightbox').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
+        function updateLightbox() {
+            const photo = photos[currentPhotoIndex];
+            document.getElementById('lightbox-image').src = photo.src;
+            document.getElementById('lightbox-title').textContent = photo.title;
+            document.getElementById('lightbox-date').textContent = photo.date;
+        }
+
+        function nextPhoto() {
+            currentPhotoIndex = (currentPhotoIndex + 1) % photos.length;
+            updateLightbox();
+        }
+
+        function prevPhoto() {
+            currentPhotoIndex = (currentPhotoIndex - 1 + photos.length) % photos.length;
+            updateLightbox();
+        }
+
+        // Event listeners
+        document.getElementById('lightbox-close').addEventListener('click', closeLightbox);
+        document.getElementById('lightbox-next').addEventListener('click', nextPhoto);
+        document.getElementById('lightbox-prev').addEventListener('click', prevPhoto);
+
+        // Close on background click
+        document.getElementById('lightbox').addEventListener('click', (e) => {
+            if (e.target.id === 'lightbox') {
+                closeLightbox();
+            }
+        });
+
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (!document.getElementById('lightbox').classList.contains('active')) return;
+
+            if (e.key === 'Escape') closeLightbox();
+            if (e.key === 'ArrowRight') nextPhoto();
+            if (e.key === 'ArrowLeft') prevPhoto();
+        });
+
+        // Initialize
+        window.addEventListener('DOMContentLoaded', loadGallery);
+    </script>
+
+</body>
+
+</html>
