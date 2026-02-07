@@ -967,6 +967,11 @@ details.modern-details[open] summary .summary-icon {
     color: #fff;
     position: relative;
     overflow: hidden;
+    min-height: 300px;
+    /* Force height to match Derkenar's visual weight */
+    display: flex;
+    align-items: center;
+    /* Vertically center the text */
 }
 
 .heybe-intro-card::before {
