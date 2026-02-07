@@ -63,5 +63,11 @@ Yine notebookLM üzerinde sesli ve videolu özetler hazırlatıp konuyu size anl
         "title": "Heybedeki Filmler",
         "isHtml": true,
         "content": `<p>Film ve dizi tavsiyeleri yükleniyor...</p>`
+    },
+    {
+        "id": 4,
+        "title": "Takip Edilesi Youtube Sayfaları",
+        "isHtml": true,
+        "content": `<p>Youtube kanal tavsiyeleri yükleniyor...</p>`
     }
 ];
