@@ -4,6 +4,16 @@ import re
 import json
 import datetime
 import time
+from PIL import Image
+from io import BytesIO
+
+# Try to import HEIC support
+try:
+    from pillow_heif import register_heif_opener
+    register_heif_opener()
+    HEIC_SUPPORT = True
+except ImportError:
+    HEIC_SUPPORT = False
 
 # --- CONFIGURATION ---
 DERKENAR_FILE = "data/derkenar.js"
@@ -14,7 +24,9 @@ GENEL_TAVSIYE_FILE = "data/tavsiyeler.js"
 MAKALELER_FILE = "data/makaleler.js"
 KITAPLAR_FILE = "data/kitaplar.js" # Publications (Books/Chapters)
 BILDIRILER_FILE = "data/bildiriler.js" 
+ANLAR_FILE = "data/anlar.js"
 IMAGES_DIR = "images"
+ANLAR_IMAGES_DIR = "images/anlar"
 MAKALELER_DIR = "makaleler"
 KITAPLAR_DIR = "kitaplar" 
 BILDIRILER_DIR = "makaleler" # Storing proceedings in same dir as articles/pubs if not specified otherwise, or separate? Let's use makaleler for now or create generic 'yayinlar'? Existing structure uses 'makaleler' and 'kitaplar'. Let's use 'bildiriler' to be clean.
@@ -82,7 +94,8 @@ def parse_js_object_array(content, array_name=None):
         keys_to_extract = [
             'id', 'title', 'date', 'summary', 'content', 'image', 'meta', 'imdb', 
             'yazar', 'yil', 'baslik', 'yayin', 'link',
-            'citation', 'dergi', 'cilt', 'sayi', 'sayfa', 'doi'
+            'citation', 'dergi', 'cilt', 'sayi', 'sayfa', 'doi',
+            'src', 'description', 'width', 'height'
         ]
         
         for key in keys_to_extract:
@@ -278,6 +291,62 @@ class FilmTavsiyeManager(BaseManager):
         self.items = [i for i in self.items if i['id'] != id]
         self.save()
 
+class AnlarManager(BaseManager):
+    def load(self):
+        super().load()
+        self.items = parse_js_object_array(self.raw_content)
+        
+    def save(self):
+        output = "const anlarData = [\n"
+        for i, item in enumerate(self.items):
+            entry = f"""    {{
+        "id": {item['id']},
+        "src": "{item.get('src', '')}",
+        "title": "{item.get('title', '')}",
+        "date": "{item.get('date', '')}",
+        "description": "{item.get('description', '')}",
+        "width": {item.get('width', 400)},
+        "height": {item.get('height', 400)}
+    }}"""
+            if i < len(self.items) - 1: entry += ","
+            output += entry + "\n"
+        output += "];\n"
+        
+        # Add module.exports for Node.js compatibility
+        output += "\nif (typeof module !== 'undefined' && module.exports) {\n"
+        output += "    module.exports = anlarData;\n"
+        output += "}\n"
+        
+        with open(self.filepath, "w", encoding="utf-8") as f: f.write(output)
+    
+    def add(self, src, title, date, description="", width=400, height=400):
+        new_id = self.generate_id()
+        item = {
+            "id": new_id,
+            "src": src,
+            "title": title,
+            "date": date,
+            "description": description,
+            "width": width,
+            "height": height
+        }
+        self.items.insert(0, item)
+        self.save()
+    
+    def update(self, id, title, date, description=""):
+        for item in self.items:
+            if item['id'] == id:
+                item['title'] = title
+                item['date'] = date
+                item['description'] = description
+                self.save()
+                return True
+        return False
+    
+    def delete(self, id):
+        self.items = [i for i in self.items if i['id'] != id]
+        self.save()
+
 class GenelTavsiyeManager(BaseManager):
     def load(self):
         super().load()
@@ -462,6 +531,7 @@ st.sidebar.title("Yönetim Paneli")
 module = st.sidebar.radio("Modül Seçin", [
     "📢 Duyurular", 
     "📚 Derkenar",
+    "📸 Anlar ve Anılar",
     "📄 Makaleler",
     "🎤 Bildiriler",
     "📖 Kitaplar (Yayın)", 
@@ -759,6 +829,159 @@ elif module == "🎬 Film/Dizi Tavsiyeleri":
                     st.success("Silindi!")
                     time.sleep(1)
                     st.rerun()
+
+elif module == "📸 Anlar ve Anılar":
+    st.header("📸 Anlar ve Anılar - Fotoğraf Galerisi")
+    
+    # Ensure directories exist
+    if not os.path.exists(ANLAR_IMAGES_DIR):
+        os.makedirs(ANLAR_IMAGES_DIR)
+    
+    mgr = AnlarManager(ANLAR_FILE)
+    
+    tab1, tab2 = st.tabs(["Fotoğraf Ekle", "Listele/Düzenle/Sil"])
+    
+    with tab1:
+        # Show HEIC support status
+        if HEIC_SUPPORT:
+            st.success("✅ HEIC formatı destekleniyor (iPhone fotoğrafları)")
+        else:
+            st.warning("⚠️ HEIC desteği için 'pillow-heif' kurulmalı: pip install pillow-heif")
+        
+        st.info("Fotoğraf yükleyin ve tarih seçin.")
+        with st.form("anlar_add"):
+            col1, col2 = st.columns([2, 1])
+            
+            with col1:
+                # Add HEIC to supported formats
+                supported_formats = ["jpg", "jpeg", "png", "webp"]
+                if HEIC_SUPPORT:
+                    supported_formats.extend(["heic", "heif"])
+                
+                photo = st.file_uploader("Fotoğraf Seçin", type=supported_formats)
+                title = st.text_input("Başlık")
+                # DATE INPUT - Calendar
+                date_val = st.date_input("Tarih Seçin", datetime.date.today())
+                description = st.text_area("Açıklama (opsiyonel)", height=100)
+            
+            with col2:
+                st.write("**Fotoğraf Boyut Bilgisi**")
+                st.caption("Masonry layout için fotoğraf oranını belirtin:")
+                orientation = st.radio(
+                    "Oryantasyon",
+                    ["Yatay (Landscape)", "Dikey (Portrait)", "Kare (Square)"],
+                    help="Fotoğrafın genel şeklini seçin"
+                )
+                
+                # Set dimensions based on orientation
+                if orientation == "Yatay (Landscape)":
+                    width, height = 400, 300
+                elif orientation == "Dikey (Portrait)":
+                    width, height = 400, 600
+                else:  # Square
+                    width, height = 400, 400
+                
+                st.caption(f"Oran: {width} x {height}")
+            
+            if st.form_submit_button("Fotoğrafı Ekle"):
+                if not photo:
+                    st.error("Lütfen bir fotoğraf seçin.")
+                elif not title:
+                    st.error("Lütfen başlık girin.")
+                else:
+                    try:
+                        # Get file extension
+                        file_ext = photo.name.split('.')[-1].lower()
+                        date_str = str(date_val) # Convert date object to YYYY-MM-DD string
+                        
+                        # Process HEIC files
+                        if file_ext in ['heic', 'heif']:
+                            if not HEIC_SUPPORT:
+                                st.error("HEIC formatı desteklenmiyor. Lütfen JPG/PNG formatında yükleyin.")
+                            else:
+                                # Convert HEIC to JPEG
+                                img = Image.open(photo)
+                                
+                                # Create new filename with .jpg extension
+                                new_filename = photo.name.rsplit('.', 1)[0] + '.jpg'
+                                img_path = os.path.join(ANLAR_IMAGES_DIR, new_filename)
+                                
+                                # Save as JPEG
+                                img.convert('RGB').save(img_path, 'JPEG', quality=90)
+                                rel_path = f"images/anlar/{new_filename}"
+                                
+                                mgr.add(rel_path, title, date_str, description, width, height)
+                                st.balloons()
+                                st.success(f"✅ HEIC fotoğraf JPG'ye dönüştürüldü ve eklendi!")
+                                time.sleep(1)
+                                st.rerun()
+                        else:
+                            # Regular image processing (JPG, PNG, WEBP)
+                            img_path = os.path.join(ANLAR_IMAGES_DIR, photo.name)
+                            with open(img_path, "wb") as f:
+                                f.write(photo.getbuffer())
+                            
+                            rel_path = f"images/anlar/{photo.name}"
+                            mgr.add(rel_path, title, date_str, description, width, height)
+                            st.balloons()
+                            st.success("Fotoğraf başarıyla eklendi!")
+                            time.sleep(1)
+                            st.rerun()
+                    
+                    except Exception as e:
+                        st.error(f"Hata oluştu: {str(e)}")
+    
+    with tab2:
+        if not mgr.items:
+            st.warning("Henüz fotoğraf eklenmemiş.")
+        else:
+            st.write(f"**Toplam {len(mgr.items)} fotoğraf**")
+            st.divider()
+            
+            for item in mgr.items:
+                with st.container():
+                    col1, col2, col3 = st.columns([1, 3, 1])
+                    
+                    with col1:
+                        # Show thumbnail - use .get() to avoid KeyError
+                        src = item.get('src', '')
+                        if src and os.path.exists(src):
+                            st.image(src, width=150)
+                        else:
+                            st.warning("Resim bulunamadı")
+                    
+                    with col2:
+                        st.write(f"**{item.get('title', 'Başlıksız')}**")
+                        
+                        # Handle date display (might be old format or new YYYY-MM-DD)
+                        d = item.get('date', '')
+                        st.caption(f"📅 {d}")
+                        
+                        if item.get('description'):
+                            st.caption(f"📝 {item['description']}")
+                        st.caption(f"📐 Boyut: {item.get('width', 400)} x {item.get('height', 400)}")
+                        st.caption(f"📁 Dosya: {item.get('src', 'Yok')}")
+                        
+                        # Edit form in expander
+                        with st.expander("✏️ Düzenle"):
+                            with st.form(f"edit_{item.get('id', 0)}"):
+                                new_title = st.text_input("Başlık", value=item.get('title', ''))
+                                
+                                # Try to parse existing date for date_input, fallback to today
+                                try:
+                                    # If it's YYYY-MM-DD
+                                    existing_date = datetime.datetime.strptime(item.get('date', ''), '%Y-%m-%d').date()
+                                except:
+                                    existing_date = datetime.date.today()
+
+                                new_date_val = st.date_input("Tarih", value=existing_date)
+                                new_desc = st.text_area("Açıklama", value=item.get('description', ''), height=80)
+                                
+                                if st.form_submit_button("Güncelle"):
+                                    mgr.update(item['id'], new_title, str(new_date_val), new_desc)
+                                    st.success("Güncellendi!")
+                                    time.sleep(1)
+                                    st.rerun()
 
 elif module == "📝 Genel Tavsiyeler":
     st.header("📝 Genel Tavsiye Yönetimi (Metin Odaklı)")
