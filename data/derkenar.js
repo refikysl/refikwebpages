@@ -10,6 +10,106 @@ Bu sayfa, hayatın ana metnine düşülmüş mütevazı bir şerh, akademik disi
     ],
     "konular": [
     {
+        "id": 32,
+        "title": "Gece-Uyku-Uykusuzluk üzerine büyük adamlardan aforizmalar",
+        "image": "",
+        "content": `Ne kadar az bilirsen o kadar iyi uyursun (Gorki)
+Uyursan gece biter, uyuyamazsan sen (Sartre)
+Çok uyumak kaçmaktır, uyuyamamaksa yakalanmak (Freud)
+
+Bunları derkenarıma kodlarken saat 03:55'ti.`
+    },
+    {
+        "id": 31,
+        "title": "Muaviye ve dişi deve hikayesi",
+        "image": "",
+        "content": `Hz. Ali’nin taraftarlarından Kûfeli bir adam Şam’a gelmiş, fakat Şamlı biri “Bindiğin bu dişi deve benimdir” diyerek deveye sahip çıkmıştır. Deve erkek olduğu halde Şamlı kişi, “Bu dişi deve benimdir” diye ısrar etmiştir. Bilahare mesele Muaviye’ye intikal edince her iki tarafı da dinlemiş, ardından “Bu dişi deve Şamlı’ya aittir” diyerek kararını halkın huzurunda ilan etmiştir. Daha sonra halka dönüp, “Ey cemaat! Bu dişi deve kimindir?” diye sormuş, halk da “Şamlınındır” diye karşılık vermiştir. Kûfeli adam bütün bu olan bitenler karşısında afallayıp kalmış, bu esnada Muaviye onu yanına çağırıp, “Kûfeli! Şimdi beni iyi dinle!” demiş ve ardından şunları eklemiştir: “Sen de ben de biliyoruz ki bu deve dişi değil, erkektir ve sana aittir. Fakat sen Kûfe’ye dönünce burada şahit olduğun manzarayı Ali’ye anlat ve ona şöyle söyle: “Ey Ali! Muaviye’nin etrafında dişi deveyi erkekten ayırt edemeyen, o ne derse evet diyen on bin adam var; o yüzden, ayağını denk al!`
+    },
+    {
+        "id": 30,
+        "title": "Galat-ı meşhur, fasîh-i mahcurdan evladır.",
+        "image": "",
+        "content": `Ben bunu derslerimde bazen kullanırım sizde bilin. Anlamı şu: Çok bilinen yanlış az bilinen doğruya tercih edilir. 
+
+Biraz ajite edecek olursak: 
+
+Galat-ı Meşhur: Halk arasında yaygınlaşmış, herkesin doğru kabul ettiği ya da zannettiği "yanlış".
+
+Fasîh-i Mahcur: Kitaba uygun, tertemiz, hatasız ama artık kimsenin bilmediği, köşesinde boynu bükük kalmış "yetim doğru".
+
+Yani bazen yanlış olmasına rağmen bazı şeyler öyle adlandırılabilir. 
+
+Örneğin: Son yıllarda gündemimize giren bir konu var. Terörle iltisakı tespit edilen belediye başkanlarının yerine görevlendirme yapılıyor. Ama kimse bunu böyle söylemiyor. Ya ne diyor? Kayyum atandı. 
+Deveye boynun eğri demişler. Nerem doğru ki demiş o hesap. 
+1. Türkçede kayyum diye bir kelime yok doğrusu kayyım.
+2. Türk kamu hukukunda kayyımlık müessesesi yok özel hukukta (medeni ve borçlar) var. 
+3. Atama değil görevlendirme. 
+Ama işte üç kere yanlış olmasına rağmen 'kayyum atandı' tabirini kullanmak mümkün mü? Evet mümkün. Niye çünkü belediye başkanı görevlendirmesi desen kimse anlamıyor da ondan. Yetim doğru yerine çok bilinen yanlışı tercih etme durumu tam olarak bu. 
+`
+    },
+    {
+        "id": 29,
+        "title": "Bilim Fanatikliği ya da Dini",
+        "image": "",
+        "content": `Bilime güvenilmez, bilime inanılmaz. Bilim bizden eleştirel ve sorgulayıcı olmamızı ister.`
+    },
+    {
+        "id": 28,
+        "title": "Cehaletin Özgüveni ve Kifayetsiz Muhterislerin Yükselişi: Dunning-Kruger Etkisi",
+        "image": "",
+        "content": `Bertrand Russell’ın yıllar önce saptadığı o acı gerçek, bugünün dünyasında dijital ve sosyal mecraların etkisiyle hiç olmadığı kadar görünür hale geldi: "Dünyanın en büyük problemi; akılsız ve fanatik kişilerin kendilerinden son derece emin olması, buna karşılık zeki insanların sürekli şüpheler içinde olmasıdır."
+
+Psikolog Justin Kruger ve David Dunning’e 2000 yılında Nobel ödülünü kazandıran ve literatüre "üstünlük yanılsaması" (superiority illusion) olarak geçen çalışma, tam da bu "özgüven zehirlenmesinin" bilimsel anatomisini çıkarıyor.
+
+Yetersizlik ve Haddini Bilmeme Kokteyli
+Dunning ve Kruger’in Cornell Üniversitesi öğrencileri üzerinde yaptığı deneyler, sarsıcı bir gerçeği gün yüzüne çıkardı: Bir konuda en başarısız olanlar (yüzde 10'luk dilim), performanslarını devasa bir yanılsamayla yüzde 60’larda tahmin ederken; gerçek uzmanlar (yüzde 90'lık dilim) kendi başarılarını çok daha mütevazı seviyelerde öngörüyordu.
+
+Bizim sınavlarda da neredeyse benzer bir durum ortaya çıkıyor. Sınavdan 100 alan adama sorsanız kaç alırsın diye en fazla 75-80 cevabını alırsınız. Buna karşın sınavlara çalışmadan gelmesine ve bütün sorulara saçma sapan cevaplar uydurmasına rağmen sınavdan aldığı notu beğenmeyenler hocaya mail atıyor. Hocam notumda bir yanlışlık olabilir mi diye. 
+
+Araştırmanın ortaya koyduğu dört temel bulgu, çevremizdeki "nedenler" tablosunu netleştiriyor:
+
+Farkındalık Yoksunluğu: Niteliksiz insanlar, ne ölçüde niteliksiz olduklarını kavrayamazlar.
+
+Abartma Eğilimi: Kendi kapasitelerini her zaman dev aynasında görürler.
+
+Körlük: Gerçekten nitelikli olanların yetkinliğini görüp takdir etmekten acizdirler.
+
+Eğitim Paradoksu: Eğer eğitimle nitelikleri artırılırsa, ancak o zaman ne kadar niteliksiz olduklarını fark etmeye başlarlar.
+
+Kariyer Basamaklarında "Cehalet Cesareti"
+Bu durumun asıl vahim sonucu ise çalışma hayatında karşımıza çıkar. Cehalet, doğası gereği içinde büyük bir girişimci ruh ve aktivasyon zenginliği taşır. İşinde yetersiz olduğuna dair en küçük bir kuşku duymayan "kifayetsiz muhteris", kendini övmekten ve haddi olmayan görevlere talip olmaktan çekinmez. Hatta bunu bir "hak" olarak görür.
+
+Buna karşılık; gerçek bilgi sahibi, liyakatli insanlar "fazla alçakgönüllü" davranarak kendilerine haksızlık eder, kıymetlerinin bilinmesini beklerler. Çoğu zaman da üstleri tarafından "ihtiras eksikliği" ile suçlanarak geride bırakılırlar.
+
+Sonuçta, bu "yetersizlik + haddini bilmeme" kokteyli, toplumsal hiyerarşide karşı koyulmaz bir itici güce dönüşür. Anladınız mı şimdi neden çoğu zaman başlar ayak, ayaklar da baş oluyor?`
+    },
+    {
+        "id": 27,
+        "title": "Guy Debord bugün yaşasaydı",
+        "image": "",
+        "content": `Guy Debord  Gosteri Toplumu kitabında şöyle demişti: İzleyici ne kadar çok seyrederse o kadar az yaşar. Bugün sosyal medyada geçirilen zamanı görse bunlar zaten ölmüş derdi herhalde`
+    },
+    {
+        "id": 26,
+        "title": "Aforizmalar",
+        "image": "",
+        "content": `Halkın bir kısmını her zaman 
+Halkın tamamını bazen aldatabilirsiniz
+Ama halkın tamamını her zaman aldatamazsınız`
+    },
+    {
+        "id": 25,
+        "title": "Soba neden yukarıda?",
+        "image": "",
+        "content": `Fizikçi, matematikçi, kimyacı, jeolog ve antropologdan oluşan bir heyet bir araştırma için ormanda bulunmaktadır.Birden yağmur bastırır. Hemen yakındaki bir orman evine sığınırlar.Ev sahibi bunlara bir şeyler ikram etmek için yanlarından ayrılır.
+Bu arada hepsinin dikkati soba üzerinde toplanır. Soba yerden bir metre kadar yukarıda ve dizili taşların üzerindedir. Sobanın niçin böyle kurulmuş olabileceğine yönelik aralarında bir tartışma başlar.
+Kimyacı,"Adam sobayı yükselterek aktivasyon enerjisini düşürmüş, böylece daha kolay yakmayı amaçlamış" der. Fizikçi, "Adam sobayı yükselterek konveksiyon yoluyla odanın daha kısa sürede ısınmasını sağlamak istemiş" diye yorumlar. Jeolog, "tektonik hareketlilik bölgesi olduğundan sobanın taşların üzerine yıkılmasını sağlayarak yangın ihtimalini azaltmayı amaçlamış." der.
+Matematikçi, "Sobayı odanın geometrik merkezine kurmuş, böylece odanın düzgün bir şekilde ısınmasını sağlamış." derken; Antropolog, "Adam ilkel topluluklarda görülen ateşe tapmanın daha soyut biçimi olan ateşe saygı nedeniyle sobayı yukarıya kurmuş" diye değerlendirir.
+Bizimkiler aralarında böyle konuşurken orman köylüsü içeri girer ve hep birlikte ona sobanın böyle yukarıda olmasının nedenini sorarlar. Adam cevap verir:
+_ Boru yetmedi. 
+😂`
+    },
+    {
         "id": 24,
         "title": "Erkeklerin Melek Olduğunun Kanıtı",
         "image": "",
