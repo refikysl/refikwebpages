@@ -459,6 +459,43 @@ document.addEventListener('DOMContentLoaded', () => {
                         </details> `;
                     });
                 }
+                // --- SPECIAL HANDLING FOR YOUTUBE (ID: 4) ---
+                else if (item.id === 4 && typeof youtubeTavsiyeleriData !== 'undefined') {
+                    // Intro note
+                    innerHTML += `<div style="margin-bottom: 1.5rem; font-style: italic; color: var(--text-color);">
+        Aşağıda, akademik ve entelektüel gelişiminiz için faydalı olabileceğini düşündüğüm Youtube kanalları listelenmiştir.
+                    </div> `;
+
+                    youtubeTavsiyeleriData.forEach(channel => {
+                        let descHtml = '';
+                        if (channel.description) {
+                            descHtml = `<p style="text-align: justify; margin-top:0; color: #444;">${channel.description}</p>`;
+                        }
+
+                        innerHTML += `
+                        <details class="modern-details" style="margin-top: 1rem;">
+                            <summary>
+                                <span class="summary-text" style="font-weight:bold; color:var(--primary-color); display: flex; align-items: center; gap: 10px;">
+                                    <i class='bx bxl-youtube' style="color: #ff0000; font-size: 1.4rem;"></i>
+                                    ${channel.title}
+                                </span>
+                                <i class='bx bx-chevron-down summary-icon'></i>
+                            </summary>
+                            <div class="details-content">
+                                <div class="recommendation-card-body" style="display: block;"> 
+                                    <div class="recommendation-content">
+                                        ${descHtml}
+                                        <div style="margin-top: 1rem;">
+                                            <a href="${channel.link}" target="_blank" style="text-decoration: none; color: #d32f2f; font-weight: bold; display: inline-flex; align-items: center; gap: 4px; padding: 5px 10px; background-color: #ffebee; border-radius: 5px; transition: background 0.3s;">
+                                                <i class='bx bxl-youtube'></i> Kanala Git
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </details> `;
+                    });
+                }
                 // --- DEFAULT ---
                 else {
                     if (item.isHtml) innerHTML = `<div style="margin-top:1rem;"> ${item.content}</div> `;
