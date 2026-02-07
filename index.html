@@ -67,6 +67,7 @@
                 <li><a href="#" class="nav-link active" data-target="anasayfa">Anasayfa</a></li>
                 <li><a href="#" class="nav-link" data-target="tavsiyeler">Hocanın Heybesinden</a></li>
                 <li><a href="#" class="nav-link" data-target="derkenar">Derkenar</a></li>
+                <li><a href="#" class="nav-link" data-target="anlar-anilar">Anlar ve Anılar</a></li>
 
                 <!-- DROPDOWN: DERSLER -->
                 <li class="nav-item-dropdown">
@@ -157,6 +158,24 @@
                 <h2 class="section-title">Derkenar</h2>
                 <div id="derkenar-container">
                     <p>Yükleniyor...</p>
+                </div>
+            </section>
+
+            <!-- ANLAR VE ANILAR -->
+            <section id="anlar-anilar">
+                <h2 class="section-title"><i class='bx bx-photo-album' style='margin-right:0.5rem;'></i> Anlar ve Anılar
+                </h2>
+                <div class="gallery-intro-card">
+                    <p>Kitapların ve teorilerin ötesinde; kampüsün canlı hafızasında yer tutan, öğrencilerimizle
+                        paylaştığımız ortak anlar. Akademik yolculuğumuza eşlik eden genç dimağlarla biriktirdiğimiz
+                        bazı hatıralar...
+                        <br>Tıklayarak büyük boyutta görüntüleyebilirsiniz.
+                    </p>
+                </div>
+
+                <!-- Masonry Grid -->
+                <div class="masonry-grid" id="gallery-grid">
+                    <p style="text-align:center; color:var(--text-secondary);">Fotoğraflar yükleniyor...</p>
                 </div>
             </section>
 
@@ -440,6 +459,26 @@
         </div>
     </div>
 
+    <!-- Lightbox Modal for Anlar ve Anılar -->
+    <div class="modal-overlay" id="lightbox-modal">
+        <div class="lightbox-content">
+            <button class="lightbox-close" id="lightbox-close">
+                <i class='bx bx-x'></i>
+            </button>
+            <button class="lightbox-nav lightbox-prev" id="lightbox-prev">
+                <i class='bx bx-chevron-left'></i>
+            </button>
+            <button class="lightbox-nav lightbox-next" id="lightbox-next">
+                <i class='bx bx-chevron-right'></i>
+            </button>
+            <img id="lightbox-image" src="" alt="" style="max-width: 90vw; max-height: 90vh; border-radius: 8px;">
+            <div class="lightbox-info">
+                <h3 id="lightbox-title"></h3>
+                <p id="lightbox-date"></p>
+            </div>
+        </div>
+    </div>
+
     <!-- Veri Dosyaları -->
     <script src="data/makaleler.js"></script>
     <script src="data/kitaplar.js"></script>
@@ -449,6 +488,7 @@
     <script src="data/tavsiyeler.js"></script>
     <script src="data/derkenar.js"></script>
     <script src="data/duyurular.js"></script>
+    <script src="data/anlar.js"></script>
 
     <script src="script.js"></script>
     <script>
