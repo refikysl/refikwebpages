@@ -10,6 +10,90 @@ Bu sayfa, hayatın ana metnine düşülmüş mütevazı bir şerh, akademik disi
     ],
     "konular": [
     {
+        "id": 24,
+        "title": "Erkeklerin Melek Olduğunun Kanıtı",
+        "image": "",
+        "content": `Bir gün ormancının biri, dalları nehrin üzerine sarkan ağacın dallarını keserken baltasını suya düşürür.
+
+- "Aman tanrım" diye bağırdığında bir peri belirir ve "Ne diye bağırıyorsun?" der.
+
+Ormancı baltasını suya düşürdüğünü ve yaşamını sürdürebilmek için o baltaya ihtiyacı olduğunu söyler.
+
+Peri suya dalar ve elinde bir altın balta ile tekrar belirir.
+
+''Baltan bu muydu ?" diye sorar.
+
+Ormancı "hayır" diye cevaplar.
+
+Peri suya tekrar dalar ve bu sefer elinde gümüş bir balta ile tekrar belirir ve yine sorar. "Baltan bu muydu?"
+
+Ormancı yine "hayır" diye cevaplar.
+
+Peri suya tekrar dalar ve bu sefer elinde demir bir balta ile tekrar belirir ve yine sorar. "Baltan bu muydu?"
+
+Ormancı "evet" der.
+
+Ormancının dürüstlüğü perinin çok hoşuna gider ve baltaların üçünü de kendisine verir.
+
+Ormancı mutlu bir şekilde evine döner.
+
+Bir zaman sonra ormancı eşiyle birlikte nehir boyunca yürürken karısı suya düşer.
+
+Ormancı "aman tanrım" diye bağırır.
+
+Peri yine belirir ve sorar: "Ne diye bağırıyorsun ?"
+
+Ormancı "karım suya düştü" der.
+
+Peri suya dalar ve Jennifer Lopez ile birlikte geri döner.
+
+"Senin karın bu mu?" diye sorar.
+
+Ormancı "evet" der.
+
+Peri sinirlenmiştir, "Yalan söylüyorsun, gerçek bu değil" der.
+
+Ormancı "özür dilerim peri, ortada bir yanlış anlaşılma söz konusu. Eğer Jennifer Lopez için hayır deseydim, bu sefer CatherineZeta-Jones ile geri dönecektin, ona da hayır deseydim karımla dönecek ve her üçünü de bana verecektin.
+
+Oysa ben fakir bir adamım ve üç karımın sorumluluğunu taşıyabilecek durumda değilim. Jennifer Lopez'e evet dememin sebebi budur.."
+
+Bu hikâyeden alınacak ders:
+Ne zaman bir erkek yalan söylüyorsa bunun iyi ve saygın bir nedeni vardır ve bu başkalarının yararı içindir. Kendileri için bir şey istiyorlarsa ekmek çarpsındır.. 🙂
+🤣🤣🤣🤣`
+    },
+    {
+        "id": 23,
+        "title": "Okuduğum yer gerçek hikaye diye yazmış ama doğru mu bilmiyorum :)",
+        "image": "",
+        "content": `Gerçek bir olay. Bu olay Kayseri’nin Bünyan ilçesi’nde yaşanmış. Olay Alfred Hitchcock’un meşhur korku filmlerini bile çok gerilerde bırakacak kadar tüyler ürpertici.
+
+Gece bindiğiniz otomobilde direksiyonda kimse yoksa ne yapardınız? Kendisi Bünyanli olmayan, politikayla uğraşmış ve halen Kayseri’de yasayan iş adamı, 22 Şubat 2005 tarihinde Bünyan sınırında, Kayseri Malatya kara yolu üzerinde, bir benzin istasyonuna
+girer.
+Lokantaya oturur ve orada kalabalık toplulukla birlikte bir ufak rakı içer. Yürüyüş mesafesindeki Bünyan’a gitmek için, lokantadan çıkar. Ancak dışarısı hem zifiri karanlıktır hem de korkunç bir kar-tipi fırtınası başlamıştır. Benzin istasyonuna yaklaşık 300 metre mesafedeki, Bünyan’a dönüş yolu kenarına varır. Oradan geçen bir arabaya binip, Bünyan’a ulaşma derdindedir. Fırtına daha da şiddetlenir. Adam bir-kaç adım ötesini bile görememektedir. Gelip-geçen bir araba da yoktur.
+
+Nihayet karanlıklar içerisinde, hayalet gibi yavaş yavaş yaklaşan bir arabanın iki farını fark eder. Arabanın, tam önünde yavaşlamasıyla birlikte hemen arka kapıyı açar ve arabaya biner. Kapıyı kapatır, araba yeniden hareket eder. İçeridekilere merhaba demek ister. Ama o da ne? Arabada kimse olmadigi gibi, direksiyonda da kimse yoktur. Birden paniğe kapılır.
+Korkuyla, hemen arabadan atlayıp, oradan koşarak uzaklaşmak ister ama hem araba hızlanmış, hem de korku ile dizleri bağlanmış, hareket edemez hale gelmiştir. Araba
+keskin bir viraja doğru yaklaşır. Adam dua etmeye baslar. Tüm günahları için tövbe eder. Arabayı durdurması için Allah’a yalvarır. Tam bu esnada, pencereden bir el uzanır ve direksiyonu kıvırarak sert virajdan arabanın doğru yola dönmesini sağlar. Her tehlikeli dönemece yaklaştıkça, Allah’a yalvarış ve yakarışı artar ve her seferinde de bir el dışarıdan uzanıp, direksiyonu çevirir.
+
+Sonunda kendisini biraz toparlar, ayaklarını kımıldatır. “Ya Allah koru beni…” deyip, kapıyı açmasıyla birlikte, kendisini arabadan dışarı fırlatır. Bir kaç takla attıktan sonra, şarampolde kendisine gelir.
+Defalarca 1 fatiha 3 ıhlası şerif okuyarak, Bünyan’a yürüyerek ulaşır ve bir kahvehaneye girer. Üstü başı ıslak ve şoka girmiş haldedir. Kendisini tanıyanlar hemen sobanın başına alırlar. Eline bir çay verirler. Bir müddet sonra kendisine gelip, sesi titreyerek, başına gelen doğa üstü ve korkunç olayı anlatır. Olayı dinleyenler inanmak istemeseler de, anlatan kişinin aklı başında ve toplumsal sorumluluk taşıyan bir pozisyonda olduğunu bildiklerinden, herkeste derin bir sessizlik oluşur. Yaklaşık yarım saat sonra, aynı kahvehaneye Koyunabdal Köyü’nden iki kişi girer. Bir masaya oturur ve iki bardak çay söylerler. Bu arada,
+gelenlerden birisi, diğerine şunları söyler :
+
+-Ahmet baksana, su sobanın başında oturan geri zekalı, bizim araba yolda kalınca, biz arabayı iterken, arabaya binip-inen öküz değil mi?`
+    },
+    {
+        "id": 22,
+        "title": "Power tends to corrupt and absolute power corrupts absolutely",
+        "image": "",
+        "content": `"Güç yozlaştırma eğilimindedir; mutlak güç ise mutlaka yozlaştırır" anlamına gelen bu meşhur söz 19. yüzyıl İngiliz tarihçisi ve siyasetçisi Lord Acton'a (John Dalberg-Acton) aittir. Acton, 1887 yılında Anglikan Piskoposu Mandell Creighton'a yazdığı bir mektupta bu ifadeyi kullanmıştır. Mektubun asıl hedefi, tarihçilerin büyük dini ve siyasi liderleri yargılarken onlara "makamlarından dolayı" imtiyaz tanımalarını eleştirmektir.`
+    },
+    {
+        "id": 21,
+        "title": "Yiğit Özgür'ün En Sevdiğim Karikatürü",
+        "image": "images/karikatür_derme.jpg",
+        "content": ``
+    },
+    {
         "id": 20,
         "title": "Tavuk gibi ölen kartal",
         "image": "",
