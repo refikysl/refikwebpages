@@ -10,6 +10,14 @@ Bu sayfa, hayatın ana metnine düşülmüş mütevazı bir şerh, akademik disi
     ],
     "konular": [
     {
+        "id": 34,
+        "title": "Ne Kutsal, Ne Roma, Ne İmparatorluk",
+        "image": "",
+        "content": `Voltaire 1756 yılında kaleme aldığı Milletlerin Gelenekleri ve Ruhu Üzerine Deneme (Essai sur les mœurs et l'esprit des nations) adlı eserinde tam olarak şunu yazmıştı:
+
+"Kendine Kutsal Roma İmparatorluğu diyen ve demeye devam eden bu kitle; hiçbir şekilde ne kutsal, ne Romalı, ne de bir imparatorluktur." (...ce corps qui s'appelait et qui s'appelle encore le saint empire romain n'était en aucune manière ni saint, ni romain, ni empire.)`
+    },
+    {
         "id": 33,
         "title": "Tutunamayanlardan",
         "image": "",
