@@ -495,6 +495,7 @@ h2.section-title::before {
 }
 
 /* Tavsiyeler Accordion */
+
 .tavsiye-header:hover {
     background-color: #f8fafc;
 }
@@ -917,4 +918,74 @@ details.modern-details[open] summary .summary-icon {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+
+/* Derkenar Intro Styling */
+.derkenar-intro-card {
+    background-image: url('images/derkenarBgr.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    padding: 3rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+.derkenar-intro-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.derkenar-intro-card p {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* Heybe Intro Card Styling (Similar to Derkenar) */
+.heybe-intro-card {
+    background-image: url('images/heybeBgr_images.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    padding: 3rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+.heybe-intro-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.heybe-intro-card p {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+    font-size: 1.1rem;
+    line-height: 1.8;
+    text-align: justify;
 }
