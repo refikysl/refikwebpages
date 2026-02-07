@@ -994,3 +994,38 @@ details.modern-details[open] summary .summary-icon {
     line-height: 1.8;
     text-align: justify;
 }
+
+/* Mobile Adjustments for Intro Cards */
+@media (max-width: 768px) {
+
+    .derkenar-intro-card,
+    .heybe-intro-card {
+        background-image: none !important;
+        /* Remove background image */
+        background-color: #f8fafc !important;
+        /* Light background color */
+        color: var(--text-dark) !important;
+        /* Dark text for readability */
+        min-height: auto !important;
+        /* Remove forced height */
+        padding: 1.5rem !important;
+        /* Reduce padding */
+        text-shadow: none !important;
+        /* Remove text shadow */
+        border: 1px solid #e2e8f0;
+        /* Add border for card look */
+    }
+
+    /* Hide the dark overlay */
+    .derkenar-intro-card::before,
+    .heybe-intro-card::before {
+        display: none !important;
+    }
+
+    /* Ensure text color override */
+    .derkenar-intro-card p,
+    .heybe-intro-card p {
+        color: var(--text-dark) !important;
+        text-shadow: none !important;
+    }
+}
