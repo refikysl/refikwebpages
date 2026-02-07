@@ -65,7 +65,7 @@
         <nav class="top-nav">
             <ul>
                 <li><a href="#" class="nav-link active" data-target="anasayfa">Anasayfa</a></li>
-                <li><a href="#" class="nav-link" data-target="tavsiyeler">Hocadan Tavsiyeler</a></li>
+                <li><a href="#" class="nav-link" data-target="tavsiyeler">Hocanın Heybesinden</a></li>
                 <li><a href="#" class="nav-link" data-target="derkenar">Derkenar</a></li>
 
                 <!-- DROPDOWN: DERSLER -->
@@ -138,7 +138,15 @@
 
             <!-- HOCADAN TAVSİYELER -->
             <section id="tavsiyeler">
-                <h2 class="section-title">Hocadan Tavsiyeler</h2>
+                <h2 class="section-title"><i class='bx bx-shopping-bag' style='margin-right:0.5rem;'></i> Hocanın
+                    Heybesinden</h2>
+                <div class="heybe-intro-card">
+                    <p>Heybe, sadece azık taşımak için değil; yol boyu toplanan tecrübeyi, satır aralarını ve hayatı
+                        kolaylaştıran araçları biriktirmek içindir. Bu sayfada, akademik mesainin dışına taşan, zihnimi
+                        besleyen ve teknolojiyle harmanlanan bir seçkiyi paylaşıyorum. Yapay zekanın sunduğu yeni
+                        imkânlardan, ruhu dinlendiren bir film karesine; bir kitabın ilk cümlesinden, dijital dünyanın
+                        pratik çözümlerine kadar heybemde ne varsa, ortak olmak isteyenler için buraya bırakıyorum.</p>
+                </div>
                 <div id="tavsiyeler-container">
                     <p>Yükleniyor...</p>
                 </div>
@@ -349,8 +357,8 @@
             </section>
             <section id="yayin-bildiri">
                 <h2 class="section-title">Bildiriler</h2>
-                <div class="modern-card">
-                    <p>Bildiri listesi yükleniyor...</p>
+                <div id="bildiriler-container">
+                    <p>Yükleniyor...</p>
                 </div>
             </section>
             <section id="yayin-proje">
@@ -435,6 +443,7 @@
     <!-- Veri Dosyaları -->
     <script src="data/makaleler.js"></script>
     <script src="data/kitaplar.js"></script>
+    <script src="data/bildiriler.js"></script>
     <script src="data/tavsiyeler_kitap.js"></script>
     <script src="data/tavsiyeler_film.js"></script>
     <script src="data/tavsiyeler.js"></script>
