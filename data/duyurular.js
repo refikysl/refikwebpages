@@ -1,33 +1,5 @@
 const duyurularData = [
     {
-        "id": 6,
-        "title": "deneme amaçlı duyuru3",
-        "date": "06.02.2026",
-        "summary": "ierik",
-        "content": `auelimkm lyuekaylmueka`
-    },
-    {
-        "id": 5,
-        "title": "deneme amaçlı duyuru2",
-        "date": "06.02.2026",
-        "summary": "ierik",
-        "content": `auelimkm lyuekaylmueka`
-    },
-    {
-        "id": 4,
-        "title": "deneme amaçlı duyuru",
-        "date": "06.02.2026",
-        "summary": "ierik",
-        "content": `auelimkm lyuekaylmueka`
-    },
-    {
-        "id": 3,
-        "title": "Yeni derkenarlar eklendi",
-        "date": "06.02.2026",
-        "summary": "Kıyıda köşede kalmış bilgileri sizinle paylaşmaya devam ediyorum",
-        "content": `içerik için derkenar sayfasına gidiniz`
-    },
-    {
         "id": 2,
         "title": "Yeni makale duyurusu",
         "date": "06.02.2026",
