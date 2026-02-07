@@ -594,4 +594,184 @@ document.addEventListener('DOMContentLoaded', () => {
 
     loadDerkenar();
 
+    // --- ANLAR VE ANILAR GALLERY ---
+    let currentPhotoIndex = 0;
+    let galleryPhotos = [];
+
+    function loadGallery() {
+        const grid = document.getElementById('gallery-grid');
+        if (!grid) return;
+
+        // Demo photos with fallback
+        const defaultPhotos = [
+            { id: 1, src: 'https://picsum.photos/400/300?random=1', title: 'Akademik Çalışma', date: '2020', width: 400, height: 300 },
+            { id: 2, src: 'https://picsum.photos/400/600?random=2', title: 'Konferans', date: '2019', width: 400, height: 600 },
+            { id: 3, src: 'https://picsum.photos/400/500?random=3', title: 'Kampüs', date: '2018', width: 400, height: 500 },
+            { id: 4, src: 'https://picsum.photos/400/400?random=4', title: 'Mezuniyet', date: '2021', width: 400, height: 400 },
+            { id: 5, src: 'https://picsum.photos/400/550?random=5', title: 'Kütüphane', date: '2017', width: 400, height: 550 },
+            { id: 6, src: 'https://picsum.photos/400/350?random=6', title: 'Seminer', date: '2022', width: 400, height: 350 },
+            { id: 7, src: 'https://picsum.photos/400/450?random=7', title: 'Toplantı', date: '2016', width: 400, height: 450 },
+            { id: 8, src: 'https://picsum.photos/400/600?random=8', title: 'Çalışma', date: '2023', width: 400, height: 600 }
+        ];
+
+        if (typeof anlarData !== 'undefined' && anlarData.length > 0) {
+            galleryPhotos = anlarData;
+        } else {
+            galleryPhotos = defaultPhotos;
+        }
+
+        // --- SORT BY DATE (Standard ISO Date YYYY-MM-DD) ---
+        // New Admin Panel saves dates as YYYY-MM-DD
+
+        galleryPhotos.sort((a, b) => {
+            // Fallback for old data or if date is missing
+            const dateA = a.date ? new Date(a.date) : new Date(0);
+            const dateB = b.date ? new Date(b.date) : new Date(0);
+            return dateB - dateA;
+        });
+
+        // --- END SORT ---
+
+        // Create Columns Logic
+        function renderMasonry() {
+            grid.innerHTML = '';
+
+            // Determine column count based on width
+            const width = window.innerWidth;
+            let cols = 1;
+            if (width >= 1200) cols = 4;
+            else if (width >= 900) cols = 3;
+            else if (width >= 600) cols = 2;
+
+            // Create column containers
+            const columnElements = [];
+            for (let i = 0; i < cols; i++) {
+                const col = document.createElement('div');
+                col.className = 'masonry-column';
+                grid.appendChild(col);
+                columnElements.push(col);
+            }
+
+            // Distribute photos into columns
+            galleryPhotos.forEach((photo, index) => {
+                // Format date for display (e.g., "15 Ocak 2025")
+                let displayDate = photo.date;
+                if (photo.date && photo.date.includes('-')) {
+                    try {
+                        const d = new Date(photo.date);
+                        displayDate = d.toLocaleDateString('tr-TR', { year: 'numeric', month: 'long', day: 'numeric' });
+                    } catch (e) { /* ignore error, use raw string */ }
+                }
+
+                const item = document.createElement('div');
+                item.className = 'gallery-item';
+                item.innerHTML = `
+                    <div class="img-wrapper">
+                        <img src="${photo.src}" alt="${photo.title}" loading="lazy">
+                    </div>
+                    <div class="gallery-item-overlay">
+                        <h3 class="overlay-title">${photo.title}</h3>
+                        <p class="overlay-date">${displayDate}</p>
+                    </div>
+                `;
+                item.addEventListener('click', () => openLightbox(index));
+
+                // Add to round-robin column
+                columnElements[index % cols].appendChild(item);
+            });
+        }
+
+        renderMasonry();
+
+        // Re-render on resize (debounced)
+        let resizeTimeout;
+        window.addEventListener('resize', () => {
+            clearTimeout(resizeTimeout);
+            resizeTimeout = setTimeout(renderMasonry, 200);
+        });
+    }
+
+    // Lightbox functions
+    function openLightbox(index) {
+        currentPhotoIndex = index;
+        updateLightbox();
+        const lightbox = document.getElementById('lightbox-modal');
+        if (lightbox) {
+            lightbox.classList.add('open');
+            document.body.style.overflow = 'hidden';
+        }
+    }
+
+    function closeLightbox() {
+        const lightbox = document.getElementById('lightbox-modal');
+        if (lightbox) {
+            lightbox.classList.remove('open');
+            document.body.style.overflow = 'auto';
+        }
+    }
+
+    function updateLightbox() {
+        if (galleryPhotos.length === 0) return;
+
+        const photo = galleryPhotos[currentPhotoIndex];
+        const img = document.getElementById('lightbox-image');
+        const title = document.getElementById('lightbox-title');
+        const date = document.getElementById('lightbox-date');
+
+        if (img) img.src = photo.src;
+        if (title) title.textContent = photo.title;
+        if (date) date.textContent = photo.date;
+    }
+
+    function nextPhoto() {
+        currentPhotoIndex = (currentPhotoIndex + 1) % galleryPhotos.length;
+        updateLightbox();
+    }
+
+    function prevPhoto() {
+        currentPhotoIndex = (currentPhotoIndex - 1 + galleryPhotos.length) % galleryPhotos.length;
+        updateLightbox();
+    }
+
+    // Event listeners for lightbox
+    const lightboxClose = document.getElementById('lightbox-close');
+    const lightboxNext = document.getElementById('lightbox-next');
+    const lightboxPrev = document.getElementById('lightbox-prev');
+    const lightboxModal = document.getElementById('lightbox-modal');
+
+    if (lightboxClose) {
+        lightboxClose.addEventListener('click', closeLightbox);
+    }
+
+    if (lightboxNext) {
+        lightboxNext.addEventListener('click', nextPhoto);
+    }
+
+    if (lightboxPrev) {
+        lightboxPrev.addEventListener('click', prevPhoto);
+    }
+
+    // Close on background click
+    if (lightboxModal) {
+        lightboxModal.addEventListener('click', (e) => {
+            if (e.target.id === 'lightbox-modal') {
+                closeLightbox();
+            }
+        });
+    }
+
+    // Keyboard navigation
+    document.addEventListener('keydown', (e) => {
+        const lightbox = document.getElementById('lightbox-modal');
+        if (!lightbox || !lightbox.classList.contains('open')) return;
+
+        if (e.key === 'Escape') closeLightbox();
+        if (e.key === 'ArrowRight') nextPhoto();
+        if (e.key === 'ArrowLeft') prevPhoto();
+    });
+
+    // Initialize gallery
+    loadGallery();
+
 });
+
