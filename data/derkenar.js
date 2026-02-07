@@ -10,6 +10,24 @@ Bu sayfa, hayatın ana metnine düşülmüş mütevazı bir şerh, akademik disi
     ],
     "konular": [
     {
+        "id": 33,
+        "title": "Tutunamayanlardan",
+        "image": "",
+        "content": `Oğuz Atay'ın romanından değil. 
+TRT'de bir zamanlar Tutunamayanlar diye güzel bir dizi vardı. 
+Ondan bir şiir. İdris Mahfiye ait. 
+Youtube'a tutunamayanlar şiir yazarsanız seslendirilmiş halini de dinleyebilirsiniz. 
+
+Susuz, soğuk dudaklardan döküldü birkaç hece.
+Bak, gökyüzü berrak, yağmur var ve ıslandım
+Her dervişin dimağında yer eden bir bilmece. 
+Yıl 57, yer Nedim divanında bir gece.
+Huzurlu bir ses yükseliyor Sıla-i Rahim'den. 
+Ölmenin tam zamanı hazır hava güzelken. 
+Çeşminden dökülmüş doğarken kıvırcık saçların,
+bir ezanla fısıldanmış en güzel isim; adın.`
+    },
+    {
         "id": 32,
         "title": "Gece-Uyku-Uykusuzluk üzerine büyük adamlardan aforizmalar",
         "image": "",
@@ -430,7 +448,7 @@ Yıllar önce yazmıştım bunu.Sırf doğduğu yer nedeniyle kendini farklı za
         "id": 7,
         "title": "Kalabalık ama boş cümleler",
         "image": "",
-        "content": `< em > Son zamanlarda özellikle akademik çalışmalarda aman daha çok bilimsel görülsün diye basit gerçeklikleri zorlama yorum ve ifadelerle uzatma modası başladı.En son böyle bir makaleye hakemlik yaptıktan sonra acaba bende bu tür ama saçma ifadeler üretebilir miyim diye zorladım kendimi biraz ve aşağıdakileri ürettim.</em >
+        "content": `Son zamanlarda özellikle akademik çalışmalarda aman daha çok bilimsel görülsün diye basit gerçeklikleri zorlama yorum ve ifadelerle uzatma modası başladı. En son böyle bir makaleye hakemlik yaptıktan sonra acaba bende bu tür ama saçma ifadeler üretebilir miyim diye zorladım kendimi biraz ve aşağıdakileri ürettim.</em >
 
     "Kolektif bilinci şekillendiren hegemonik paradigmaların, epistemolojik düzlemdeki ontolojik yeniden inşasının, sosyo-kültürel katmanlar üzerindeki diyalektik izdüşümlerinin fenomenolojik bir perspektifle sorunsallaştırılması."
         (Türkçesi: "Fikirler değişince toplum da değişir.")
